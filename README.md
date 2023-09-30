@@ -1,6 +1,7 @@
 # 2023zjudem-The-Dynamic-Seven
 
 # Team Members 
+* Tasnim Afra 22351383
 * FAHIM RANA 22351418
 * SRISTY CHOWDHURY 22351402
 * JAKIR 22351398
