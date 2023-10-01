@@ -2,7 +2,7 @@
 
 # Team Members 
 * Burton Kamzimbi 22351385
-* MINHAZUL ISLAM 22351396(https://minhazul249602.github.io/my_cv/)
+* MINHAZUL ISLAM 22351396(https://minhazul249602.github.io/cv/)
 * FAHIM RANA 22351418
 * SRISTY CHOWDHURY 22351402
 * JAKIR 22351398
