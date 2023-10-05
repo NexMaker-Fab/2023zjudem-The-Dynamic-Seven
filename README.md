@@ -1,7 +1,7 @@
 # 2023zjudem-The-Dynamic-Seven
 
 # Team Members 
-* Burton Kamzimbi 22351385
+* [Burton Kamzimbi 22351385 ](https://bkamzimbi.github.io/cv/)
 * [SRISTY CHOWDHURY 22351402]( https://chowdhurysristy.github.io/my_cv/)
 * [Tasnim Afra 22351383](https://afratasmim.github.io/personalportfolio/)
 * [Fahim Rana 22351418](https://fahim-rana.github.io/fahim_cv/)
