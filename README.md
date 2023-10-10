@@ -1,4 +1,4 @@
-# 2023zjudem-The-Dynamic-Seven
+# [2023zjudem-The-Dynamic-Seven](https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/)
 
 # Team Members 
 * [Burton Kamzimbi 22351385 ](https://bkamzimbi.github.io/cv/)
