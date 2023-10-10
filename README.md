@@ -7,5 +7,5 @@
 * [Fahim Rana 22351418](https://fahim-rana.github.io/fahim_cv/)
 * [Minhazul Islam 22351396](https://minhazul249602.github.io/cv/)
 * [JAKIR 22351398](https://jakir669.github.io/jakirs_page/)
-* A. R. Shoikot 22351397
+* [A. R. Shoikot 22351397](https://arshoikot1.github.io/arshoikotProtfolio/#contact)
 
