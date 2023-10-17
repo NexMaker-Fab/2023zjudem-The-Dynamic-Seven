@@ -9,9 +9,9 @@
 
 - [Git](https://git-scm.com/downloads):
 我们使用 Git 作为版本控制系统并跟踪对文件所做的更改。我们使用 git 版本 2.42.0.windows.2。
-- [Github](https://about.gitlab.com/): 
+- [Github](https://github.com/): 
 对于我们的网站，我们使用 GitHub 服务。
-- [Github desktop](https://www.gitbook.com/):
+- [Github desktop](https://desktop.github.com/):
 为了将我们的代码从本地移动或推送到 Github，我们使用 GitHub 桌面。
 - [VScode](https://code.visualstudio.com/):
 我们使用 Visual Studio 代码来写下我们的文档。
