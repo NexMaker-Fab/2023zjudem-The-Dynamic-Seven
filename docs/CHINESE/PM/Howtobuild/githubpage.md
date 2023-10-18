@@ -162,7 +162,7 @@
 
              loadNavbar: true,
 
-#### 6. Image Upload
+#### 6. 图像上传
 
  我们用
  我们在文档中创建了一个图像文件夹，其中存储了所有图片，并将它们拖放到文档中。"img style="float: center;" width=700 src="url/imagename.png(format)".
@@ -171,6 +171,89 @@
 <img style="float: center;" width=700 src="PM/Howtobuild/img.png">
 <BR>
 
+
+#### 7. 如何创建瓷砖，标题和内容
+
+
+
+-  如何添加标题和组徽标
+
+<BR>
+
+     <img style="display: block;
+     margin-left: auto;
+      margin-right: auto;
+      width: 30%;" src="PM/Howtobuild/logo.png">
+
+    <H2 style= "text-align: center; font-size:7vw" > <span style="color:green"></span><span     style="color:orange">The </span><span style="color:orange"> Dynamic Seven</span> </h2>
+
+     <H2 style= "text-align: center; font-size:2vw" > <span style="color:light black">HELLO! <br> Welcome to The     Dynamic-Seven</span>
+
+
+<BR>
+
+
+
+
+ - 如何添加部分
+
+<br> 
+
+       ## A. WAYS TO BUILD
+       ## B. PROBLEMS & SOLUTIONS
+       ## C. SET UP TEAMINTRO
+       ## D. LANGUAGE
+       ## D. LANGUAGE
+
+<BR>
+
+ - 如何添加小节
+<br>
+
+
+       #### 1. Github Desktop
+       #### 2. Vs Code
+       #### 3. Install Docsify
+       #### 4. Setting up Index.html
+       #### 5. Add sidebar and navbar
+       #### 6. Image Upload
+       #### 7. How to create tile,Header, and content 
+
+
+<BR>
+
+ 
+ - 添加文本和图片的一些代码。
+
+<BR>
+
+<span style="color:red">EXAMPLE</span>
+
+
+<br>
+<img style="float: center;" width=1000 src="PM/Howtobuild/text_add.png">
+<br>
+    
+<BR>
+
+ - 如何添加链接
+<BR>
+
+
+    Installing all of the tools required to develop the website:
+
+    - [Git](https://git-scm.com/downloads):we used Git for version control system and track of changes made to files.We used git version 2.42.0.windows.2.
+    - [Github](https://github.com/):For our website, we utilize the github service.
+    - [Github Desktop](https://desktop.github.com/):To move or push our coding from local to github, we used github desktop.
+    - [VScode](https://code.visualstudio.com/):We used the visual studio code to write down our documents.
+    - [Nodejs](https://nodejs.org/en/):We used it to build the environment. node --version v18.18.0.
+    - [Markdown language](https://www.nexmaker.com/doc/1projectmanage/markdown.html): to write our document;
+
+
+<BR>
+<BR>
+<BR>
+<BR>
 
 ### 第 4 步：将文档上传到 Github
 

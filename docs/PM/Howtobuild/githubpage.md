@@ -102,6 +102,7 @@ After successful initialization, you can see several files created in the direct
 <BR>
 <span></span>
 
+
 #### 4. Setting up Index.html
 
 
@@ -153,6 +154,92 @@ We use
  <br>
 <img style="float: center;" width=700 src="PM/Howtobuild/img.png">
 <BR>
+<BR>
+<BR>
+
+#### 7. How to create tile,Header, and content 
+
+
+
+-  How to add Title and Group Logo
+
+<BR>
+
+     <img style="display: block;
+     margin-left: auto;
+      margin-right: auto;
+      width: 30%;" src="PM/Howtobuild/logo.png">
+
+    <H2 style= "text-align: center; font-size:7vw" > <span style="color:green"></span><span     style="color:orange">The </span><span style="color:orange"> Dynamic Seven</span> </h2>
+
+     <H2 style= "text-align: center; font-size:2vw" > <span style="color:light black">HELLO! <br> Welcome to The     Dynamic-Seven</span>
+
+
+<BR>
+
+
+
+
+- How to add Section 
+
+<br> 
+
+       ## A. WAYS TO BUILD
+       ## B. PROBLEMS & SOLUTIONS
+       ## C. SET UP TEAMINTRO
+       ## D. LANGUAGE
+       ## D. LANGUAGE
+
+<BR>
+
+- How to add subsections
+<br>
+
+
+       #### 1. Github Desktop
+       #### 2. Vs Code
+       #### 3. Install Docsify
+       #### 4. Setting up Index.html
+       #### 5. Add sidebar and navbar
+       #### 6. Image Upload
+       #### 7. How to create tile,Header, and content 
+
+
+<BR>
+
+ 
+-Here some codes for add text and picture .
+
+<BR>
+
+<span style="color:red">EXAMPLE</span>
+
+
+<br>
+<img style="float: center;" width=1000 src="PM/Howtobuild/text_add.png">
+<br>
+    
+<BR>
+
+- How to add link 
+<BR>
+
+
+    Installing all of the tools required to develop the website:
+
+    - [Git](https://git-scm.com/downloads):we used Git for version control system and track of changes made to files.We used git version 2.42.0.windows.2.
+    - [Github](https://github.com/):For our website, we utilize the github service.
+    - [Github Desktop](https://desktop.github.com/):To move or push our coding from local to github, we used github desktop.
+    - [VScode](https://code.visualstudio.com/):We used the visual studio code to write down our documents.
+    - [Nodejs](https://nodejs.org/en/):We used it to build the environment. node --version v18.18.0.
+    - [Markdown language](https://www.nexmaker.com/doc/1projectmanage/markdown.html): to write our document;
+
+
+<BR>
+
+<BR>
+
+
 
 ### Step 4: UPLOAD Document to Github
 
