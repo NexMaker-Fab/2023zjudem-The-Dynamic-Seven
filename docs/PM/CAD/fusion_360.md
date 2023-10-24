@@ -35,13 +35,13 @@ Fusion 360 is known for its versatility, ease of use, and the ability to handle 
 Fusion 360 is a popular computer-aided design (CAD) and computer-aided manufacturing (CAM) software developed by Autodesk. It is used for 3D modeling, engineering design, and simulation. The interface in Fusion 360 is designed to be user-friendly and efficient. Here's an overview of the main components of the Fusion 360 interface:
 
 <br>
-<img style="float: center;" width=1000 src="PM/CAD/pic1.png">
+<img style="float: center;" width=700 src="PM/CAD/pic1.png">
 <br>
 
 1.**Data Panel**: This panel is your gateway to managing design data and collaborating with others. It allows you to access teams, projects, and designs. You can organize your design files, share them with team members, and control access to your projects. It's a central hub for version control, collaboration, and project management.
 
 <br>
-<img style="float: center;" width=1000 src="PM/CAD/pic2.png">
+<img style="float: center;" width=700 src="PM/CAD/pic2.png">
 <BR>
 
 2.**Application Bar**:This bar is located at the top and includes several essential functions:
