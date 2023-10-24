@@ -88,7 +88,7 @@ Contextual Environments:Similar to contextual tabs, certain commands activate co
 <img style="float: center;" width=1000 src="PM/CAD/pic6.png">
 <BR>
 
-6. **ViewCube**: The ViewCube is a visual navigation tool that allows you to orbit your design or quickly switch between different views.
+1. **ViewCube**: The ViewCube is a visual navigation tool that allows you to orbit your design or quickly switch between different views.
 
 
 <br><img style="float: center;" width=1000 src="PM/CAD/pic 7.png">
