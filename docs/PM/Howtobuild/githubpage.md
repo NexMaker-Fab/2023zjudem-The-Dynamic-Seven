@@ -208,16 +208,66 @@ We use
 <BR>
 
  
--Here some codes for add text and picture .
+- Here some codes for add text and picture .
 
 <BR>
 
 <span style="color:red">EXAMPLE</span>
 
 
-<br>
-<img style="float: center;" width=1000 src="PM/Howtobuild/text_add.png">
-<br>
+    #### 3. Install Docsify
+
+    To set up the environment, follow these steps:
+    <BR>
+    <span style="color:red">Method 1</span>
+      <BR>
+
+    1. Begin by executing the command: "npm i docsify-cli -g" to install Docsify globally.At that time some necessary         file downloaded.
+      <br>
+
+      <br>
+      <img style="float: center;" width=700 src="PM/Howtobuild/doc1.png">
+      <br>
+
+    <BR>
+    2. Ensure you are in the desired directory, and then initialize the environment with the command: "docsify init ./    docs."
+       <br>
+    3. We used "docsify serve docs" command for run the server.
+       <br>
+    <img style="float: center;" width=700 src="PM/Howtobuild/doc2.png">
+    <BR>
+    4. After running the above command, open your web browser and visit "http://localhost:3000" to access your initial     website.
+    <BR>
+    <span style="color:red">Method 2</span>
+    <BR>
+
+    * We used a vs code extension to run our server.We used 'live Server' extension.
+
+    <br>
+    <img style="float: center;" width=700 src="PM/Howtobuild/live_s1.png">
+    <BR>
+    1. From vs code extension search bar search "Live Server" and Install it in vs code .
+    <br>
+    <img style="float: center;" width=700 src="PM/Howtobuild/live_s2.png">
+    <BR>
+    2. For start the server at first we have to go index.html file.Here in vs code at right down corner "Go Live"     option .From here we can also run the server. <br>
+       <span style="color:red;">NOTE:</span>
+       <span style="color:#29fad0">Have to run server from index.html: The Entry File. </span>
+    
+    <BR>
+    <BR>
+    <img style="float: center;" width=700 src="PM/Howtobuild/file.png">
+    <br>  
+       <span style="color:red">NOTE:</span> 
+    <span>Enter the following in command terminal: docsify init ./docs
+    After successful initialization, you can see several files created in the directory：
+    <br>index.html: Entry File.
+    <br>README.md: It will be rendered as the homepage content.
+    <br>.nojekyll: is Used to prevent GitHub Pages from ignoring files that begin with an underscore.</span>
+    <BR>
+    <span>
+    </span>
+......
     
 <BR>
 
@@ -290,8 +340,159 @@ We use
     <span style="color:#ff5a5a">This error means docsify cannot be found in the PATH. Eitherinstall it globally (recommended for many command-line tools, and where it is found in the global Github folder, already in the PATH) or run it from where it is installed in the local Github</span>
 
 ## C. SET UP TEAMINTRO
-<br>
-<img style="float: center;" width=1000 src="INTRO/NAVBAR/code_team.png">
+
+Here is some coding part How we setup our team introduction.
+We upload img using this tag 
+                      
+        <img src="" alt=""/>
+
+Link teammate personal portfolio  by using this code.
+       
+        <button class="button button1"><a href="https://minhazul249602.github.io/cv/">Personal website link</a></button>
+
+In description part we used 
+   
+        <p class="description">TEAMMATE DISCRIPTION </p>
+
+Here is the code part how we build our team introduction.
+
+              
+    <div class="demo">
+    <div class="container">
+    <div class="row text-center">
+    <h1 class="white" style="text-align:left; font-size:40px;">MEET WITH OUR AMAZING TEAM </h1>
+    <br>
+    <br>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                     <img src="IMAGE/profile/minhaz.png" alt=""/>
+                  </div>
+                   <div class="team-content">
+                   <h1><a href="https://minhazul249602.github.io/cv/">MINHAZUL ISLAM</a></h1>
+                            <span class="post">22351396</span><br>
+                             <button class="button button1"><a href="https://minhazul249602.github.io/cv/">Personal website link</a></button>
+                            <p class="description">
+                              It's Minhazul Islam from Bangladesh. I'm a diligent worker and a quick learner 
+                                  ,interested in technology and human behavior. I love coding and problem-solving. 
+                                  I pride myself on having an open mind and trying to be really honest. I enjoy learning about people's backgrounds,tales, and travel experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                        <img src="IMAGE/profile/fahim.jpg" alt=""/>
+                        </div>
+                        <div class="team-content">
+                        <h1><a href="https://fahim-rana.github.io/fahim_cv/">FAHIM RANA</a></h1>
+                            <span class="post">22351418</span><br>
+                             <button class="button button1"><a href="https://fahim-rana.github.io/fahim_cv/">Personal website link</a></button>
+                            <p class="description">
+                                 Fahim Rana is a highly motivated individual, currently dedicated to 
+                                earning a Master's degree in industrial design engineering at Zhejiang 
+                                University. He possesses a strong tech-savvy mindset and a deep passion for 
+                                 adventure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                 <div class="demo">
+        <div class="container">
+            
+
+                 <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="IMAGE/profile/afra.png" alt=""/>
+                        </div>
+                        <div class="team-content">
+                        <h1><a href="https://afratasmim.github.io/personal-website/">TASNIM AFRA</a></h1>
+                            <span class="post"> 22351383</span> <br>
+                             <button class="button button1"><a href="https://afratasmim.github.io/personal-website/">Personal website link</a></button>
+                            <p class="description">
+                                   I am  Tasnim Afra from Bangladesh.I love programming, as well as designing,and 
+                                   learning new things!I believe in taking a simplistic approach to solving problem 
+                                   and also enjoy taking on challenging tasks that encourage me to think and create 
+                                   outside the box and contribute to my personal growth.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                        <img src="IMAGE/profile/sristy.jpg" alt=""/>
+                        </div>
+                        <BR>
+                        <div class="team-content">
+                        <h1><a href="https://chowdhurysristy.github.io/my_cv/">SRISTY CHOWDHURY</a></h1>
+                            <span class="post">22351402</span> <br>
+                             <button class="button button1"><a href="https://chowdhurysristy.github.io/my_cv/">Personal website link</a></button>
+                            <p class="description">
+                                I'm "Sristy Chowdhury", a motivated master's student in industrial design engineering at Zhejiang University. I am from Bangladesh. I enjoy learning new things and solving problems. You may frequently find me singing to express myself on happy or sad occasions. Join me on my imaginative and inventive journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                     <div class="demo">
+        <div class="container">
+            
+
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                        <img src="IMAGE/profile/burton.jpg" alt=""/>
+                        </div>
+                        <div class="team-content">,
+                            <h3 class="title"></h3>
+                            <h1><a href="https://bkamzimbi.github.io/cv/">BURTON KAMZIMBI</a></h1>
+                            <span class="post">22351385</span> <br>
+                            <button class="button button1"><a href="https://bkamzimbi.github.io/cv/">Personal website link</a></button>
+                            <p class="description">
+                               This is Burton from Malawi studying a Master in Industrial 
+                               Designing Engineering at Zhejiang University . I enjoy coding and 
+                                learning latest and advanced technology. My desire  is to use my technical 
+                                 skills  and experts in solving global challenges while targeting sustainable development goals.
+                            </p>
+                        </div>
+                              </div>
+                       </div>
+
+                 <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="IMAGE/profile/zakir.jpg" alt=""/>
+                        </div>
+                        <div class="team-content">
+                        <h1><a href="https://jakir669.github.io/my_cv/">JAKIR</a></h1>
+                            <span class="post">22351398</span> <br>
+                             <button class="button button1"><a href="https://jakir669.github.io/my_cv/">Personal website link</a></button>
+                            <p class="description">
+                               Hello, I'm Jakir, a dedicated Industrial Design Engineering master's
+                                student at Zhejiang University. Passionate about travel, learning new skills, 
+                                and nurturing innovative ideas. Aspiring to be a successful entrepreneur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+......
 
 ## D. LANGUAGE
  Normaly our docs file look like this.It's in English Language.
@@ -314,6 +515,7 @@ STEP 2: Now we copy all the necessary files that are already translated manually
 <img style="float: center;" width=40% src="PM/Howtobuild/lan2.png">
 <BR>
 From navigation bar user can see our website in English and also In Chinese language.
+
 
 
 ## E. REFERENCES
