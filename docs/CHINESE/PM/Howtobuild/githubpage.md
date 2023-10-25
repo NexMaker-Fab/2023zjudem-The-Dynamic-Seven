@@ -122,10 +122,56 @@
 
 #### 4. 建立Index.html
 
-<br>
-<img style="float: center;" width=800 src="PM/Howtobuild/html_set.png">
-<br>
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>The Dynamic Seven</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/common-1.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.min.css">
+ 
 
+    <style>
+    :root {
+    --base-font-size                              : 14px;
+    --theme-color                                 : rgb(236, 173, 35);
+     }
+
+    </style>
+    </head>
+    <body>
+    <div id="app"></div>
+    <script>
+    window.$docsify = {
+      name: '🌐HOME',
+      repo: '',
+      homepage: 'home.md',
+      loadSidebar: true,                 //prepare for sidebar
+      loadNavbar: true,                  //prepare for navbar
+      mergeNavbar: true,
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,            // set sidebar display level
+    }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <div id="ad1_footer" style="display: none;">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- 728-CodeLab-Demo --> <ins class="adsbygoogle"      style="display:inline-block;width:728px;height:90px"      data-ad-client="ca-pub-3311815518700050"      data-ad-slot="5805089606"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+    </div>
+     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+     <script type="text/javascript" src="../../js/script.js"></script>
+    </body>
+    </html>
 
 
  * 这里链接一些网站主题的 css 文件。<br>
@@ -146,8 +192,11 @@
  - 可折叠侧边栏
 要使我们的侧边栏可折叠，您只需要将这些东西添加到窗口中即可。.$docsify this code
 
-<br>
-<img style="float: center;" width=700 src="PM/Howtobuild/code_sidebar_collaps.png">
+      loadSidebar: true,                 //prepare for sidebar
+      loadNavbar: true,                  //prepare for navbar
+      mergeNavbar: true,
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,            // set sidebar display level
 
 <BR>
 
@@ -230,9 +279,58 @@
 <span style="color:red">EXAMPLE</span>
 
 
-<br>
-<img style="float: center;" width=1000 src="PM/Howtobuild/text_add.png">
-<br>
+#### 3. Install Docsify
+
+    To set up the environment, follow these steps:
+    <BR>
+    <span style="color:red">Method 1</span>
+      <BR>
+
+    1. Begin by executing the command: "npm i docsify-cli -g" to install Docsify globally.At that time some necessary         file downloaded.
+      <br>
+
+      <br>
+      <img style="float: center;" width=700 src="PM/Howtobuild/doc1.png">
+      <br>
+
+    <BR>
+    2. Ensure you are in the desired directory, and then initialize the environment with the command: "docsify init ./    docs."
+       <br>
+    3. We used "docsify serve docs" command for run the server.
+       <br>
+    <img style="float: center;" width=700 src="PM/Howtobuild/doc2.png">
+    <BR>
+    4. After running the above command, open your web browser and visit "http://localhost:3000" to access your initial     website.
+    <BR>
+    <span style="color:red">Method 2</span>
+    <BR>
+
+    * We used a vs code extension to run our server.We used 'live Server' extension.
+
+    <br>
+    <img style="float: center;" width=700 src="PM/Howtobuild/live_s1.png">
+    <BR>
+    1. From vs code extension search bar search "Live Server" and Install it in vs code .
+    <br>
+    <img style="float: center;" width=700 src="PM/Howtobuild/live_s2.png">
+    <BR>
+    2. For start the server at first we have to go index.html file.Here in vs code at right down corner "Go Live"     option .From here we can also run the server. <br>
+       <span style="color:red;">NOTE:</span>
+       <span style="color:#29fad0">Have to run server from index.html: The Entry File. </span>
+    
+    <BR>
+    <BR>
+    <img style="float: center;" width=700 src="PM/Howtobuild/file.png">
+    <br>  
+       <span style="color:red">NOTE:</span> 
+    <span>Enter the following in command terminal: docsify init ./docs
+    After successful initialization, you can see several files created in the directory：
+    <br>index.html: Entry File.
+    <br>README.md: It will be rendered as the homepage content.
+    <br>.nojekyll: is Used to prevent GitHub Pages from ignoring files that begin with an underscore.</span>
+    <BR>
+    <span>
+    </span>
     
 <BR>
 
@@ -307,8 +405,157 @@
 
 ## C. 设置
 
-<br>
-<img style="float: center;" width=1000 src="INTRO/NAVBAR/code_team.png">
+这是我们如何设置团队介绍的一些编码部分。
+我们使用此标签上传图像
+
+        <img src="" alt=""/>
+
+通过使用此代码链接队友个人投资组合。
+
+        <button class="button button1"><a href="https://minhazul249602.github.io/cv/">Personal website link</a></button>
+
+在说明部分中我们使用了
+
+        <p class="description">TEAMMATE DISCRIPTION </p>
+
+这是我们建立团队介绍的代码部分。
+
+    <div class="demo">
+    <div class="container">
+    <div class="row text-center">
+    <h1 class="white" style="text-align:left; font-size:40px;">MEET WITH OUR AMAZING TEAM </h1>
+    <br>
+    <br>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                     <img src="IMAGE/profile/minhaz.png" alt=""/>
+                  </div>
+                   <div class="team-content">
+                   <h1><a href="https://minhazul249602.github.io/cv/">MINHAZUL ISLAM</a></h1>
+                            <span class="post">22351396</span><br>
+                             <button class="button button1"><a href="https://minhazul249602.github.io/cv/">Personal website link</a></button>
+                            <p class="description">
+                              It's Minhazul Islam from Bangladesh. I'm a diligent worker and a quick learner 
+                                  ,interested in technology and human behavior. I love coding and problem-solving. 
+                                  I pride myself on having an open mind and trying to be really honest. I enjoy learning about people's backgrounds,tales, and travel experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                        <img src="IMAGE/profile/fahim.jpg" alt=""/>
+                        </div>
+                        <div class="team-content">
+                        <h1><a href="https://fahim-rana.github.io/fahim_cv/">FAHIM RANA</a></h1>
+                            <span class="post">22351418</span><br>
+                             <button class="button button1"><a href="https://fahim-rana.github.io/fahim_cv/">Personal website link</a></button>
+                            <p class="description">
+                                 Fahim Rana is a highly motivated individual, currently dedicated to 
+                                earning a Master's degree in industrial design engineering at Zhejiang 
+                                University. He possesses a strong tech-savvy mindset and a deep passion for 
+                                 adventure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                 <div class="demo">
+        <div class="container">
+            
+
+                 <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="IMAGE/profile/afra.png" alt=""/>
+                        </div>
+                        <div class="team-content">
+                        <h1><a href="https://afratasmim.github.io/personal-website/">TASNIM AFRA</a></h1>
+                            <span class="post"> 22351383</span> <br>
+                             <button class="button button1"><a href="https://afratasmim.github.io/personal-website/">Personal website link</a></button>
+                            <p class="description">
+                                   I am  Tasnim Afra from Bangladesh.I love programming, as well as designing,and 
+                                   learning new things!I believe in taking a simplistic approach to solving problem 
+                                   and also enjoy taking on challenging tasks that encourage me to think and create 
+                                   outside the box and contribute to my personal growth.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                        <img src="IMAGE/profile/sristy.jpg" alt=""/>
+                        </div>
+                        <BR>
+                        <div class="team-content">
+                        <h1><a href="https://chowdhurysristy.github.io/my_cv/">SRISTY CHOWDHURY</a></h1>
+                            <span class="post">22351402</span> <br>
+                             <button class="button button1"><a href="https://chowdhurysristy.github.io/my_cv/">Personal website link</a></button>
+                            <p class="description">
+                                I'm "Sristy Chowdhury", a motivated master's student in industrial design engineering at Zhejiang University. I am from Bangladesh. I enjoy learning new things and solving problems. You may frequently find me singing to express myself on happy or sad occasions. Join me on my imaginative and inventive journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                     <div class="demo">
+        <div class="container">
+            
+
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                        <img src="IMAGE/profile/burton.jpg" alt=""/>
+                        </div>
+                        <div class="team-content">,
+                            <h3 class="title"></h3>
+                            <h1><a href="https://bkamzimbi.github.io/cv/">BURTON KAMZIMBI</a></h1>
+                            <span class="post">22351385</span> <br>
+                            <button class="button button1"><a href="https://bkamzimbi.github.io/cv/">Personal website link</a></button>
+                            <p class="description">
+                               This is Burton from Malawi studying a Master in Industrial 
+                               Designing Engineering at Zhejiang University . I enjoy coding and 
+                                learning latest and advanced technology. My desire  is to use my technical 
+                                 skills  and experts in solving global challenges while targeting sustainable development goals.
+                            </p>
+                        </div>
+                              </div>
+                       </div>
+
+                 <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="IMAGE/profile/zakir.jpg" alt=""/>
+                        </div>
+                        <div class="team-content">
+                        <h1><a href="https://jakir669.github.io/my_cv/">JAKIR</a></h1>
+                            <span class="post">22351398</span> <br>
+                             <button class="button button1"><a href="https://jakir669.github.io/my_cv/">Personal website link</a></button>
+                            <p class="description">
+                               Hello, I'm Jakir, a dedicated Industrial Design Engineering master's
+                                student at Zhejiang University. Passionate about travel, learning new skills, 
+                                and nurturing innovative ideas. Aspiring to be a successful entrepreneur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+......
 
 
 ## D. 语言
@@ -335,7 +582,10 @@
 
 从导航栏中的用户可以用英语和中文查看我们的网站。
 
-## E. 引用
+
+## E. How to collaborate with team
+
+## D. 引用
  - [Nexmaker](https://www.nexmaker.com/)
  - [Docsify](https://docsify.js.org/#/?id=docsify)
  - [Jquery](http://www.bestjquery.com/)

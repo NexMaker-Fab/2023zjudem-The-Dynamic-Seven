@@ -106,9 +106,57 @@ After successful initialization, you can see several files created in the direct
 #### 4. Setting up Index.html
 
 
-<br>
-<img style="float: center;" width=800 src="PM/Howtobuild/html_set.png">
-<br>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>The Dynamic Seven</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/common-1.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.min.css">
+ 
+
+    <style>
+    :root {
+    --base-font-size                              : 14px;
+    --theme-color                                 : rgb(236, 173, 35);
+     }
+
+    </style>
+    </head>
+    <body>
+    <div id="app"></div>
+    <script>
+    window.$docsify = {
+      name: '🌐HOME',
+      repo: '',
+      homepage: 'home.md',
+      loadSidebar: true,                 //prepare for sidebar
+      loadNavbar: true,                  //prepare for navbar
+      mergeNavbar: true,
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,            // set sidebar display level
+    }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <div id="ad1_footer" style="display: none;">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- 728-CodeLab-Demo --> <ins class="adsbygoogle"      style="display:inline-block;width:728px;height:90px"      data-ad-client="ca-pub-3311815518700050"      data-ad-slot="5805089606"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+    </div>
+     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+     <script type="text/javascript" src="../../js/script.js"></script>
+    </body>
+    </html>
+
 
 <span>
    - Here link up with some css files for website theme.<br>
@@ -129,10 +177,13 @@ After successful initialization, you can see several files created in the direct
 - Collapsible Sidebar
 to make our sidebar collapsible you just need to these things add in window.$docsify this code
 
-<br>
-<img style="float: center;" width=700 src="PM/Howtobuild/code_sidebar_collaps.png">
-
-<br>
+       
+      loadSidebar: true,                 //prepare for sidebar
+      loadNavbar: true,                  //prepare for navbar
+      mergeNavbar: true,
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,            // set sidebar display level
+    
 - NAVBAR
 
 In navagation bar we have vision ,team members information and language
@@ -516,9 +567,13 @@ STEP 2: Now we copy all the necessary files that are already translated manually
 <BR>
 From navigation bar user can see our website in English and also In Chinese language.
 
+## E. How to collaborate with team
 
 
-## E. REFERENCES
+
+<BR>
+
+## F. REFERENCES
  - [Nexmaker](https://www.nexmaker.com/)
  - [Docsify](https://docsify.js.org/#/?id=docsify)
  - [Jquery](http://www.bestjquery.com/)
