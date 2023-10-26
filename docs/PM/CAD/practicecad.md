@@ -26,16 +26,6 @@
 4. Following this way user can save new design fle.
 
 ## How to design a Cardan Joint in Autodesk Fusion 360
-Now we will show to how to create a Cardan Joint in Autodesk Fusion 360
-
-- Tools and Commands 
-  1. Components
-  2. Joints
-  3. Hole
-  4. Extrude
-  5. Combine
-  6. Extrude
-  7. Fillet
 
 
 
