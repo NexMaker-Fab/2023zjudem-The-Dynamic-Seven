@@ -25,36 +25,11 @@ Here are some key features and capabilities of Fusion 360:
 
 Fusion 360 is known for its versatility, ease of use, and the ability to handle the entire product design and development process within a single platform. It has gained popularity in various industries due to its integrated approach, cloud-based collaboration, and the broad range of design and engineering tools it provides.
 
-**System requirements for Autodesk Fusion 360**
-
-
-Operating System Apple® macOS <br>
- * macOS Sonoma – Official support coming soon<br>
- *   macOS 13 Ventura – (Version 2.0.15289 or newer)<br>
- *   macOS 12 Monterey<br>
- *   macOS 11 Big Sur – Until March 2024 <br>
-  <BR>
-Microsoft® Windows®<br>
-  * Windows 11<br>
-  * Windows 10 (64-bit) Version 1809 or newer<br>
-  * Note: Fusion 360 will not launch on your device running older applications or OS version<br>
-  * CPU Type x86-based 64-bit processor (for example, Intel Core i, AMD Ryzen series), 4 cores, 1.7 GHz or greater; 32-bit not supported
-
-Memory 4 GB of RAM (integrated graphics recommend 6 GB or more)<br>
-Graphics Card DirectX11 (Direct3D 10.1 or greater)<br>
-Dedicated GPU with 1 GB or more of VRAM<br>
-Integrated graphics with 6 GB or more of RAM<br>
-Disk Space 8.5 GB of storage<br>
-Display Resolution 1366 x 768 (1920 x 1080 or greater at 100% scale recommended)<br>
-Pointing Device HID-compliant mouse or trackpad, optional Wacom® tablet and 3Dconnexion SpaceMouse® support
-Internet 2.5 Mbps or faster download; 500 Kbps or faster upload<br>
-Dependencies SSL 3.0, TLS 1.2+, .NET Framework 4.5 or newer required to submit crash reports<br>
-
 # Install Fusion 360
 <BR>
 <span style=color:red>LINK:</span>  
 
--[Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&tab=subscription) From here user can download the software. User need to open an account in Autodesk to download Fusion360.Here is the guide line for opening an account. [Open an account](https://www.nexmaker.com/doc/2cad/Fusion360prepare.html).Here also information about the software installation.
+-[Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/free-trialn) From here user can download the software. User need to open an account in Autodesk to download Fusion360.Here is the guide line for opening an account. [Open an account](https://www.nexmaker.com/doc/2cad/Fusion360prepare.html).Here also information about the software installation.
 
 # Interface
 Fusion 360 is a popular computer-aided design (CAD) and computer-aided manufacturing (CAM) software developed by Autodesk. It is used for 3D modeling, engineering design, and simulation. The interface in Fusion 360 is designed to be user-friendly and efficient. Here's an overview of the main components of the Fusion 360 interface:
@@ -135,7 +110,7 @@ Contextual Environments:Similar to contextual tabs, certain commands activate co
 
 
 
-# Key Operations in Fusion 360:
+# Here are some of the key Operations you can perform in Fusion 360:
 
 1. Sketching: Fusion 360 allows you to create 2D sketches to define the basic shape of your 3D models. You can draw lines, circles, arcs, and other geometric shapes, and use constraints and dimensions to control their size and position.
 
