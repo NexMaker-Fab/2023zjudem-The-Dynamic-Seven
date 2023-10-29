@@ -1,5 +1,5 @@
-# What is Fusion 360?
-Fusion 360 is a professional-grade 3D computer-aided design (CAD), computer-aided manufacturing (CAM), and computer-aided engineering (CAE) software application developed by Autodesk. It is a powerful, cloud-based platform that integrates design and engineering tools, making it well-suited for a wide range of industries, including product design, engineering, architecture, and manufacturing.
+# 什么是 Fusion 360?
+Fusion 360是专业级3D计算机辅助设计（CAD），计算机辅助制造（CAM）和由Autodesk开发的计算机辅助工程（CAE）软件应用程序。它是一个强大的，基于云的平台，可集成设计和工程工具，使其适合广泛的行业，包括产品设计，工程，建筑和制造。
 
 # 什么是 Fusion 360？
 Fusion 360 是由 Autodesk 开发的专业级 3D 计算机辅助设计 (CAD)、计算机辅助制造 (CAM) 和计算机辅助工程 (CAE) 软件应用程序。它是一个强大的基于云的平台，集成了设计和工程工具，非常适合广泛的行业，包括产品设计、工程、架构和制造。
@@ -37,13 +37,39 @@ Here are some key features and capabilities of Fusion 360:
 
 Fusion 360 以其多功能性、易用性以及在单一平台内处理整个产品设计和开发流程的能力而闻名。由于其集成方法、基于云的协作以及提供的广泛的设计和工程工具，它在各个行业中广受欢迎。
 
+**Autodesk Fusion的系统要求360**
+
+操作系统Apple®Macos<br>
+
+* Macos Sonoma  - 官方支持即将到来<br>
+* MacOS 13 Ventura  - （版本2.0.15289或更新）<br>
+* MacOS 12 Monterey <br>
+* MacOS 11 Big Sur  - 直到2024年3月<br>
+  <br>
+
+microsoft®windows®<br>
+
+* Windows 11 <br>
+* Windows 10（64位）版本1809或新<br>
+*注意：Fusion 360不会在运行旧应用程序或操作系统版本的设备上启动<br>
+*基于CPU X86的64位处理器（例如，Intel Core I，AMD Ryzen系列），4个内核，1.7 GHz或更高；不支持32位
+
+内存4 GB的RAM（集成图形建议6 GB或更多）<br>
+图形卡DirectX11（Direct3d 10.1或更高）<br>
+具有1 GB或更多VRAM的专用GPU <br>
+具有6 GB或更多RAM的集成图形<br>
+磁盘空间8.5 GB存储<br>
+显示分辨率1366 x 768（建议以100％比例）<br>
+指向设备隐藏符合鼠标或触控板，可选的WACOM®平板电脑和3DConnexionSpaceMouse®支持
+Internet 2.5 Mbps或更快下载;500 kbps或更快上传<br>
+依赖项SSL 3.0，TLS 1.2+，.NET Framework 4.5或提交崩溃报告所需的较新<br>
 
 # 安装 Fusion 360
 <BR>
 <span style=color:red>LINK:</span>  
 
 
--[Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/free-Trialn) 用户可以从这里下载该软件。用户需要在Autodesk中开设帐户才能下载Fusion360。以下是开设帐户的指南。 [开设帐户](https://www.nexmaker.com/doc/2cad/Fusion360prepare.html)。这里还有有关软件安装的信息。
+-[Autodesk Fusion 360]((https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&tab=subscription)) 用户可以从这里下载该软件。用户需要在Autodesk中开设帐户才能下载Fusion360。以下是开设帐户的指南。 [开设帐户](https://www.nexmaker.com/doc/2cad/Fusion360prepare.html)。这里还有有关软件安装的信息。
 
 
 # 界面
@@ -117,7 +143,7 @@ Fusion 360 是由 Autodesk 开发的一款流行的计算机辅助设计 (CAD) �
 
 9.**时间轴**：在时间轴中，您可以查看设计中执行的操作的历史记录。这在参数化建模模式中特别有用，允许您编辑或更改设计历史记录中的操作顺序。
 
-# 以下是您可以在 Fusion 360 中执行的一些关键操作：
+# Fusion 360中的主要操作:
 
 1. 草图绘制：Fusion 360 允许您创建 2D 草图来定义 3D 模型的基本形状。您可以绘制直线、圆、弧和其他几何形状，并使用约束和尺寸来控制它们的大小和位置。
 
@@ -125,9 +151,9 @@ Fusion 360 是由 Autodesk 开发的一款流行的计算机辅助设计 (CAD) �
 
 3. 装配：Fusion 360 支持装配多个零件或组件以创建复杂的结构。您可以定义关节和约束来模拟这些零件如何相互作用。
 
-4.参数化设计：Fusion 360是一款参数化建模软件，这意味着您可以建立特征和尺寸之间的关系。如果更改某一维度，软件将自动更新相关功能。
+4. 参数化设计：Fusion 360是一款参数化建模软件，这意味着您可以建立特征和尺寸之间的关系。如果更改某一维度，软件将自动更新相关功能。
 
-5.直接建模：除了参数化设计之外，Fusion 360还支持直接建模，允许您快速编辑3D模型，而不影响整个参数化历史记录。
+5. 直接建模：除了参数化设计之外，Fusion 360还支持直接建模，允许您快速编辑3D模型，而不影响整个参数化历史记录。
 
 6. 曲面建模：使用“修补”、“放样”和“边界”命令等工具创建和操作复杂的自由曲面。
 
