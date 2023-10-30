@@ -13,11 +13,11 @@ The Classic Family includes boards like the renowned Arduino UNO as well as othe
 
 <img style="float: center;" width=700 src="PM/AD/ADRUINO UNO R3.jpg">
 <BR>
-ADRUINO UNO R3
+ARDUINO UNO R3
 <img style="float: center;" width=700 src="PM/AD/ADRUINO LEONARDO.jpg">
 <BR>
 <BR>
-ADRUINO LEONARDO
+ARDUINO LEONARDO
 <img style="float: center;" width=700 src= "PM/AD/Arduino UNO Mini Limited Edition.jpg">
 <BR>
 <BR>
@@ -52,7 +52,7 @@ Arduino Motor Shield Rev3
 
 **1.2 Arduino Kits**
 
-Kits are an excellent way to get started with Arduino. The traditional Starter Kit includes an Arduino UNO, a huge range of electronic components, and a hardcopy book with 15 chapters to help you get started.The Oplà IoT Kit contains all of the components needed to create outstanding IoT projects, while the Sensor Kit contains a collection of great plug-and-play sensors and actuators. These kits also have their own dedicated content portal, where you can follow along with various amazing projects step by step.
+Kits are an excellent way to get started with Arduino. The traditional Starter Kit includes an Arduino UNO, a huge range of electronic components, and a hardcopy book with 15 chapters to help you get started. The Oplà IoT Kit contains all of the components needed to create outstanding IoT projects, while the Sensor Kit contains a collection of great plug-and-play sensors and actuators. These kits also have their own dedicated content portal, where you can follow along with various amazing projects step by step.
 <img style="float: center;" width=700 src="PM/AD/Arduino Starter Kit Multi-language.jpg">
 <BR>
 Arduino Starter Kit Multi-language
@@ -64,7 +64,7 @@ Arduino Oplà IoT Kit
 Arduino Sensor Kit
 
 **1.3 Arduino Nano Family**
-The Nano Family is a collection of boards with a small footprint yet a lot of features. It starts with the basic Nano Every and progresses to the more feature-rich Nano 33 BLE Sense / Nano RP2040 Connect with Bluetooth® / Wi-Fi radio modules. These boards also include a variety of embedded sensors, including temperature/humidity, pressure, gesture, microphone, and others. They also support Machine Learning and may be programmed with Micro Python.
+The Nano Family is a collection of boards with a small footprint yet a lot of features. It starts with the basic Nano Every and progresses to the more feature-rich Nano 33 BLE Sense / Nano RP2040 Connect with Bluetooth® / Wi-Fi radio modules. These boards also include a variety of embedded sensors, including temperature/humidity, pressure, gestures, microphone, and others. They also support Machine Learning and may be programmed with Micro Python.
 
 - 1.3.1 Nano Family Store Page
 <img style="float: center;" width=700 src="PM/AD/Arduino Nano 33 BLE Sense.jpg">
@@ -110,7 +110,7 @@ Arduino GIGA R1 WiFi
 
 **1.5 MKR Family**
 In the Arduino Store, you can find all MKR items.
-The MKR Family is a collection of boards, shields, and carriers that may be used to create incredible projects without the use of any additional electronics. Except for the MKR Zero, each board has a radio module that supports Wi-Fi, Bluetooth®, LoRa®, Sigfox, and NB-IoT connection. The family's boards are all based on the Cortex-M0 32-bit SAMD21 low power processor and include a crypto chip for secure communication. The MKR Family shields and carriers are intended to supplement the board's functions, such as environmental sensors, GPS, Ethernet, motor control, and RGB matrix.
+The MKR Family is a collection of boards, shields, and carriers that may be used to create incredible projects without the use of any additional electronics. Except for the MKR Zero, each board has a radio module that supports Wi-Fi, Bluetooth®, LoRa®, Sigfox, and NB-IoT connection. The family's boards are all based on the Cortex-M0 32-bit SAMD21 low-power processor and include a crypto chip for secure communication. The MKR Family shields and carriers are intended to supplement the board's functions, such as environmental sensors, GPS, Ethernet, motor control, and RGB matrix.
 
 - 1.5.1 Boards
 <img src="PM/AD/Arduino MKR1000 WIFI.jpg">
@@ -240,7 +240,7 @@ Holding the "Shift" key while clicking "Upload" is useful if you're using an ext
 
 - Paste: Inserts the contents of the clipboard at the current cursor position in the editor.
 
-- Select All: Highlights and selects the entire content of the editor.
+- Select All: Highlights and select the entire content of the editor.
 
 - Comment/Uncomment: Adds or removes the "//" comment marker at the start of each selected line, making it easy to comment or uncomment code.
 
@@ -256,7 +256,7 @@ Holding the "Shift" key while clicking "Upload" is useful if you're using an ext
 
 - Verify/Compile: Checks your sketch for errors by compiling it and provides information on memory usage for code and variables in the console area.
 
-- Upload: Compiles your sketch and uploads the resulting binary file to the configured Arduino board through the specified port.
+- Upload: Compile your sketch and upload the resulting binary file to the configured Arduino board through the specified port.
 
 - Upload Using Programmer: This option overwrites the bootloader on the board. To restore it and enable USB serial port uploads, you'll need to use "Tools > Burn Bootloader." However, this allows you to utilize the full capacity of the Flash memory for your sketch. Note that this command does not change the fuse settings, which can be adjusted via "Tools > Burn Bootloader."
 
@@ -306,7 +306,7 @@ Holding the "Shift" key while clicking "Upload" is useful if you're using an ext
 
 **Libraries**
 
-- Libraries provide extra functionality for use in sketches, e.g. working with hardware or manipulating data. To use a library in a sketch, select it from the Sketch > Import Library menu. This will insert one or more #include statements at the top of the sketch and compile the library with your sketch. Because libraries are uploaded to the board with your sketch, they increase the amount of space it takes up. If a sketch no longer needs a library, simply delete its #include statements from the top of your code.
+- Libraries provide extra functionality for use in sketches, e.g. working with hardware or manipulating data. To use a library in a sketch, select it from the Sketch > Import Library menu. This will insert one or more #include statements at the top of the sketch and compile the library with your sketch. Because libraries are uploaded to the board with your sketch, they increase the amount of space they takes up. If a sketch no longer needs a library, simply delete its #include statements from the top of your code.
 
 - There is a list of libraries in the reference. Some libraries are included with the Arduino software. Others can be downloaded from a variety of sources or through the Library Manager. Starting with version 1.0.5 of the IDE, you do can import a library from a zip file and use it in an open sketch. See these instructions for installing a third-party library.
 
@@ -330,9 +330,9 @@ We may view our most recent designs on a dashboard after logging into Tinkercad.
 
 <img style="float: center;" width=700 src="PM/AD/second.png">
 
-While on the dashboard, we can scroll through our existing 3D, Codeblocks or Circuits designs. By picking the editor we want to use and pressing the blue + New icon in the dashboard's top right corner, we can easily create a new design.
+While on the dashboard, we can scroll through our existing 3D, Codeblocks, or Circuits designs. By picking the editor we want to use and pressing the blue + New icon in the dashboard's top right corner, we can easily create a new design.
 
-The Circuits editor in Tinkercad is organised similarly to its 3D design editor. You'll discover a sizable window for designing our layout on the left. A panel containing parts we can drag and drop onto the workspace to build our circuit is visible on the right side. 
+The Circuits editor in Tinkercad is organized similarly to its 3D design editor. You'll discover a sizable window for designing our layout on the left. A panel containing parts we can drag and drop onto the workspace to build our circuit is visible on the right side. 
 <br>
 
 <img style="float: center;" width=700 src="PM/AD/3rd.png">
@@ -353,7 +353,7 @@ A “Zoom to fit” button is located in the top left corner of the workspace, w
 
 <img style="float: center;" width=700 src="PM/AD/compo.png">
 <br>
-In this video, we try to show how to access more components, use the drop-down menu to select the All Components view, or search for specific components using the search bar beneath the menu.
+In this video, we try to show how to access more components, use the drop-down menu to select the All Components view or search for specific components using the search bar beneath the menu.
 <br> 
 
 2. Learning Basic Circuits
@@ -362,27 +362,27 @@ Tinkercad is more than just a platform for exploring electronics. We include a s
 The hub for all Tinkercad Circuits instructional content can be found on our [ Tinker > Circuits](https://www.tinkercad.com/circuits)
  page, accessible from the top navigation bar of our design dashboard.
 
-Scrolling down on the Circuits page allows we can  dive into lessons with varying degrees of difficulty.
+Scrolling down on the Circuits page allows us to  dive into lessons with varying degrees of difficulty.
 <br>
 <img style="float: center;" width=700 src="PM/AD/4th.png">
 <br>
 
 3. Arduino in Tinkercad
-For over 15 years, the Arduino ecosystem of microcontroller boards and code libraries have become an indispensable part of electronics education. 
+For over 15 years, the Arduino ecosystem of microcontroller boards and code libraries has become an indispensable part of electronics education. 
 
 The Arduino simulation within Tinkercad simplifies the learning experience. It’s free, works on any computer with an Internet connection, and scales to any class size. Best of all, Tinkercad Circuits provides a bottomless supply of virtual components that students can use to build and simulate their projects.
 
-When they’re ready to physically prototype their projects, Tinkercad Circuits makes it easy to export their code as a native Arduino (.ino) file that they can upload to their board.
+When they’re ready to prototype their projects physically, Tinkercad Circuits makes it easy to export their code as a native Arduino (.ino) file that they can upload to their board.
 
 4. Arduino Starters
-One of the fastest ways to explore the possibilities of Arduino in Tinkercad is to simply drag one of our sample Starter circuits into our workspace.
+One of the fastest ways to explore the possibilities of Arduino in Tinkercad is to drag one of our sample Starter circuits into our workspace.
 
- Arduino Starter circuits to choose from. In this  example which is includes simple code that we can view, simulate, and modify. And in below there are some pictures that describe everystep.
+ Arduino Starter circuits to choose from. This  example which is includes simple code that we can view, simulate, and modify. And below there are some pictures that describe every step.
 
  <img style="float: center;" width=700 src="PM/AD/5th.png">
  <br>
  <br>
- Its a simple Led blinker using Arduino . Last week we do it in the class. 
+ It's a simple LED blinker using Arduino. Last week we did it in the class. 
 
  <img style="float: center;" width=700 src="PM/AD/7th.png"><br> 
 
@@ -397,7 +397,7 @@ One of the fastest ways to explore the possibilities of Arduino in Tinkercad is 
 
  ## Switch
 
-**2 Leds and Switches**
+**2 LEDs and Switches**
 
 **Material Used**
 - 1 Arduino Uno R3
