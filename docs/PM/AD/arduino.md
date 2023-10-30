@@ -394,3 +394,88 @@ One of the fastest ways to explore the possibilities of Arduino in Tinkercad is 
 
 
  ## PRACTICE
+
+ ## Switch
+
+**2 Leds and Switches**
+
+**Material Used**
+- 1 Arduino Uno R3
+- 2 240 kΩ Resistor
+- 1 1040 kΩ Resistor
+- 1 Pushbutton
+- 1 Red LED
+- 1 Green LED
+
+ **Codes**
+
+          const int LED1=12;
+          const int LED2=13;
+          int val=0; 
+          void setup()
+          { 
+             pinMode(LED1, OUTPUT); 
+             pinMode(LED2, OUTPUT); 
+             pinMode(7, INPUT);     
+          }
+          void loop(){
+          val=digitalRead(7);
+          if(val==HIGH)
+          {
+             digitalWrite(LED1,HIGH);
+             digitalWrite(LED2,LOW);
+          }
+          else
+          { 
+             digitalWrite(LED2,HIGH);
+             digitalWrite(LED1,LOW);  
+          }
+          delay(1000);
+          }
+
+ **Code Description**
+ This code is written in the Arduino programming language and is designed to control two LEDs based on the input from a push button connected to digital pin 7. Below is a description of the code's functionality:
+
+1. **Variable Declarations:**
+   - `LED1` and `LED2` are defined as constants with values 12 and 13, respectively. These constants are used to represent the pins to which two LEDs are connected.
+   - `val` is declared as an integer to store the value read from digital pin 7.
+
+2. **Setup Function:**
+   - In the `setup()` function, the code configures the pins as follows:
+     - `LED1` and `LED2` are set as output pins using `pinMode`, which means they will be used to control the LEDs.
+     - Pin 7 is set as an input using `pinMode`, indicating that it's connected to a push button or some other digital sensor.
+
+3. **Loop Function:**
+   - The `loop()` function is where the main program logic resides, and it runs continuously.
+
+4. **Input Read:**
+   - The code reads the state of the push button connected to pin 7 using `digitalRead` and stores the result in the `val` variable.
+
+5. **LED Control:**
+   - It then checks the value of `val`. If `val` is `HIGH`, it means the push button is pressed, and the code does the following:
+     - Turns on `LED1` by setting it to `HIGH` (illuminating the first LED).
+     - Turns off `LED2` by setting it to `LOW`.
+
+   - If `val` is not `HIGH`, it means the push button is not pressed, and the code does the following:
+     - Turns on `LED2` by setting it to `HIGH` (illuminating the second LED).
+     - Turns off `LED1` by setting it to `LOW`.
+
+6. **Delay:**
+   - The code then introduces a 1-second delay using `delay(1000)` before looping again. This delay creates a visual distinction when the button is pressed.
+
+This code sets up two LEDs and a push button, and it toggles the LEDs based on the state of the button. When the button is pressed, one LED is turned on, and the other is turned off. When the button is released, the other LED is turned on, and the first one is turned off. The delay helps control the visual response to the button press.
+  
+
+
+ **Images and Video**
+
+ <img style="float: center;" width=700 src="PM/AD/pic1.jpg">
+ <img style="float: center;" width=700 src="PM/AD/pic2.jpg">
+ <img style="float: center;" width=700 src="PM/AD/pic3.jpg">
+
+
+<video width="700" controls>
+  <source src="PM/AD/vdo.mp4" type="video/mp4">
+  <source src="PM/AD/vdo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
