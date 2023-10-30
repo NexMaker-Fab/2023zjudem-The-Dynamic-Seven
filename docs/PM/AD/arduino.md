@@ -64,7 +64,7 @@ Arduino Oplà IoT Kit
 Arduino Sensor Kit
 
 **1.3 Arduino Nano Family**
-The Nano Family is a collection of boards with a small footprint yet a lot of features. It starts with the basic Nano Every and progresses to the more feature-rich Nano 33 BLE Sense / Nano RP2040 Connect with Bluetooth® / Wi-Fi radio modules. These boards also include a variety of embedded sensors, including temperature/humidity, pressure, gestures, microphone, and others. They also support Machine Learning and may be programmed with Micro Python.
+The Nano Family is a collection of boards with a small footprint yet a lot of features. It starts with the basic Nano Every and progresses to the more feature-rich Nano 33 BLE Sense / Nano RP2040 Connect with Bluetooth® / Wi-Fi radio modules. These boards also include a variety of embedded sensors, including temperature/humidity, pressure, gestures, microphones, and others. They also support Machine Learning and may be programmed with Micro Python.
 
 - 1.3.1 Nano Family Store Page
 <img style="float: center;" width=700 src="PM/AD/Arduino Nano 33 BLE Sense.jpg">
@@ -164,11 +164,11 @@ Open source software refers to computer programs and applications whose source c
 
 2.6 Licensing: Open source software is typically distributed under licenses like the GNU General Public License (GPL), the MIT License, or the Apache License. These licenses define the terms and conditions under which the software can be used, modified, and distributed.
 
-2.7 Transparency: Open source software projects are typically transparent, with publicly accessible repositories, issue tracking, and communication channels.Examples of open source software include the Linux operating system, the Mozilla Firefox web browser, the LibreOffice office suite, and the Apache web server. Open source software has become a fundamental part of the technology ecosystem, powering servers, desktop computers, mobile devices, and a wide range of applications across various industries.
+2.7 Transparency: Open source software projects are typically transparent, with publicly accessible repositories, issue tracking, and communication channels. Examples of open-source software include the Linux operating system, the Mozilla Firefox web browser, the LibreOffice office suite, and the Apache web server. Open-source software has become a fundamental part of the technology ecosystem, powering servers, desktop computers, mobile devices, and a wide range of applications across various industries.
 
 **Reference**
 [Open source software & Hardware](https://www.nexmaker.com/doc/5arduino/open_source.html)
-[Open source Hardware wikipedia](https://en.wikipedia.org/wiki/List_of_open-source_hardware_projects)
+[Open source Hardware Wikipedia](https://en.wikipedia.org/wiki/List_of_open-source_hardware_projects)
 
 ### Arduino Control
 
