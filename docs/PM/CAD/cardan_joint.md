@@ -12,11 +12,11 @@
 
 
 
-Here we can see all dimensions in centimeter.Our basic structure.
+Here we can see all dimensions in centimeters.Our basic structure.
 <BR>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/1.png">
 <BR>
-Select New Design .We can open it from file option or shortcut "Ctrl+N".
+Select New Design.We can open it from the file option or shortcut "Ctrl+N".
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/2.png">
 <BR>
@@ -24,42 +24,42 @@ Select New Design .We can open it from file option or shortcut "Ctrl+N".
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/3.png">
 <BR>
-For this model we will use all unit in centimetre.From here we changed unit to centimetre.
+For this model, we will use all units in centimetres.From here we changed the unit to centimetre.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/4.png">
 <BR>
-From ASSEMBLE option we created new components.
+From the ASSEMBLE option we created new components.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/5.png">
 <BR>
-Select the new component and from CREATE option create a new Sketch and select a plane.Here we select FRONT part.
+Select the new component and from the CREATE option create a new Sketch and select a plane. Here we select the FRONT part.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/6.png">
 <BR>
-Select Rectangle this time we used center rectangle.And make rectangle 4,6.
+Select Rectangle this time we used a center rectangle. And make rectangle 4,6.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/7.png">
 <BR>
-From MODIFY Select Offset Option make -1.cm offset.
+From MODIFY Select the Offset Option to make a -1.cm offset.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/8.png">
 <BR>
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/9.png">
 <br>
- Click Finish sketch
+ Click Finish Sketch
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/10.png">
 <BR>
 
 **Extrude**
-After creating sketch, select the "Extrude" command from the toolbar or the right-click context menu. You can also find it in the "Create" dropdown menu.Click on the sketch region you want to extrude. The selected area will highlight.
+After creating a sketch, select the "Extrude" command from the toolbar or the right-click context menu. You can also find it in the "Create" dropdown menu. Click on the sketch region you want to extrude. The selected area will be highlighted.
 
 Fusion 360 will now display the Extrude dialog box. Here, you can set several parameters:
 
 - Distance: Specify how far you want to extrude the sketch in the third dimension. You can enter a specific value or drag the arrow in the graphics area.
 
-- Direction: Choose whether to extrude in one direction, symmetrically on both sides, or to a specific face or plane.
+- Direction: Choose whether to extrude in one direction, symmetrically on both sides or to a specific face or plane.
 
 - Operation: You can perform various operations like "Join," "Cut," "Intersect," or "New Body." This determines how the extrusion interacts with existing geometry.
 
@@ -71,7 +71,7 @@ Fusion 360 will now display the Extrude dialog box. Here, you can set several pa
 
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/11extrude.png">
 <BR>
-Make new Sketch make two circle in the center of the object.
+Make a new Sketch make two circles in the center of the object.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/12.png">
 <BR>
@@ -79,11 +79,11 @@ Finish Sketch
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/13.png">
 <BR>
-Select small circle, operation "cut" distance -3.50cm.It will cut the object.
+Select a small circle, operation the "cut" distance -3.50cm. It will cut the object.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/14.png">
 <BR>
-Now select the big circle this time join operation.
+Now select the big circle this time join the operation.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/16.png">
 <BR>
@@ -118,7 +118,7 @@ Multiple Fillets: You can select multiple edges or faces to fillet in one operat
 Symmetric Fillet: Creates a symmetric fillet on an edge.
 Tangent Chain: Automatically selects a chain of connected edges or faces to fillet.
 
-As you adjust the fillet parameters, Fusion 360 will provide a live preview of the filleted edges or faces. Ensure the result looks the way you want and click ok.
+As you adjust the fillet parameters, Fusion 360 will provide a live preview of the filleted edges or faces. Ensure the result looks the way you want and click OK.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/19fillet.png">
 <BR>
@@ -159,7 +159,7 @@ As you adjust the fillet parameters, Fusion 360 will provide a live preview of t
 - Fusion 360 will prompt you to specify a reference point. Click on a specific point or edge of the object that will be used as the reference for duplication.
 - Click on the location where you want to place the copy of the object. You can either drag the object to the desired location or enter specific coordinates.
 - After specifying the copy point, destination point, and any additional settings, click the "OK" button in the "Copy" dialog box to confirm and create the copy.
-- Here you can see our second component it's copy of component one.
+- Here you can see our second component is a copy of component one.
 <br>
 
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/23copy.png">
@@ -189,18 +189,18 @@ In the "Combine" dialog box, you'll have the following options for the combine o
 * Cut: This subtracts the selected objects from one another, creating a cut or void where they intersect.
 - Intersect: This keeps only the common areas of the selected objects, discarding the rest.
 
-- "Cut" operation, you'll need to specify the target and tool bodies. The target body is the object you want to cut, while the tool bodies are the objects that will be used to perform the cutting.Fusion 360 will provide a live preview of the result of the combine operation. Make sure the preview matches your design intent.And click ok.
+- "Cut" operation, you'll need to specify the target and tool bodies. The target body is the object you want to cut, while the tool bodies are the objects that will be used to perform the cutting. Fusion 360 will provide a live preview of the result of the combined operation. Make sure the preview matches your design intent. Click OK.
 
 <br>
 <img style="float: center;" width=1000 src="PM/CAd/cad_img/26combine.png">
 <BR>
 
-Use fillet option.
+Use the fillet option.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/27.png">
 <BR>
 
-Make a copy of the pin 1 using Move function.and make pin 2.
+Make a copy of pin 1 using the Move function. and make pin 2.
 
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/28.png">
@@ -221,7 +221,7 @@ After specifying the component name and choosing the creation method, click the 
 
 **Project**
 
-"Project" feature is a useful tool for creating reference geometry or capturing 2D sketches on 3D surfaces. It allows you to transfer specific geometry or information from a 3D model to a 2D sketch. Here's how the Project feature works:
+The "Project" feature is a useful tool for creating reference geometry or capturing 2D sketches on 3D surfaces. It allows you to transfer specific geometry or information from a 3D model to a 2D sketch. Here's how the Project feature works:
 
 There are a few ways to access the Project command:
 
@@ -251,48 +251,48 @@ Adding dimensions to a sketch in Fusion 360 is an essential step in creating pre
 - Start by either creating a new sketch on a specific plane or opening an existing sketch in Fusion 360.
 - In the Sketch workspace, select the "Sketch Dimension" tool. You can find it in the "Sketch" dropdown menu or on the toolbar.
 - Click on the sketch entities (lines, arcs, circles, etc.) that you want to dimension. Fusion 360 will highlight the selected entities.
-- Click at the location where you want to place the dimension. This action will create a dimension line, and the dimension value will appear. You can drag the dimension value to reposition it if needed.
+- Click on the location where you want to place the dimension. This action will create a dimension line, and the dimension value will appear. You can drag the dimension value to reposition it if needed.
 - After placing the dimension, you can either type a specific value on your keyboard or drag the dimension line to set the desired dimension. Fusion 360 will automatically update the sketch geometry to match the new dimension.
 - In the Fusion 360 Browser, you'll find the "Sketch Palette." It provides a list of dimensions, constraints, and sketch entities. You can use the Sketch Palette to easily manage and edit your sketch's dimensions and constraints.
 
 Here First select Center Block.
-Create new Sketch.
+Create a new Sketch.
 Select circle.
-Make two circle small onw with 1 cm dimensions and second one 2 cm dimension.
+Make two circles small one with 1 cm dimensions and the second one with 2 cm dimensions.
 Select Sketch Dimension.
-At first select the project line and then select the circle center and make vertical distance between them 2 cm and horizental 1 cm.
+First, select the project line and then select the circle center and make the vertical distance between them 2 cm and horizontally 1 cm.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/32.png">
 <BR>
 After finishing the sketch.
-Now used Extrude command.
-Select Center Block then select extrude.
-Now select the profile here select 1 cm circle and direction Symmetric.Distance 1.25 cm Operation New Body.
+Now used the Extrude command.
+Select Center Block then select Extrude.
+Now select the profile here select 1 cm circle and direction Symmetric. Distance 1.25 cm Operation New Body.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/33cb.png">
 <BR>
-Now select extrude command
-Select 1cm and 2cm circle at a same time .
+Now select the extrude command
+Select 1cm and 2cm circles at the same time.
 Start operation from object.
 Distance 1 cm
 Select operation 'Join'
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/34cb.png">
 <BR>
-In Center Block Select Mirror.
-In mirror select object type "Features"
-Select Object that extruded in center Block
-Select the Mirror plane as Image
+In the Center Block Select Mirror.
+In mirror select the object type "Features"
+Select Object that extruded in the center Block
+Select the Mirror plane as the Image
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/35cb.png">
 <BR>
-Now copy and Move .
+Now copy and Move.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/36cb.png">
 <BR>
 
-Make a New Sketch .Open Project and select left Circle as Image.Now make a rectangle with 5 cm and 1 cm.
-Select Sketch Dimension and make 0.5 cm distance between circle center and rectangle 5cm line.
+Make a New Sketch . Open Project and select the left Circle as Image. Now make a rectangle with 5 cm and 1 cm.
+Select Sketch Dimension and make a 0.5 cm distance between the circle center and the rectangle 5cm line.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/37cb.png">
 <BR>
@@ -304,11 +304,11 @@ Now Extrude the selected part.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/39cb.png">
 <BR>
-Use Mirror command.
+Use the Mirror command.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/40.png">
 <BR>
-Here is our all components.
+Here are our all components.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/41all_com.png">
 <BR>
@@ -361,7 +361,7 @@ Here we can see after joint.
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/46.png">
 <BR>
 
-Now Join pin e and Yoko .
+Now join Pin and Yoko.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/47.png">
 <BR>
@@ -376,7 +376,7 @@ Now join pin and Center Block
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/49j.png">
 <BR>
 
-Adjust pin and Center Block position.
+Adjust the pin and Center Block position.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/50j.png">
 <BR>
@@ -388,7 +388,7 @@ Adjust Position.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/52.png">
 <BR>
-Now another select Yoko and the pin.And join them.
+Now select Yoko and the pin. And join them.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/53.png">
 <BR>
@@ -400,17 +400,17 @@ Now we can see all components join.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/55all.png">
 <BR>
-Now set the moving rotation. Click M on keyboard and at first select Yoko 1 and then select the pin.After selecting pin again unselect the Yoko.Now adjust the pin in z angle in 22.5 degrees.
+Now set the moving rotation. Click M on keyboard and at first select Yoko 1 and then select the pin. After selecting the pin again unselect the Yoko. Now adjust the pin in z angle to 22.5 degrees.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/56.png">
 <BR>
 
-After adjusting the degree here our final 3d model.
+After adjusting the degree here is our final 3D model.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/57final.png">
 <BR>
-For better view hide Component 4.1 and Component 4.2.
-Go joints file here and click right button in Mouse in Revolute 6. and Select Animate Joint Relationship.
+For a better view hide Component 4.1 and Component 4.2.
+Go joints file here and click the right button in Mouse in Revolute 6. and Select Animate Joint Relationship.
 Now we can see our final Model.
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/58.png">
