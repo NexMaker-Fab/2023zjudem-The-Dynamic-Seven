@@ -4,10 +4,10 @@
 
  Installing all of the tools required to develop the website:
 
-- [Git](https://git-scm.com/downloads):we used Git for version control system and track of changes made to files.We used git version 2.42.0.windows.2.
-- [Github](https://github.com/):For our website, we utilize the github service.
-- [Github Desktop](https://desktop.github.com/):To move or push our coding from local to github, we used github desktop.
-- [VScode](https://code.visualstudio.com/):We used the visual studio code to write down our documents.
+- [Git](https://git-scm.com/downloads): we used Git for the version control system and track of changes made to files.We used git version 2.42.0.windows.2.
+- [Github](https://github.com/): For our website, we utilize the github service.
+- [Github Desktop](https://desktop.github.com/):To move or push our coding from local to GitHub, we used github desktop.
+- [VScode](https://code.visualstudio.com/):We used the Visual Studio code to write down our documents.
 - [Nodejs](https://nodejs.org/en/):We used it to build the environment. node --version v18.18.0.
 - [Markdown language](https://www.nexmaker.com/doc/1projectmanage/markdown.html): to write our document;
 
