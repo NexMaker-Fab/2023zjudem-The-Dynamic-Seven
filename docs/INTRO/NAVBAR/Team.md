@@ -121,7 +121,7 @@
                         <div class="team-content">
                         <h1><a href="https://jakir669.github.io/my_cv/">JAKIR</a></h1>
                             <span class="post">22351398</span> <br>
-                             <button class="button button1"><a href="https://jakir669.github.io/my_cv/">Personal website link</a></button>
+                             <button class="button button1"><a href="https://jakir669.github.io/my_website/">Personal website link</a></button>
                             <p class="description">
                                Hello, I'm Jakir, a dedicated Industrial Design Engineering master's
                                 student at Zhejiang University. Passionate about travel, learning new skills, 

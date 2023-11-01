@@ -25,6 +25,11 @@
 <span> 
 要建立存储库，请访问 github.com，并根据需要创建您的帐户。继续创建您的存储库并将其可见性设置为公共，以允许互联网用户访问它。确保在存储库中包含自述文件，因为您可以在其中提供全面的项目描述
 </span>
+
+<span style=color:red>NOTE</span>
+图片中的这里 <span>Owner* name is Minhazul249602</span>.但是，当您在组织下工作时，应该是组织的姓名。 对于我们的存储库 <BR>
+**Owner=** **NexMaker-Fab**<br>
+**Repository name=** **2023zjudem-The-Dynamic-Seven**
 <br>
 <img style="float: center;" width=700 src="PM/Howtobuild/github.png">
 <BR>
