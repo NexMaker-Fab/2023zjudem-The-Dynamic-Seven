@@ -16,11 +16,15 @@
 <span> To establish a repository, visit github.com and, if necessary, create your account. Proceed to create your repository and set its visibility to Public, allowing internet users to access it. Make sure to include a README file within the repository, as this is where you can provide a comprehensive project description.
 </span>
 
+<span style=color:red>NOTE</span>
+Here in the picture <span>Owner* name is Minhazul249602</span>.But When you working under an organization here should be the organization's name. For our repository <BR>
+**Owner=** **NexMaker-Fab**<br>
+**Repository name=** **2023zjudem-The-Dynamic-Seven**
 <BR>
 <img style="float: center;" width=700 src="PM/Howtobuild/github.png">
 <BR>
 
-<span>Additionally, take note of the following: To activate GitHub Pages for your repository, navigate to the repository's settings. In the "Pages" section, choose the main source branch, typically named "main," and designate the folder as "root" before saving your preferences. It's important to select the "root" folder because a "docs" folder has not yet been established for this repository. Please be aware that you may need to adjust this setting at a later time. After saving these settings, you will receive a link to your repository.Some time it takes some time to provide page link.After one minute you can check the link. <br> </span> <BR>
+<span>Additionally, take note of the following: To activate GitHub Pages for your repository, navigate to the repository's settings. In the "Pages" section, choose the main source branch, typically named "main," and designate the folder as "root" before saving your preferences. It's important to select the "root" folder because a "docs" folder has not yet been established for this repository. Please be aware that you may need to adjust this setting at a later time. After saving these settings, you will receive a link to your repository. Sometimes it takes some time to provide a page link.After one minute you can check the link. <br> </span> <BR>
 
 
 <span style="color:red">EXAMPLE : Page </span>
@@ -28,7 +32,7 @@
 <img style="float: center;" width=700 src="PM/Howtobuild/github2.png">
 
 ### Step3: LOCAL SETTINGS
-  #### 1. Github Desktop
+  #### 1. GitHub Desktop
 
 <span>Launch GitHub Desktop, then clone the repository you previously created and proceed to open it in Visual Studio Code.</span>
 <br>
@@ -46,7 +50,7 @@
 <img style="float: center;" width=700 src="PM/Howtobuild/gd3.png">
 
 #### 2. Vs Code
-From vs code at first open terminal for install doscsify.
+From vs code at the first open terminal for install doscsify.
 <br>
 <img style="float: center;" width=400 src="PM/Howtobuild/vs1.png">
 
