@@ -1,2 +1,0 @@
-
- - [CHINESE](/docs/chinese/)
