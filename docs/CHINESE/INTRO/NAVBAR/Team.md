@@ -14,7 +14,7 @@
                         <img src="IMAGE/profile/minhaz.png" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1><a href="https://minhazul249602.github.io/cv/">MINHAZUL ISLAM</a></h1>
+                        <h1>MINHAZUL ISLAM</h1>
                             <span class="post"> 22351396</span><br>
                              <button class="button button1"><a href="https://minhazul249602.github.io/cv/">个人网站链接</a></button>
                             <p class="description">
@@ -30,7 +30,7 @@
                         <img src="IMAGE/profile/fahim.jpg" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1><a href="https://fahim-rana.github.io/fahim_cv/">FAHIM RANA</a></h1>
+                        <h1>FAHIM RANA</h1>
                             <span class="post">22351418</span><br>
                              <button class="button button1"><a href="https://fahim-rana.github.io/fahim_cv/">个人网站链接</a></button>
                             <p class="description">
@@ -52,7 +52,7 @@
                             <img src="IMAGE/profile/afra.png" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1><a href="https://afratasmim.github.io/personal-website/">TASNIM AFRA</a></h1>
+                        <h1>TASNIM AFRA</h1>
                             <span class="post"> 22351383</span><br>
                              <button class="button button1"><a href="https://afratasmim.github.io/personal-website/">个人网站链接</a></button>
                             <p class="description">
@@ -68,7 +68,7 @@
                         </div>
                         <BR>
                         <div class="team-content">
-                        <h1><a href="https://chowdhurysristy.github.io/my_cv/">SRISTY CHOWDHURY</a></h1>
+                        <h1>SRISTY CHOWDHURY</h1>
                             <span class="post">22351402</span><br>
                              <button class="button button1"><a href="https://chowdhurysristy.github.io/my_cv/">个人网站链接</a></button>
                             <p class="description">
@@ -91,7 +91,7 @@
                         </div>
                         <div class="team-content">,
                             <h3 class="title"></h3>
-                            <h1><a href="https://bkamzimbi.github.io/cv/">BURTON KAMZIMBI</a></h1>
+                            <h1>BURTON KAMZIMBI</h1>
                             <span class="post">22351385</span><br>
                             <button class="button button1"><a href="https://bkamzimbi.github.io/cv/">个人网站链接</a></button>
                             <p class="description">                            
@@ -106,7 +106,7 @@
                             <img src="IMAGE/profile/zakir.jpg" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1><a href="https://jakir669.github.io/jakirs_page/">JAKIR</a></h1>
+                        <h1>JAKIR</h1>
                             <span class="post">22351398</span><br>
                              <button class="button button1"><a href="https://jakir669.github.io/jakirs_page/">个人网站链接</a></button>
                             <p class="description">
