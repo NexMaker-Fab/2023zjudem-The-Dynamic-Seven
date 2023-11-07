@@ -14,7 +14,7 @@
                             <img src="IMAGE/profile/minhaz.png" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1>MINHAZUL ISLAM</h1>
+                        <h1 style="color:blue;"> MINHAZUL ISLAM </h1>
                             <span class="post">22351396</span><br>
                              <button class="button button1"><a href="https://minhazul249602.github.io/cv/">Personal website link</a></button>
                             <p class="description">
@@ -32,7 +32,7 @@
                         <img src="IMAGE/profile/fahim.jpg" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1>FAHIM RANA</h1>
+                        <h1 style="color:blue;">FAHIM RANA</h1>
                             <span class="post">22351418</span><br>
                              <button class="button button1"><a href="https://fahim-rana.github.io/fahim_cv/">Personal website link</a></button>
                             <p class="description">
@@ -57,7 +57,7 @@
                             <img src="IMAGE/profile/afra.png" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1>TASNIM AFRA</h1>
+                        <h1 style="color:blue;">TASNIM AFRA</h1>
                             <span class="post"> 22351383</span> <br>
                              <button class="button button1"><a href="https://afratasmim.github.io/personal-website/">Personal website link</a></button>
                             <p class="description">
@@ -76,7 +76,7 @@
                         </div>
                         <BR>
                         <div class="team-content">
-                        <h1>SRISTY CHOWDHURY</h1>
+                        <h1 style="color:blue;">SRISTY CHOWDHURY</h1>
                             <span class="post">22351402</span> <br>
                              <button class="button button1"><a href="https://chowdhurysristy.github.io/my_cv/">Personal website link</a></button>
                             <p class="description">
@@ -100,7 +100,7 @@
                         </div>
                         <div class="team-content">,
                             <h3 class="title"></h3>
-                            <h1>BURTON KAMZIMBI</h1>
+                            <h1 style="color:blue;">BURTON KAMZIMBI</h1>
                             <span class="post">22351385</span> <br>
                             <button class="button button1"><a href="https://bkamzimbi.github.io/cv/">Personal website link</a></button>
                             <p class="description">
@@ -119,7 +119,7 @@
                             <img src="IMAGE/profile/zakir.jpg" alt=""/>
                         </div>
                         <div class="team-content">
-                        <h1>JAKIR</h1>
+                        <h1 style="color:blue;">JAKIR</h1>
                             <span class="post">22351398</span> <br>
                              <button class="button button1"><a href="https://jakir669.github.io/my_website/">Personal website link</a></button>
                             <p class="description">
