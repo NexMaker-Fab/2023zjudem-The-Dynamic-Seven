@@ -11,11 +11,19 @@
 - Fillet
 
 
+Here you can see all dimensions.Our basic structure.
+<br>
+<br>
 
-Here we can see all dimensions in centimeters.Our basic structure.
+**Engineering Drawing**
+<iframe src="https://myhub.autodesk360.com/ue2fb5969/shares/public/SHd38bfQT1fb47330c99adbcc3338b7aaf0d?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<br>
+<br>
+<br>
+<img style="float: center;" width=1000 src="PM/CAD/cad_img/1.1.1.png">
 <BR>
-<img style="float: center;" width=1000 src="PM/CAD/cad_img/1.png">
-<BR>
+
+<br>
 Select New Design.We can open it from the file option or shortcut "Ctrl+N".
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/2.png">

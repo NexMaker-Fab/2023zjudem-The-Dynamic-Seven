@@ -12,10 +12,18 @@
 
 
 
-在这里，我们可以看到以厘米为单位的所有维度。我们的基本结构。
+在这里，您可以看到所有维度。我们的基本结构。
+<br>
+<br>
+
+**Engineering Drawing**
+<iframe src="https://myhub.autodesk360.com/ue2fb5969/shares/public/SHd38bfQT1fb47330c99adbcc3338b7aaf0d?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<br>
+<br>
+<br>
+<img style="float: center;" width=1000 src="PM/CAD/cad_img/1.1.1.png">
 <BR>
-<img style="float: center;" width=1000 src="PM/CAD/cad_img/1.png">
-<BR>
+
 选择新设计。我们可以从文件选项或快捷方式“ CTRL+N”打开它。
 <br>
 <img style="float: center;" width=1000 src="PM/CAD/cad_img/2.png">
