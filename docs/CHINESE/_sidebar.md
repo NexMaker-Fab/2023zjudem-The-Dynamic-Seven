@@ -7,6 +7,7 @@
     - [Fusion 360](CHINESE/PM/CAD/fusion_360.md)
     - [Cardan Joint](CHINESE/PM/CAD/cardan_joint.md)
     - [Spur Gears](CHINESE/PM/CAD/fg.md)
+    - [Parameter](CHINESE/PM/CAD/parameter/parameter.md)
     - [实践](CHINESE/PM/CAD/practicecad.md)
   - [3. Arduino](CHINESE/PM/AD/arduino.md)
   - [4. 激光切割](CHINESE/PM/Laser_cutting/laser_cutting.md)
