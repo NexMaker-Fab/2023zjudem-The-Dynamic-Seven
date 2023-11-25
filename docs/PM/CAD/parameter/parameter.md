@@ -95,7 +95,7 @@ In Fusion 360, you can create user parameters at the beginning or while working 
 
 ## Create Users Parameters “On the Fly” in Fusion 360
 Create parameters “on the fly” while you type values directly in the input fields. This helps you create parameters without the need to open the Change Parameters dialog. Fusion 360 automatically adds “on the fly” parameters to your favorites, so that it is easy to find in the Parameters dialog.
-### Note: 
+**Note:** 
 Parameters created on the fly are considered “Model Parameters” and not “User Parameters.” That’s because they’re derived from the model itself. In essence, you can use model parameters and user parameters in the same manner – calling the parameter name in both sketch dimensions and modeling features.
 
 <img style="float: center;" width=1200 height=500 src="PM/CAD/parameter/20.jpg"><br>
@@ -104,7 +104,7 @@ Define a parameter name, equal symbol, and define the parameter value without an
 
 1.	Within a dimension input (Sketch or Model feature), define the parameter name.
 2.	After the parameter name, use the equal symbol (=) and the desired value.
-### Note:there are no spaces between the parameter name and equal symbol. You will also find that parameters created ‘on the fly’ do not show the parameter name after you save them. However, changing the original dimension will continue to update the parameter itself (and all areas you use the parameter).
+**Note:**there are no spaces between the parameter name and equal symbol. You will also find that parameters created ‘on the fly’ do not show the parameter name after you save them. However, changing the original dimension will continue to update the parameter itself (and all areas you use the parameter).
 
 <br><br>
 

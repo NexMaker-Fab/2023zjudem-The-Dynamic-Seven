@@ -4,7 +4,7 @@
   - [2. Computer Aided Design](PM/CAD/cad.md)
     - [Fusion 360](PM/CAD/fusion_360.md)
     - [Cardan Joint](PM/CAD/cardan_joint.md)
-    - [Spur Gears](PM/CAD/fg.md)
+    - [3D Model using Plugins](PM/CAD/fg.md)
     - [Parameter](PM/CAD/parameter/parameter.md)
     - [Practices](PM/CAD/practicecad.md)
   - [3. ARDUINO](PM/AD/arduino.md)

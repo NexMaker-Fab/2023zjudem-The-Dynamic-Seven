@@ -1,8 +1,4 @@
-# FM Gear
-
-Here we create a Create Spur gears. In this part we using plugins to create spur gears.
-
-**Pluging**
+# **Pluging**
 
 In Fusion 360, a plugin (sometimes referred to as an "add-in") is a piece of software that extends the functionality of the core Fusion 360 application. These plugins are typically created by third-party developers or users and can be installed to provide additional features, tools, or capabilities within Fusion 360. Plugins can be used to streamline specific workflows, add new design or simulation tools, integrate with external software or hardware, and much more.
 
@@ -23,6 +19,15 @@ Here are some common uses for Fusion 360 plugins:
 7. CAM (Computer-Aided Manufacturing): CAM plugins can help generate toolpaths for CNC machining and other manufacturing processes directly from Fusion 360.
 
 8. Rendering and Visualization: Plugins can improve rendering and visualization capabilities, enabling more realistic 3D renderings of designs.
+
+## Planetary Gear Train Modeling
+
+
+
+
+## FM Gear
+
+Here we create a Create Spur gears. In this part we using plugins to create spur gears.
 
 <img style="float: center;" width=1000 src="PM/CAD/fg/1st.jpg">
 
@@ -55,9 +60,8 @@ Then just go and search for "FM Gear" after that download it . After installatio
 <br>
 Now we can see that this FM Gear is arraived. After Clicking there this page arrived. After fix everything press ok then one gear arrived. 
 
-<br><br>
-
-
+<br>
+<br>
 <img style="float: center;" width=700 src="PM/CAD/fg/8th.jpg">
 
 <br>
@@ -127,3 +131,5 @@ Here is our project.
   <source src="PM/CAD/fg/FMG.ogg" type="video/ogg">
   Your browser does not support the video tag.
 </video>
+
+
