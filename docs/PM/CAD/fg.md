@@ -19,6 +19,10 @@ Here are some common uses for Fusion 360 plugins:
 7. CAM (Computer-Aided Manufacturing): CAM plugins can help generate toolpaths for CNC machining and other manufacturing processes directly from Fusion 360.
 
 8. Rendering and Visualization: Plugins can improve rendering and visualization capabilities, enabling more realistic 3D renderings of designs.
+   
+
+   <br>
+   <br>
 
 ## Planetary Gear Train Modeling
 
