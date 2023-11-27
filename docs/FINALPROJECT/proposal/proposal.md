@@ -109,3 +109,4 @@ Objectives:
 - [ ] Combine all codes together
 - [ ] System test
 - [ ] Final Prototype
+- [ ] Final Presentation
