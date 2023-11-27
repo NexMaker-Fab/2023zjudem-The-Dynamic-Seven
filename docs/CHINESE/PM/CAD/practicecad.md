@@ -69,4 +69,14 @@ Cardan关节被广泛用于各种应用中，例如汽车传动系统，工业�
 <iframe src="https://myhub.autodesk360.com/ue28cacf9/shares/public/SH512d4QTec90decfa6e03d57e9366f84f4a?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 **Burton**
+<br>
+<br>
+
+弹簧是一种具有弹性的机械组件，可以储存和释放能量。它通常用于各种应用程序，从车辆的悬架系统到在计算机图形中创建逼真的动画。3D模型的弹簧的基本结构涉及反映现实世界弹簧物理特性的螺旋形或盘绕形状。
+
+在3D建模中，通常使用螺旋形或螺旋形创建弹簧。这种形状由诸如半径和高度等参数定义，从而可以精确控制弹簧特征。可以调整线圈以模拟不同类型的弹簧，从压缩弹簧（挤压在一起）到延伸弹簧（伸展）。
+
+3D模型的弹簧可以动画以说明其机械行为。这可能涉及压缩或伸展弹簧，以证明其对外部力量的反应。动画可以实现教育目的，帮助用户了解动态环境中春季的功能方面。
+<br>
+<br>
 <iframe src="https://myhub.autodesk360.com/ue28cacf9/shares/public/SH512d4QTec90decfa6e234de29307a30508?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>

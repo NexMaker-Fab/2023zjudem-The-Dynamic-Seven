@@ -67,4 +67,14 @@ This mechanism is commonly used in various applications, such as drawer slides, 
 <iframe src="https://myhub.autodesk360.com/ue28cacf9/shares/public/SH512d4QTec90decfa6e03d57e9366f84f4a?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 **Burton**
+<br>
+<br>
+
+A spring is a mechanical component that exhibits elasticity, allowing it to store and release energy. It is often used in various applications, from suspension systems in vehicles to creating realistic animations in computer graphics. The basic structure of a 3D-modeled spring involves a helical or coiled shape reflecting the physical properties of a real-world spring.
+
+In 3D modelling, a spring is typically created using a helix or spiral shape. This shape is defined by parameters such as radius and height allowing for precise control over the characteristics of the spring. The coil can be adjusted to simulate different types of springs, from compression springs (squeezed together) to extension springs (stretched out).
+
+The 3D-modeled spring may be animated to illustrate its mechanical behavior. This can involve compressing or stretching the spring to demonstrate how it responds to external forces.The animation can serve educational purposes, helping users understand the functional aspects of a spring in a dynamic environment.
+<br>
+<br>
 <iframe src="https://myhub.autodesk360.com/ue28cacf9/shares/public/SH512d4QTec90decfa6e234de29307a30508?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>

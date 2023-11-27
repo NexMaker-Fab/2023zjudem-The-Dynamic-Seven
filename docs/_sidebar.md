@@ -12,4 +12,4 @@
   - [5. LASER CUTTING](PM/Laser_cutting/laser_cutting.md)
   - [6. PROGRAMMING](PM/programing/programming.md)
 - FINAL PROJECT
-  - [1.Topic](FINALPROJECT/topic.md)
+  - [Project Proposal](FINALPROJECT/proposal/proposal.md)
