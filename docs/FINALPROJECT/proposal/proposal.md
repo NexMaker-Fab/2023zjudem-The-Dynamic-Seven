@@ -92,7 +92,7 @@ In a world teeming with smart accessories, InclusiveVision stands out as a beaco
   
 - [X] Meeting for searching for a project
 - [X] Requirement and specification
-- [X] Deciding what component are needed
+- [X] Deciding what components are needed
 - [X] Arduino and learn how to use them
 - [X] Installing python
 - [X] Learning about Python
@@ -103,10 +103,11 @@ In a world teeming with smart accessories, InclusiveVision stands out as a beaco
 - [ ] System design
 - [ ] 3D Printing
 - [ ] System testing and analysis
-- [ ] Assembling hardware
-- [ ] Set up Arduino operating system
+- [ ] Assembling the hardware
+- [ ] Assembling the PCB
+- [ ] Set up the Arduino operating system
 - [ ] Implementing Ultrasonic sensors
-- [ ] Coding using python and also for Arduino 
+- [ ] Coding using Python and also for Arduino 
 - [ ] Combine all codes together
 - [ ] System test
 - [ ] Final Prototype
