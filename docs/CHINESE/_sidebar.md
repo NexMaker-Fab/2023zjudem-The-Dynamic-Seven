@@ -6,7 +6,7 @@
   - [2. Computer Aided Design](CHINESE/PM/CAD/cad.md)
     - [Fusion 360](CHINESE/PM/CAD/fusion_360.md)
     - [Cardan Joint](CHINESE/PM/CAD/cardan_joint.md)
-    - [Spur Gears](CHINESE/PM/CAD/fg.md)
+    - [3D Model using Plugins](CHINESE/PM/CAD/fg.md)
     - [Parameter](CHINESE/PM/CAD/parameter_ch.md)
     - [实践](CHINESE/PM/CAD/practicecad.md)
   - [3. Arduino](CHINESE/PM/AD/arduino.md)

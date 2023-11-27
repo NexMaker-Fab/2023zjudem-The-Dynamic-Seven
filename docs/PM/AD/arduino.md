@@ -409,15 +409,15 @@ By monitoring variations in the amounts of infrared (heat) radiation generated b
 ## **Components Required  for the Arduino with PIR Sensor Project**
 
 - Arduino Uno × 1
-  <img src="PM\AD\PIR\uno.jpg">
+  <img style="float: center;" width=700 height=700 src="PM\AD\PIR\uno.jpg">
 - PIR Sensor × 1
-  <img src="PM\AD\PIR\pir.jpg">
+  <img style="float: center;" width=700 height=700 src="PM\AD\PIR\pir.jpg">
 - Buzzer × 1
-  <img src="PM\AD\PIR\buzzer.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\buzzer.jpg">
 - LED and Resistor Kit × 1
-  <img src="PM\AD\PIR\led.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\led.jpg">
 - Breadboard × 1
-  <img src="PM\AD\PIR\board.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\board.jpg">
 - Jumper wires × 2
 - USB cable type A/B
   
@@ -505,6 +505,42 @@ PIR Sensor‘s  Out Pin connected to digital pin 2. LED connected from digital p
       Serial.println("Motion not Detected");
     }
     }
+<br>
+
+**Code Description**
+
+<br>
+
+This Arduino code sets up a simple motion detection system using a Passive Infrared (PIR) sensor, an LED, and a buzzer. Below is a breakdown of the code:
+
+1. Global Variables
+
+- `PIRSensor`, `Buzzer`, `LED`: These variables store the pin numbers for the PIR sensor, buzzer, and LED respectively.
+- `SensorValue`: This variable holds the value read from the PIR sensor.
+
+2. `setup()` Function
+
+- Configures the pinMode for the buzzer, LED, and PIR sensor pins.
+- Initializes serial communication with a baud rate of 9600.
+
+3. `loop()` Function (Repeated Execution)
+
+- Reads the digital value from the PIR sensor pin and stores it in `SensorValue`.
+- Checks if `SensorValue` is `HIGH` (meaning motion is detected):
+  - Turns on the LED by setting its pin to `HIGH`.
+  - Activates the buzzer at a frequency of 5000 Hz using the `tone()` function.
+  - Prints "Motion Detected" to the Serial Monitor.
+- If `SensorValue` is not `HIGH` (motion is not detected):
+  - Turns off the LED.
+  - Stops the buzzer sound using the `noTone()` function.
+  - Prints "Motion not Detected" to the Serial Monitor.
+
+4. Explanation
+
+- The code continuously monitors the PIR sensor. When the sensor detects motion (`SensorValue` becomes `HIGH`), it activates the LED, triggers the buzzer to emit a 5000 Hz sound, and prints "Motion Detected" to the Serial Monitor. When no motion is detected (`SensorValue` is not `HIGH`), it turns off the LED, stops the buzzer sound, and prints "Motion not Detected" to the Serial Monitor.
+
+Ensure the connections for the PIR sensor, LED, and buzzer are appropriately set up and connected to the correct pins as defined in the code (e.g., PIR sensor to pin 2, LED to pin 4, and buzzer to pin 5). Adjustments to pin connections may be needed depending on your physical setup.
+
 
 ## **Result**
 
@@ -614,6 +650,54 @@ Smart Dustbin as its name represents its work smartly or we can say that it is a
     }
     Serial.print(dist);
     }
+
+
+
+**Code Description**
+<br>
+<br>
+This Arduino code is designed to measure distance using an ultrasonic sensor (connected to `trigPin` and `echoPin`), control a servo motor (`servo`), and toggle an LED (`led`). Below is a breakdown of the code:
+
+1. Libraries Used
+
+- `Servo.h`: Library for controlling servo motors.
+
+2. Global Variables
+
+- `trigPin`, `echoPin`, `servoPin`, `led`: These variables store the pin numbers for the ultrasonic sensor's trigger and echo pins, the servo motor, and the LED respectively.
+- `duration`, `dist`, `average`: Variables used for storing the duration, distance measured, and the average distance.
+- `aver[3]`: Array for storing three distance measurements to calculate an average.
+
+3. `setup()` Function
+
+- Initializes serial communication with a baud rate of 9600.
+- Attaches the servo motor to its pin (`servoPin`) and positions it to close the cap (servo.write(0)) on power-up.
+- Detaches the servo motor after a brief delay.
+
+4. `measure()` Function
+
+- Triggers the ultrasonic sensor to measure distance:
+  - Sends a short LOW-HIGH-LOW pulse to the `trigPin`.
+  - Measures the duration of the pulse received on the `echoPin`.
+  - Calculates the distance based on the duration of the received pulse.
+
+4. `loop()` Function (Repeated Execution)
+
+- Conducts three measurements using the `measure()` function, storing each distance in the `aver` array.
+- Calculates the average distance from the three measurements.
+- If the calculated average distance is less than 50 (adjustable threshold), it executes the following:
+  - Attaches the servo motor and positions it at 0 degrees (servo.write(0)) for 3 seconds.
+  - Moves the servo to 150 degrees for 1 second.
+  - Detaches the servo motor.
+- Prints the measured distance to the Serial Monitor.
+
+5. Explanation
+
+- The code continuously measures distance using the ultrasonic sensor. If the average distance is below 50 units, it activates the servo motor to move within specified angles (0 and 150 degrees) and toggles the LED. This setup might be used, for instance, to trigger actions (servo movement and LED activation) based on detected proximity (distance less than 50 units).
+
+Ensure the connections for the ultrasonic sensor, servo motor, and LED are correctly set up and connected to the designated pins as defined in the code. Adjustments to pin connections may be necessary based on your hardware setup.
+<br>
+<br>
 
 ## **RESULT**
 

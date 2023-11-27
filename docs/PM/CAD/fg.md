@@ -25,6 +25,21 @@ Here are some common uses for Fusion 360 plugins:
    <br>
 
 ## Planetary Gear Train Modeling
+<br>
+<br>
+
+
+A planetary gear train is a mechanical system consisting of gears arranged in a specific configuration known as a planetary or epicyclic gear arrangement. It comprises three main components: a sun gear positioned at the center, planet gears that revolve around the sun gear, and a ring gear enclosing the planet gears. These gears are interconnected in a way that enables them to transmit motion and torque in complex but predictable ways.
+
+Modeling a planetary gear train involves understanding and mathematically representing its behavior. Engineers and mathematicians use equations and diagrams to describe how the gears interact, the speed ratios, torque transmission, and rotational direction changes within the system.
+
+To model a planetary gear train, one typically considers factors like the number of teeth on each gear, gear sizes, rotational speeds, and the gear arrangement. Equations derived from the principles of gear mechanics, such as the laws of gearing and kinematics, are used to predict and analyze the system's performance. Computer simulations and mathematical models help in understanding the behavior of the gear train under different conditions and configurations.
+
+Modeling planetary gear trains is crucial in various fields, including mechanical engineering, automotive design, robotics, and more, as it allows engineers to predict performance, optimize designs, and ensure efficient power transmission within machinery and systems.
+<br>
+<br>
+
+**3D Model**
 
 Setting up design parameters
 This project will build a gear with contain three gear namely ring, sun and  planent. The gear ration 1:6, fixed:Ring Gear,driven: Sun Gear, Output: Carrier 
@@ -213,6 +228,14 @@ The model is complete and in action
 
 <br>
 <br>
+
+ <img style="float: center;" width=1280 height=600 src="PM/CAD/gear.gif">
+        
+
+<br>
+<br>
+
+
 
 ## FM Gear
 

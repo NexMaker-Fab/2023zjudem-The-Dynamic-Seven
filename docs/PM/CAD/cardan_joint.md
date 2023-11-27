@@ -1,4 +1,14 @@
 # Here we will make a cardan Joint.
+<br>
+A Cardan joint, also known as a universal joint, is a mechanical device used to transmit rotational motion between two shafts that are not in a straight line with each other. It consists of two yokes connected by a cross-shaped component called the "cross" or "spider." Each yoke attaches to the ends of the shafts, allowing them to be at an angle to each other.
+
+The design of the Cardan joint enables it to transfer torque and rotation smoothly, even when the connected shafts are not aligned perfectly. This flexibility makes it ideal for applications where the shafts need to transmit rotational motion while operating at angles, such as in automobiles, drive shafts, and machinery.
+
+By accommodating angular misalignment, the Cardan joint helps to maintain consistent power transmission and reduces vibration, making it a widely used component in various mechanical systems.
+
+
+<br>
+<br>
 
 **Tools&Commands**
 

@@ -9,15 +9,15 @@ By monitoring variations in the amounts of infrared (heat) radiation generated b
 ## **Components Required  for the Arduino with PIR Sensor Project**
 
 * Arduino Uno × 1
-  <img src="PM\AD\PIR\uno.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\uno.jpg">
 * PIR Sensor × 1 
-  <img src="PM\AD\PIR\pir.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\pir.jpg">
 * Buzzer × 1 
-  <img src="PM\AD\PIR\buzzer.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\buzzer.jpg">
 * LED and Resistor Kit × 1 
-  <img src="PM\AD\PIR\led.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\led.jpg">
 * Breadboard × 1 
-  <img src="PM\AD\PIR\board.jpg">
+  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\board.jpg">
 * Jumper wires × 2 
 * USB cable type A/B
   
@@ -77,7 +77,7 @@ The sensor has a controllable sensitivity that allows motion detection range of 
 
 ## **Circuit Diagram of PIR Sensor with Arduino, LED and Buzzer**
 
-<img src="PM\AD\PIR\circuit.png">
+<img style="float: center;" width=700 src="PM\AD\PIR\circuit.png">
 
 <br><br>
 PIR Sensor‘s  Out Pin connected to digital pin 2. LED connected from digital pin 4 to ground through a 220ohm resistor. And Buzzer connected to digital PWM(~) pin 5.
