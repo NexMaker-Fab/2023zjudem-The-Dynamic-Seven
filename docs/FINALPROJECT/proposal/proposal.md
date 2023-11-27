@@ -33,7 +33,7 @@ The smart glasses function through an ultrasonic sensor mounted on the frame. By
 
 In a world teeming with smart accessories, InclusiveVision stands out as a beacon of innovation and inclusivity. Recognizing the significant gap in technology catering to the visually impaired, our project aims to create a low-cost, accessible solution to empower individuals with visual challenges.
 
-## ==**Objectives:**==
+### ==**Objectives:**==
 
 1. **Enhanced Mobility:** Develop smart glasses equipped with an ultrasonic sensor to detect obstacles in the user's path.
 
