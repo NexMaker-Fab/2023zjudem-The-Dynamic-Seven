@@ -19,7 +19,8 @@ These smart glasses can make a huge impact on the lives of blind people. So we t
 ### ==**Working Process:**==
 <br>
 <br>
-The smart glasses function through an ultrasonic sensor mounted on the frame. By continuously scanning the environment, the sensor identifies objects in the user's path. When an object approaches within 30 cm, the Arduino UNO, programmed with Python 3, triggers a voice alert through earphones, informing the user to stop and indicating the presence of an obstacle. To speak to the user, "STOP! STOP! THERE IS AN OBJECT VERY NEAR TO YOU." through the earphones.  
+The smart glasses function through an ultrasonic sensor mounted on the frame. By continuously scanning the environment, the sensor identifies objects in the user's path. When an object approaches within 30 cm, the Arduino UNO, programmed with Python 3, triggers a voice alert through earphones, informing the user to stop and indicating the presence of an obstacle. To speak to the user, 
+<span style="color:red">"STOP! STOP! THERE IS AN OBJECT VERY NEAR TO YOU."</span> through the earphones.  
 <br>
 <br>
 
