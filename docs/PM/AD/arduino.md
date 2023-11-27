@@ -930,9 +930,11 @@ Your browser does not support the video tag.
 </video>
 <br>
 <br>
-   
+
+
+
 ## Applications
-There is a lot you can do with an IR controlled servo motor. Here are some fun ideas and possible applications:
+There is a lot you can do with an IR-controlled servo motor. Here are some fun ideas and possible applications:
 
 **Automated Blinds or Curtains**
 Use the stepper motor to control the opening and closing of blinds or curtains in response to commands from the IR remote. This can be a convenient addition to home automation systems.
