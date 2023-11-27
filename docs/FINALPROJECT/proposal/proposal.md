@@ -1,7 +1,7 @@
 ## Title: InclusiveVision - Smart Glasses for Visually Impaired Individuals
+===========================================================================
 
-
-### **Project description**
+### ==**Project description**==
 <br>
 <br>
 
@@ -16,24 +16,24 @@ These smart glasses can make a huge impact on the lives of blind people. So we t
 <br>
 
 
-### **Working Process:**
+### ==**Working Process:**==
 <br>
 <br>
 The smart glasses function through an ultrasonic sensor mounted on the frame. By continuously scanning the environment, the sensor identifies objects in the user's path. When an object approaches within 30 cm, the Arduino UNO, programmed with Python 3, triggers a voice alert through earphones, informing the user to stop and indicating the presence of an obstacle. To speak to the user, "STOP! STOP! THERE IS AN OBJECT VERY NEAR TO YOU." through the earphones.  
 <br>
 <br>
 
-### **Working diagram**
+### ==**Working diagram**==
 
 
 <img style="float: center;" width=650 height=450 src="FINALPROJECT/proposal/diagram.png">
 
 
-### **Project Overview**
+### ==**Project Overview**==
 
 In a world teeming with smart accessories, InclusiveVision stands out as a beacon of innovation and inclusivity. Recognizing the significant gap in technology catering to the visually impaired, our project aims to create a low-cost, accessible solution to empower individuals with visual challenges.
 
-Objectives:
+## ==**Objectives:**==
 
 1. **Enhanced Mobility:** Develop smart glasses equipped with an ultrasonic sensor to detect obstacles in the user's path.
 
@@ -41,7 +41,7 @@ Objectives:
 
 3. **Affordability and Scalability:** Prioritize the use of cost-effective components, ensuring that the technology is accessible to a wide range of individuals. Aim for scalability to reach more visually impaired communities.
 
-### **Key Features:**
+### ==**Key Features:**==
 
 - **User-Centric Design:** Prioritizing user experience, the glasses are designed to be lightweight, comfortable, and discreet, seamlessly integrating into the user's daily life.
 
@@ -49,7 +49,7 @@ Objectives:
 
 - **Battery Efficiency:** Implement power-saving features to extend the battery life, ensuring prolonged and reliable usage.
 
-### **Sustainable Development Goals (SDGs):**
+### ==**Sustainable Development Goals (SDGs):**==
 
 **SDG 3: Good Health and Well-being:** Improving the safety and well-being of visually impaired individuals.
 
@@ -63,7 +63,7 @@ Objectives:
 <br>
 <br>
 
-### **Materials**
+### ==**Materials**==
 1. Arduino UNO
 2. Bread Board
 3. Smart Glasses Frame
@@ -75,7 +75,7 @@ Objectives:
 8. 220ohm resistor
 
 
-### **Software**
+### ==**Software**==
 
 1. **Arduino IDE:** We  need to program the Arduino to coordinate the functionalities of the various components. This includes reading sensor data, processing it, and triggering appropriate actions.
 2. **Fusion 360**: Designing glasses for blind individuals involves creating a wearable device that aids in navigation, object recognition, and obstacle detection.
@@ -86,7 +86,7 @@ Objectives:
 
 
 
-### **Working Update**
+### ==**Working Update**==
 
   
 - [X] Meeting for searching for a project
