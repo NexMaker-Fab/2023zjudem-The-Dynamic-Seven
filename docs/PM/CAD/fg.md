@@ -37,30 +37,33 @@ To model a planetary gear train, one typically considers factors like the number
 
 Modeling planetary gear trains is crucial in various fields, including mechanical engineering, automotive design, robotics, and more, as it allows engineers to predict performance, optimize designs, and ensure efficient power transmission within machinery and systems.
 <br>
-<br>
+<be>
+
+
+<iframe src="https://myhub.autodesk360.com/ue28cacf9/shares/public/SH512d4QTec90decfa6e578049a619e222d9?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 **3D Model**
 
 Setting up design parameters
-This project will build a gear with contain three gear namely ring, sun and  planent. The gear ration 1:6, fixed:Ring Gear,driven: Sun Gear, Output: Carrier 
+This project will build a gear with contains three gears namely ring, sun, and  planet. The gear ratio 1:6, fixed: Ring Gear, driven: Sun Gear, Output: Carrier 
 
-Open the fusion 360 application.
+Open the Fusion 360 application.
 
-Select the utility in the fusion task bar.
+Select the utility in the fusion taskbar.
 
 <br>
 <img src="PM/CAD/Plugin/figure1.png" > <br>
 <br>
-Select ADD-INS and Select Scripts and Add-Ins option ( or click Shift + S). This pops scripts and Add-Ins box options on the screen.
+Select ADD-INS and Select the Scripts and Add-Ins option ( or click Shift + S). This pops scripts and add-ons box options on the screen.
 <br>
 <img src="PM/CAD/Plugin/figure2.png" > <br>
 <br>
 
-Click Add-Ins option, scrowl down and Select the SpearGear option and click run.This add a SpearGear command in the <b>Create</b> pannel. Click OK on the command sample popup. 
+Click the Add-Ins option, scroll down Select the SpearGear option, and click run. This adds a SpearGear command in the <b>Create</b> pannel. Click OK on the command sample popup. 
 <br>
 <img src="PM/CAD/Plugin/figure3.png" style="float: center;" width=700 > <br>
 <br> <br>
-Click Solid on the fusion workplace and  click Create option and Select the SpearGear on the create options.
+Click Solid on the fusion workplace click the Create option and Select SpearGear on the Create options.
 <br>
 <img src="PM/CAD/Plugin/figure4.png" style="float: center;" width=700 > <br>
 <br>
@@ -70,7 +73,7 @@ Set up the Spur Gear parameter as shown below and click OK. This create a SpurGe
 <img src="PM/CAD/Plugin/figure5.png" style="float: center;" width=700 > <br>
 <br>
 
-Click Create and select Cylider.Select any plane and sketch the cylider from the center of the circle.
+Click Create and select Cylider. Select any plane and sketch the cylinder from the center of the circle.
 <br>
 <img src="PM/CAD/Plugin/figure6.png" style="float: center;" width=700 > <br>
 <br>
@@ -78,69 +81,69 @@ Set up the parameters as shown below and click OK
 <br>
 <img src="PM/CAD/Plugin/figure7.png" style="float: center;" width=700 > <br>
 <br>
-Now we gonna use the extrude command to cut the shape of the gear from the cyclider. Activate the cyclider  
+Now we gonna use the extrude command to cut the shape of the gear from the cylinder. Activate the cylinder  
 <br>
 <img src="PM/CAD/Plugin/figure8.png" style="float: center;" width=700 > <br>
 <br>
-Press E for extrude. Set the  distance to -10mm and select the spear gear as a profile and other parameters as shown below.Note :profile options; click the face of the gear to select it
+Press E for extrude. Set the  distance to -10mm and select the spear gear as a profile and other parameters as shown below. Note: profile options; click the face of the gear to select it
 <br>
 <img src="PM/CAD/Plugin/figure9.png" style="float: center;" width=700 > <br>
 <br>
-Now select the SpearGear(80teeth)  component  and Right click the spearGear(80teeth). Select  Remove option and Click Ok
+Now select the SpearGear(80teeth)  component  and Right click the spearGear(80teeth). Select  the Remove option and Click OK
 <br>
 <img src="PM/CAD/Plugin/figure10.png" style="float: center;" width=700 > <br>
-Double click the componenent 2 and rename it to the Ring gear
+Double click the component 2 and rename it to the Ring gear
 <br>
 <img src="PM/CAD/Plugin/figure11.png" style="float: center;" width=700 > <br>
-Now lets modal the planents.Create another supergear by Clicking the CREATE and select the spear gear option.
+Now let's modal the planets. Create another supergear by Clicking the CREATE and selecting the spear gear option.
 <br>
 <img src="PM/CAD/Plugin/figure4.png" style="float: center;" width=700 > <br>
-Set up the parameters as shown below. The rest of the parameters will remain the same except for the number of teeth will be 32 and other two parameters as shown below and click OK
+Set up the parameters as shown below. The rest of the parameters will remain the same except for the number of teeth will be 32 and the other two parameters as shown below and click OK
 <br>
 <img src="PM/CAD/Plugin/figure12.png" style="float: center;" width=700 > <br>
-Press M on the keyboard to move the component  and Select Components on move object option in the Move/Copy menu and zoom in the origin to select the origin to be center as select option. Check the create Copy option first and set the y axis to 48mm  The aim is to make a copy of the gear.
+Press M on the keyboard to move the component  and Select Components on the move object option in the Move/Copy menu and zoom in the origin to select the origin to be center as the select option. Check the create Copy option first and set the y-axis to 48mm  The aim is to make a copy of the gear.
 <br>
 <img src="PM/CAD/Plugin/figure13.png" style="float: center;" width=700 > <br>
 
-Press M again and  this time add rotation as motion type, select the axis to be center of the gear and set the angle to 120 degrees.Check the create Copy option first. The aim is to make another copy of the gear
+Press M again and  this time add rotation as motion type, select the axis to be the center of the gear, and set the angle to 120 degrees. Check the create Copy option first. The aim is to make another copy of the gear
 <br>
 <img src="PM/CAD/Plugin/figure14.png" style="float: center;" width=700 > <br>
 
-Before clicking OK,  Check free mode and set the y axis to 48mm  and click OK
+Before clicking OK,  Check free mode set the y-axis to 48mm,  and click OK
 <br>
 <img src="PM/CAD/Plugin/figure15.png" style="float: center;" width=700 > <br>
-Press M again and  add rotation as motion type, select the axis to be center of the gear and set the angle to 240 degrees. Do not check the copy option because this is a last copy
+Press M again and  add rotation as motion type, select the axis to be the center of the gear, and set the angle to 240 degrees. Do not check the copy option because this is the last copy
 <br>
 <img src="PM/CAD/Plugin/figure16.png" style="float: center;" width=700 > <br>
 
-Before Clicking Ok, Check free mode and set the y axis to 48mm  and click OK. 
+Before Clicking OK, Check free mode and set the y-axis to 48mm,  and click OK. 
 <br>
 <img src="PM/CAD/Plugin/figure17.png" style="float: center;" width=700 > <br>
-The planet gear are now in place.Now lets modal the sun gear with 16 teeth.
-Create another supergear by Clicking the CREATE and select the spear gear option 
+The planet gear is now in place. Now let's model the sun gear with 16 teeth.
+Create another super gear by Clicking the CREATE and selecting the spear gear option 
 <br>
 <img src="PM/CAD/Plugin/figure4.png" style="float: center;" width=700 > <br>
 Set up the parameters as shown below. The rest of the parameters will remain the same except for the number of teeth  which will be 16 and click OK
 <br>
 <img src="PM/CAD/Plugin/figure18.png" style="float: center;" width=700 > <br>
-The sun gear is now in place.Lets now build an input shaft to the 16 teeth spear gear.
-Set the 16 teeth  spear gear as an  active components and click the sketch
+The sun gear is now in place.Let's now build an input shaft to the 16 teeth spear gear.
+Set the 16 teeth  spear gear as an  active component and click the sketch
 <br>
 <img src="PM/CAD/Plugin/figure19.png" style="float: center;" width=700 >
 
 Click the face of this gear and Select the capture position 
 <img src="PM/CAD/Plugin/figure20.png" style="float: center;" width=700 > <br>
-Then press P to project. Then select the input shaft diameter as geometery on the current sketch. Click OK and click finish sketch
+Then press P to project. Then select the input shaft diameter as geometery on the current sketch. Click OK and click Finish sketch
 <img src="PM/CAD/Plugin/figure21.png" style="float: center;" width=700 > <br>
-Press E for exclude and select that input shaft diameter as a profile, set distance to -40mm, select a join on operation options to join to the shaft
+Press E to exclude and select that input shaft diameter as a profile, set the distance to -40mm, select a join on operation options to join to the shaft
 <img src="PM/CAD/Plugin/figure22.png" style="float: center;" width=700 > <br>
-Let's rename the spear Gear (32teeth) as a planent gear and spear gear (16teeth) as the Sun gear just to be organised 
+Let's rename the spear Gear (32teeth) as a planet gear and spear gear (16teeth) as the Sun gear just to be organised 
 <img src="PM/CAD/Plugin/figure23.png" style="float: center;" width=700 > <br>
-Now take alook at the front/top or back /bottom view of the sketch ,the gears are not marching collectively.
+Now take a look at the front/top or back /bottom view of the sketch,the gears are not marching collectively.
 <img src="PM/CAD/Plugin/figure24.png" style="float: center;" width=700 > <br>
 Now press M and select rotate then pick the components you want to move and the axis which is the center of the gear then manually rotate the position of the gear until they match correctly. Do the same for the rest of the gears until they are fully matched.
 <img src="PM/CAD/Plugin/figure25.png" style="float: center;" width=700 > <br>
-Once everything is matching correct , capture the position
+Once everything matches correct , capture the position
 <img src="PM/CAD/Plugin/figure26.png" style="float: center;" width=700 > <br>
 
 Now the last part is the carrier which is the one which is going to connect each of the planet  gears to the input shaft.
@@ -148,15 +151,15 @@ Create anew component by selecting CREATE then select new component
 <img src="PM/CAD/Plugin/figure27.png" style="float: center;" width=700 > <br>
 Name the component "Carrier" and click okay 
 <img src="PM/CAD/Plugin/figure28.png" style="float: center;" width=700 > <br>
-create a new sketch by click sketch and position the mouse on the face of one of the  planent gear 
+create a new sketch by clicking sketch and positioning the mouse on the face of one of the  planet gear 
 <img src="PM/CAD/Plugin/figure29.png" style="float: center;" width=700 > <br>
-click P to project and select all the  inner diameter of the gears as shown below and click OK
+click P to project select all the  inner diameters of the gears as shown below and click OK
 <img src="PM/CAD/Plugin/figure30.png" style="float: center;" width=700 > <br>
-select Center Diameter Circle and create circles of 10 diameter in all the gears. make sure to zoom the center of the gear to position the mouse for drawing.
+select Center Diameter Circle and create circles of 10 diameters in all the gears. make sure to zoom the center of the gear to position the mouse for drawing.
 <img src="PM/CAD/Plugin/figure31.png" style="float: center;" width=700 > <br>
-Select aline to join all the gears.Draw the carrier lines that connect all the gears as shown below
+Select aline to join all the gears. Draw the carrier lines that connect all the gears as shown below
 <img src="PM/CAD/Plugin/figure32.png" style="float: center;" width=700 > <br>
-Select the tagent to make sure that the lines are attached to the circle.Select the geometery which is the line and the gear circle at each point the circle become in contact with the line eg as shown below
+Select the tangent to make sure that the lines are attached to the circle.Select the geometery which is the line and the gear circle at each point the circle become in contact with the line eg as shown below
 <img src="PM/CAD/Plugin/figure34.png" style="float: center;" width=700 > <br>
 select fillets to specify the radius at the intersection.Select the two separate lines making the intersection and click OK and finish sketch 
 <img src="PM/CAD/Plugin/figure33.png" style="float: center;" width=700 > <br>
