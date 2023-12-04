@@ -714,303 +714,161 @@ Your browser does not support the video tag.
 
 
 
-# Control a Stepper Motor with an IR Remote
+# Stepper Motor Control
 <br>
+## Hardware Required:
 <br>
-
-## Description 
-Stepper motors are widely used in various applications, such as robotics, CNC machines, and 3D printers, due to their precise control and ability to move in small increments. By combining the stepper motor with an IR remote control, we can create a wireless control system for our projects.
-
-We will be using the ULN2003 driver module to interface the stepper motor with the Arduino. The ULN2003 is a popular driver chip that simplifies the control of stepper motors by providing the necessary current amplification and protection circuitry. It allows us to control the stepper motor using just a few digital pins of the Arduino.For the stepper motor, we use a 28byj-48 stepper motor. It is very affordable, compact and runs on 5-12 Volts, which makes it easy to integrate with Arduino and battery powered projects.
-
-By the end of this tutorial, you will have a clear understanding of how to connect the components, write the Arduino code, and control the stepper motor using an IR remote control.
-
-## Required Parts
-
-1. Arduino Uno
-2. Dupont Wire Set
-3. Breadboard
-4. USB Cable for Arduino UNO
-5. IR Receiver Module
-6. IR Remote Receiver Kit
-7. Stepper Motor
-8. Arduino IDE
-
+1. Arduino UNO board
+2. 28BYJ-48 unipolar stepper motor (with driver board)
+3. 10k ohm potentiometer
+4. Pushbutton
+5. 5V power source
+6. Bread board
+7. Jumper wires
 
 <br>
 
-## Connecting the Parts
-In this section we will connect the components to the Arduino.  Since the stepper motor consumes more power than the Arduino can supply, we add a breadboard with an additional power supply. The breadboard will also carry the IR sensor, which needs to be connected to power and an input pin of the Arduino. The picture below shows  the complete wiring.
+## Arduino stepper motor control circuit
+<br>
+<br>
+<img style="float: center;" width=700 height=700 src="PM\AD\stepper\stepper.png">
+<br>
+<br>
+The stepper motor is connected to the ULN2003A board which is supplied with external power source of 5V. The control lines (IN1, IN2, IN3 and IN4) of this board are connected to the Arduino as follows:
+INA to Arduino pin 11
+INB to Arduino pin 10
+INC to Arduino pin 9
+IND to Arduino pin 8
 
-<img style="float: center;" width=700 height=500 src="PM/AD/ir/ir_circuit.png"> <br>
+The 10k ohm potentiometer is used to control the speed of the stepper motor, its output pin is connected to Arduino analog pin 0.
 
-## Connecting the Stepper Motor and Driver
-Let’s start by connecting the stepper motor to the driver board.
+The push button which is connected to Arduino pin 4 is used to change the rotation direction of the stepper motor.
 
-The 28byj-48 stepper motor typically comes with a connector that directly fits into the socket on the driver board. Just plugin it in. It will fit only in one orientation.
-
-<img style="float: center;" width=700 height=500 src="PM/AD/ir/md_ir.png"> <br>
-
-Next, we connect the input signals for the motor driver to the output pins of the Arduino board:
-
-<img style="float: center;" width=700 height=500 src="PM/AD/ir/md.png"> <br>
-
-| Arduino   | Driver module  |
-| --------  | -------        |
-| Pin 12    | INA            |
-| Pin 11    | INB            |
-| Pin 10    | INC           |
-| Pin 9     | IND            |
-
-We finish the wiring of the driver by connecting the power for the driver board to the breadboard. Make sure the red wire connect the positive input of the driver board with the positive power rail on the breadboard (marked by a red line). The black wire connects the negative side to ground (GND).
+<img style="float: center;" width=700 height=700 src="PM\AD\stepper\stepper_diagram.png">
 
 
-## Connecting the IR Sensor
-Now, let’s place the infrared (IR) sensor on the breadboard and connect it. The negative pin is marked with a (-) sign. We use a black wire to connect this pin to the ground rail of the breadboard. This means the sensor and the driver board using the same ground.
+## Arduino unipolar stepper motor control code
 
+    # include <Stepper.h>
+The stepper motor which I used in this project is 28BYJ-48, this motor equipped with speed reducer of 1/64. The internal motor has 32 steps per one revolution which means the external shaft has 2048 steps per one revolution (64 x 32). Number of steps is defined in the code as shown below:
 
+    # define STEPS 32
+and the connection of the control lines of the stepper motor are defined as:
 
-<img style="float: center;" width=400 height=500 src="PM/AD/ir/ir_s.png"> <br>
+    Stepper stepper(STEPS, 8, 10, 9, 11);
+Using the function stepper.step(direction_) the stepper motor moves according to the variable direction_, in this example this variable may be 1 or -1. If direction_= 1 the motor will move in the first direction and if direction_ = -1 the motor will move in the other direction.
 
-The middle pin of the sensor is typically plus. We need to connect this to the 5V output of the Arduino. Below you see the red wire running from the center pin of the IR sensor to the 5V output of the Arduino board.
+When ever the pushbutton is pressed, the variable direction_ will be inverted (1 or -1).
 
-<img style="float: center;" width=700 height=500 src="PM/AD/ir/ir_s_a.png"> <br>
-
-
-## Writing the Arduino Code
-In this section we will write the code to control the stepper motor from an IR remote. Specifically, we want to be able to control speed and direction of the stepper motor. In addition, it would be nice if we could stop and start the motor with the press of a button.
-
-The code below does all of that. We will break it into pieces and explain its parts in the following sections.
-
-     #include <IRremote.h>
-     #include <AccelStepper.h>
-
-     #define IR_RECEIVE_PIN 8
-     #define INA_PIN 12
-     #define INB_PIN 11
-     #define INC_PIN 10
-     #define IND_PIN 9
-     #define TYPE AccelStepper::HALF4WIRE
-     #define MAXSPEED 1000
-     #define MINSPEED 100
-     
-     int currspeed = 500;
-     int prevspeed = 500;
-     int inc = 1000;
-     int dir = +1;
-     
-     // Note the pin order 1,3,2,4!
-     auto stepper = AccelStepper(TYPE, INA_PIN, INB_PIN, INC_PIN, IND_PIN);
-     
-     void setup() {
-       IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
-       stepper.setMaxSpeed(MAXSPEED);
-     }
-     
-     void loop() {
-       if (IrReceiver.decode()) {
-         uint16_t command = IrReceiver.decodedIRData.command;
-         if (command == 31) {         // VOL+
-           prevspeed = currspeed;
-           currspeed = min(currspeed + inc, MAXSPEED);
-         } else if (command == 23) {  // VOL-
-           prevspeed = currspeed;
-           currspeed = max(currspeed - inc, MINSPEED);
-         } else if (command == 21) { // MODE
-           dir = -dir;
-           delay(200);
-         } else if (command == 7) {  // PLAY or PAUSE
-           currspeed = currspeed > 0 ? 0 : prevspeed;
-           delay(200);
-         }
-         IrReceiver.resume();
-       }
-       stepper.setSpeed(dir * currspeed);
-       stepper.runSpeed();
-     }
-
-
-### Code Description
-
-**Libraries Used:**
-
-IRremote.h: This library allows the Arduino to receive and decode signals from an IR remote control.
-AccelStepper.h: This library facilitates control of stepper motors with acceleration capabilities.
-
-**Pin Definitions:**
-
-IR_RECEIVE_PIN: The pin number to which the IR receiver is connected (pin 8).
-INA_PIN, INB_PIN, INC_PIN, IND_PIN: Pins connected to the stepper motor driver to control the stepper motor.
-TYPE: Stepper motor control type (specifically, a half-step, four-wire configuration).
-MAXSPEED: Maximum speed for the stepper motor (1000 steps per second).
-MINSPEED: Minimum speed for the stepper motor (100 steps per second).
-
-**Variables:**
-
-currspeed: Current speed of the stepper motor (initially set to 500 steps per second).
-prevspeed: Previous speed of the stepper motor (initially set to 500 steps per second).
-inc: Increment or decrement value for speed changes (set to 1000 steps per second).
-dir: Direction of the stepper motor rotation (initially set to +1, it may change to -1 based on the IR command).
-
-**Stepper Motor Initialization:**
-
-AccelStepper stepper(TYPE, INA_PIN, INB_PIN, INC_PIN, IND_PIN): Creating an instance of the AccelStepper class for controlling the stepper motor with the specified pins.
-
-**setup() Function:**
-
-IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK): Initializing the IR receiver on pin 8 and enabling LED feedback for the IR receiver.
-stepper.setMaxSpeed(MAXSPEED): Setting the maximum speed for the stepper motor.
-
-**loop() Function:**
-
-The loop continuously checks for incoming IR signals using IrReceiver.decode().
-Based on the received IR command, the code adjusts the currspeed variable for the stepper motor speed:Command 31 (VOL+): Increases the speed by inc value, capped at MAXSPEED.
-Command 23 (VOL-): Decreases the speed by inc value, limited to MINSPEED.
-Command 21 (MODE): Changes the direction of rotation (dir) by toggling its sign.
-Command 7 (PLAY/PAUSE): Pauses the motor if it's running or resumes it from the last saved speed.
-
-Stepper Motor Control:
-stepper.setSpeed(dir * currspee)
-
-
-<!-- ## Installing the Libraries
-First, we need two libraries. IRremote, which is used to read and interpret the signals sent from the IR remote. And AccelStepper, which will make it very easy for us to control the stepper motor. If you don’t have these two libraries already installed, you will need to install them.
-
-     #include <IRremote.h>
-     #include <AccelStepper.h> 
+Rest of code is described through comments.
 
 
 
-## Defining the Constants
-
-Next, we define the constants we will use in the remainder of the code. First, we define the pins for the IR sensor (PIN 8) and the four output pins on the Arduino board that are connected to the input pins of the stepper motor driver (IN1_PIN, …, IN4_PIN)
-
-    #define IR_RECEIVE_PIN 8
-    #define IN1_PIN 12
-    #define IN2_PIN 11
-    #define IN3_PIN 10
-    #define IN4_PIN 9
-
-
-
-In addition, we need to let the stepper library know, which type of stepper motor we have connected (HALF4WIRE). We also want to specify a maximum and a minimum speed (1000…100). For more details see our tutorial 28BYJ-48 Stepper Motor with ULN2003 Driver and Arduino.
-
-
-    #define TYPE AccelStepper::HALF4WIRE
-    #define MAXSPEED 1000
-    #define MINSPEED 100
-
-
-
-## Defining the Variables
-Since we want to be able to control the speed of the stepper motor, we need a few variables in addition to the constants above. Specifically, we require the current speed (currspeed), the previous speed of the motor (lastspeed), and the increment (inc) to speed up or slow down the motor. We also have a variable dir, which is either +1 or -1 and determines the direction of rotation.
-
-    int currspeed = 500;
-    int prevspeed = 500;
-    int inc       = 100;
-    int dir       = +1;
-
-
-Lastly, we create the stepper motor object (stepper), which we need to send commands to the stepper motor.
-
-      auto stepper = AccelStepper(TYPE, IN1_PIN, IN3_PIN, IN2_PIN, IN4_PIN);   
-
-## The Setup Function
-The setup function, where we initialize the board, is very simple. We just let the sensor library know, which pins are used for the IR sensor and set the initial speed of the stepper motor to MAXSPEED.
-     
-     
-    void setup() {
-    receiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
-    pper.setMaxSpeed(MAXSPEED);
-                }
-
-
-## The Loop Function
-
-All the real action happens in the main loop. Here, we first wait for the IR receiver. If it gets a signal to decode, we decode it and extract the specific command the IR remote sent. Depending on the value of the command variable we either speed up, slow down, change direction or switch between stop and run.
-
-     void loop() {
-       if (IrReceiver.decode()) {
-     uint16_t command = IrReceiver.decodedIRData.command;
-      if (command == 31) {         // VOL+
-      prevspeed = currspeed;
-      currspeed = min(currspeed + inc, MAXSPEED);
-     } else if (command == 23) {  // VOL-
-      prevspeed = currspeed;
-      currspeed = max(currspeed - inc, MINSPEED);
-    } else if (command == 21) { // MODE
-      dir = -dir;
-      delay(200);
-    } else if (command == 7) {  // PLAY or PAUSE
-      currspeed = currspeed > 0 ? 0 : prevspeed;
-      delay(200);
+    # include <Stepper.h>
+    # define STEPS 32
+    Stepper stepper(STEPS, 8, 10, 9, 11);
+    
+    const int button =  4; // direction control button is connected to Arduino pin 4
+    const int pot    = A0; // speed control potentiometer is connected to analog pin 0
+    
+    void setup()
+    {
+      // configure button pin as input with internal pull up enabled
+      pinMode(button, INPUT_PULLUP);
     }
-     IrReceiver.resume();
+
+    int direction_= 1, speed_ = 0;
+    
+    void loop()
+    {
+      if ( digitalRead(button) == 0 )  // if button is pressed
+        if ( debounce() )  // debounce button signal
+        {
+          direction_ *= -1;  // reverse direction variable
+          while ( debounce() ) ;  // wait for button release
+        }
+    
+      // read analog value from the potentiometer
+      int val = analogRead(pot);
+    
+      // map digital value from [0, 1023] to [2, 500]
+      // ===> min speed = 2 and max speed = 500 rpm
+      if ( speed_!= map(val, 0, 1023, 2, 700) )
+      { // if the speed was changed
+        speed_ = map(val, 0, 1023, 2, 700);
+        // set the speed of the motor
+        stepper.setSpeed(speed_);
+      }
+    
+      // move the stepper motor
+      stepper.step(direction_);
+    
     }
-     stepper.setSpeed(dir * currspeed);    
-     stepper.runSpeed();
-     }
+
+    // a small function for button debounce
+    bool debounce()
+    {
+      byte count = 0;
+      for(byte i = 0; i < 5; i++) {
+        if (digitalRead(button) == 0)
+          count++;
+        delay(1);
+      }
+      if(count > 2)  return 1;
+      else           return 0;
+    }
 
 
-The command codes are mapped to specific keys (Vol+->31, Vol–>23, Mode->21, Play/Pause->7) on the IR remote. This mapping will depend on the IR remote you are using! To figure out, which keys correspond to which command codes for you remote have a look at our tutorial on How to use an IR receiver and remote with Arduino.
+**Breakdown of the code:**
 
-There are some interesting details in the code. Firstly, if we speed up, we need to avoid going faster than MAXSPEED. The min() function ensures that. Similarly, when we slow down, we use the max() function to ensure that we don’t go below MINSPEED.
 
-Change of direction is easy, whenever I press MODE on my remote, the IR receiver reads the command code 21, and we simply change the sign of the dir variable. Note that the dir variable is used later in the code when the speed is set via stepper.setSpeed(dir*currspeed), and determines the direction of rotation (+1 = clockwise, -1 = counter-clockwise).
+ **Libraries**
 
-The last command is to toggle between run or stop using the PLAY/PAUSE key on my remote. We use a ternary condition (c ? a : b) here to check if the current speed if greater than zero. If that is the case, it means the motor is running and we set current speed to zero stop. Alternatively, if the motor is not running (speed is zero), we set the speed to the last known speed (prevspeed). -->
+- `#include <Stepper.h>`: Includes the Stepper library that provides functions to control the stepper motor.
 
-## Result
+ **Pin Definitions**
 
-<img style="float: center;" width=700 height=500 src="PM/AD/ir/ir.jpg"> <br>
+- `#define STEPS 32`: Defines the number of steps per revolution for the stepper motor.
+- `Stepper stepper(STEPS, 8, 10, 9, 11);`: Initializes a stepper motor object named 'stepper' with the number of steps and the pins connected to the motor coils (pins 8, 10, 9, 11).
+
+ **Constants and Variables**
+
+- `const int button = 4;`: Defines a constant 'button' representing the pin to which the direction control button is connected.
+- `const int pot = A0;`: Defines a constant 'pot' representing the analog pin to which the speed control potentiometer is connected.
+- `int direction_ = 1, speed_ = 0;`: Initializes variables for direction and speed control of the stepper motor.
+
+ **Setup**
+
+- `void setup()`: Setup function runs once at the beginning of the program.
+  - `pinMode(button, INPUT_PULLUP);`: Configures the button pin as input with an internal pull-up resistor enabled.
+
+ **Loop**
+
+- `void loop()`: Loop function runs repeatedly after the setup.
+  - Checks if the button is pressed and debounces the signal to prevent false readings due to noise.
+  - Reads the analog value from the potentiometer and maps it to set the speed of the stepper motor in the range of 2 to 500 RPM.
+  - Adjusts the speed of the motor using `stepper.setSpeed(speed_)` and moves the motor in the defined direction using `stepper.step(direction_)`.
+
+ **Debouncing Function**
+
+- `bool debounce()`: A function to debounce the button signal to prevent false triggers.
+  - It counts how many times the button reads LOW within a short period (debounce time) and returns true if it detects a stable button press.
+
+ **Motor Control**
+
+- The code continuously checks the button for direction changes and the potentiometer for speed changes. If changes are detected, it updates the motor's speed and direction accordingly.
+
+This code creates an Arduino program that allows you to control the direction and speed of a stepper motor using a button and a potentiometer, respectively, ensuring stable and reliable operation through debouncing.
+
+## Rsult
+<br>
+<br>
+<img style="float: center;" width=700 height=700 src="PM\AD\stepper\stepper_re.jpg">
 <br>
 <br>
 
-<video width="600" height="400" controls>
-<source src="PM/AD/ir/ir.mp4" type="video/mp4">
-<source src="PM/AD/ir/ir.ogg" type="video/ogg">
+<video width="700" controls>
+  <source src="PM\AD\stepper\stepper.mp4" type="video/mp4">
+  <source src="PM\AD\stepper\stepper.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
-<br>
-<br>
-
-
-
-## Applications
-There is a lot you can do with an IR-controlled servo motor. Here are some fun ideas and possible applications:
-
-**Automated Blinds or Curtains**
-Use the stepper motor to control the opening and closing of blinds or curtains in response to commands from the IR remote. This can be a convenient addition to home automation systems.
-
-**Robotic Arm**
-Build a small robotic arm that can be controlled using the IR remote. The stepper motor can be used to control the movement of the arm, allowing it to pick up and manipulate objects.
-
-**Automated Pet Feeder**
-Create an automated pet feeder that dispenses food at specific times or in response to commands from the IR remote. The stepper motor can be used to control the release mechanism.
-
-**Plant Watering System**
-Build a system that waters plants automatically based on a schedule or commands from the IR remote. The stepper motor can be used to control the flow of water or the movement of a watering arm.
-
-**Garage Door Opener**
-Use the stepper motor to control the opening and closing of a garage door in response to commands from the IR remote. This can be a useful addition to a home automation system.
-
-**Robotic Vacuum Cleaner**
-Create a small robotic vacuum cleaner that can be controlled using the IR remote. The stepper motor can be used to control the movement of the vacuum cleaner, allowing it to navigate around a room.
-
-**Automated Fish Feeder**
-Build an automated fish feeder that dispenses food at specific times or in response to commands from the IR remote. The stepper motor can be used to control the release mechanism.
-
-**Smart Door Lock**
-Use the stepper motor to control the locking and unlocking of a door in response to commands from the IR remote. This can be a convenient addition to a home automation system.
-
-**Automated Window Opener**
-Create a system that automatically opens and closes windows based on temperature or commands from the IR remote. The stepper motor can be used to control the movement of the window.
-
-**Robotic Bartender**
-Build a robotic bartender that can mix and serve drinks based on commands from the IR remote. The stepper motor can be used to control the movement of the drink dispensing mechanism.
-
-## Conclusions
-
-We have done how to control a 28byj-48 stepper motor using an IR remote and an ULN2003 driver with the help of an Arduino board. We started by gathering the necessary parts, including the 28byj-48 stepper motor, an IR remote, an ULN2003 driver, and an Arduino board. We then connected these components together, ensuring that the wiring was correct and secure.Next, we wrote the Arduino code to receive IR remote signals and translate them into specific motor movements. By utilizing the IRremote library, we were able to easily capture and interpret the signals sent by the remote control. We then used the ULN2003 driver to control the stepper motor, providing the necessary power and signals to drive the motor in the desired direction and speed.
-
-In conclusion, controlling a 28byj-48 stepper motor with an IR remote using an ULN2003 driver is a fun and practical project that opens up a world of possibilities for automation and robotics. Whether you’re building a camera slider, a robotic arm, or any other project that requires precise motor control.
