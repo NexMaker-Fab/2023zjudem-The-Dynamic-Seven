@@ -476,7 +476,7 @@ PIR传感器基本上是由pyroelectric传感器组成的（在下面可以看�
 
 ## **带有Arduino，LED和蜂鸣器的PIR传感器电路图**
 
-<img src="PM\AD\PIR\circuit.jpg">
+<img src="PM\AD\PIR\circuit.png">
 
 <br><br>
 PIR传感器的引脚连接到数字引脚2。LED通过220OHM电阻从数字引脚4连接到接地。连接到数字PWM（〜）引脚5的蜂鸣器。

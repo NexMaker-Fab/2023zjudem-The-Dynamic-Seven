@@ -470,7 +470,7 @@ The sensor has a controllable sensitivity that allows motion detection range of 
 
 ## **Circuit Diagram of PIR Sensor with Arduino, LED and Buzzer**
 
-<img src="PM\AD\PIR\circuit.jpg">
+<img src="PM\AD\PIR\circuit.png">
 
 <br><br>
 PIR Sensor‘s  Out Pin connected to digital pin 2. LED connected from digital pin 4 to ground through a 220ohm resistor. And Buzzer connected to digital PWM(~) pin 5.
@@ -770,7 +770,7 @@ Now, let’s place the infrared (IR) sensor on the breadboard and connect it. Th
 
 
 
-<img style="float: center;" width=700 src="PM/AD/ir/ir_s.png"> <br>
+<img style="float: center;" width=400 height=500 src="PM/AD/ir/ir_s.png"> <br>
 
 The middle pin of the sensor is typically plus. We need to connect this to the 5V output of the Arduino. Below you see the red wire running from the center pin of the IR sensor to the 5V output of the Arduino board.
 
