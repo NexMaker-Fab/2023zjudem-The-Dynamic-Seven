@@ -830,7 +830,50 @@ The code below does all of that. We will break it into pieces and explain its pa
      }
 
 
-## Installing the Libraries
+### Code Description
+
+**Libraries Used:**
+
+IRremote.h: This library allows the Arduino to receive and decode signals from an IR remote control.
+AccelStepper.h: This library facilitates control of stepper motors with acceleration capabilities.
+
+**Pin Definitions:**
+
+IR_RECEIVE_PIN: The pin number to which the IR receiver is connected (pin 8).
+INA_PIN, INB_PIN, INC_PIN, IND_PIN: Pins connected to the stepper motor driver to control the stepper motor.
+TYPE: Stepper motor control type (specifically, a half-step, four-wire configuration).
+MAXSPEED: Maximum speed for the stepper motor (1000 steps per second).
+MINSPEED: Minimum speed for the stepper motor (100 steps per second).
+
+**Variables:**
+
+currspeed: Current speed of the stepper motor (initially set to 500 steps per second).
+prevspeed: Previous speed of the stepper motor (initially set to 500 steps per second).
+inc: Increment or decrement value for speed changes (set to 1000 steps per second).
+dir: Direction of the stepper motor rotation (initially set to +1, it may change to -1 based on the IR command).
+
+**Stepper Motor Initialization:**
+
+AccelStepper stepper(TYPE, INA_PIN, INB_PIN, INC_PIN, IND_PIN): Creating an instance of the AccelStepper class for controlling the stepper motor with the specified pins.
+
+**setup() Function:**
+
+IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK): Initializing the IR receiver on pin 8 and enabling LED feedback for the IR receiver.
+stepper.setMaxSpeed(MAXSPEED): Setting the maximum speed for the stepper motor.
+
+**loop() Function:**
+
+The loop continuously checks for incoming IR signals using IrReceiver.decode().
+Based on the received IR command, the code adjusts the currspeed variable for the stepper motor speed:Command 31 (VOL+): Increases the speed by inc value, capped at MAXSPEED.
+Command 23 (VOL-): Decreases the speed by inc value, limited to MINSPEED.
+Command 21 (MODE): Changes the direction of rotation (dir) by toggling its sign.
+Command 7 (PLAY/PAUSE): Pauses the motor if it's running or resumes it from the last saved speed.
+
+Stepper Motor Control:
+stepper.setSpeed(dir * currspee)
+
+
+<!-- ## Installing the Libraries
 First, we need two libraries. IRremote, which is used to read and interpret the signals sent from the IR remote. And AccelStepper, which will make it very easy for us to control the stepper motor. If you don’t have these two libraries already installed, you will need to install them.
 
      #include <IRremote.h>
@@ -915,7 +958,7 @@ There are some interesting details in the code. Firstly, if we speed up, we need
 
 Change of direction is easy, whenever I press MODE on my remote, the IR receiver reads the command code 21, and we simply change the sign of the dir variable. Note that the dir variable is used later in the code when the speed is set via stepper.setSpeed(dir*currspeed), and determines the direction of rotation (+1 = clockwise, -1 = counter-clockwise).
 
-The last command is to toggle between run or stop using the PLAY/PAUSE key on my remote. We use a ternary condition (c ? a : b) here to check if the current speed if greater than zero. If that is the case, it means the motor is running and we set current speed to zero stop. Alternatively, if the motor is not running (speed is zero), we set the speed to the last known speed (prevspeed).
+The last command is to toggle between run or stop using the PLAY/PAUSE key on my remote. We use a ternary condition (c ? a : b) here to check if the current speed if greater than zero. If that is the case, it means the motor is running and we set current speed to zero stop. Alternatively, if the motor is not running (speed is zero), we set the speed to the last known speed (prevspeed). -->
 
 ## Result
 
