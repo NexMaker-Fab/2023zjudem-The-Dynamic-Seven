@@ -713,3 +713,163 @@ Smart Dustbin的名字巧妙地代表了其工作，或者我们可以说这是�
   <source src="PM\AD\Ultrasonic\video.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
+
+
+# Stepper Motor Control
+
+<br>
+
+## Hardware Required
+<br>
+1. Arduino UNO board
+2. 28BYJ-48 unipolar stepper motor (with driver board)
+3. 10k ohm potentiometer
+4. Pushbutton
+5. 5V power source
+6. Bread board
+7. Jumper wires
+
+<br>
+
+## Arduino stepper motor control circuit
+
+<br>
+<br>
+<img style="float: center;" width=1000 height=500 src="PM\AD\stepper\stepper.png">
+<br>
+<br>
+The stepper motor is connected to the ULN2003A board which is supplied with external power source of 5V. The control lines (IN1, IN2, IN3 and IN4) of this board are connected to the Arduino as follows:
+INA to Arduino pin 11
+INB to Arduino pin 10
+INC to Arduino pin 9
+IND to Arduino pin 8
+
+The 10k ohm potentiometer is used to control the speed of the stepper motor, its output pin is connected to Arduino analog pin 0.
+
+The push button which is connected to Arduino pin 4 is used to change the rotation direction of the stepper motor.
+
+<img style="float: center;" width=1000 height=400 src="PM\AD\stepper\stepper_diagram.png">
+
+## Arduino unipolar stepper motor control code
+
+    # include <Stepper.h>
+The stepper motor which I used in this project is 28BYJ-48, this motor equipped with speed reducer of 1/64. The internal motor has 32 steps per one revolution which means the external shaft has 2048 steps per one revolution (64 x 32). Number of steps is defined in the code as shown below:
+
+    # define STEPS 32
+and the connection of the control lines of the stepper motor are defined as:
+
+    Stepper stepper(STEPS, 8, 10, 9, 11);
+Using the function stepper.step(direction_) the stepper motor moves according to the variable direction_, in this example this variable may be 1 or -1. If direction_= 1 the motor will move in the first direction and if direction_ = -1 the motor will move in the other direction.
+
+When ever the pushbutton is pressed, the variable direction_ will be inverted (1 or -1).
+
+Rest of code is described through comments.
+
+    # include <Stepper.h>
+    # define STEPS 32
+    Stepper stepper(STEPS, 8, 10, 9, 11);
+    
+    const int button =  4; // direction control button is connected to Arduino pin 4
+    const int pot    = A0; // speed control potentiometer is connected to analog pin 0
+    
+    void setup()
+    {
+      // configure button pin as input with internal pull up enabled
+      pinMode(button, INPUT_PULLUP);
+    }
+
+    int direction_= 1, speed_ = 0;
+    
+    void loop()
+    {
+      if ( digitalRead(button) == 0 )  // if button is pressed
+        if ( debounce() )  // debounce button signal
+        {
+          direction_ *= -1;  // reverse direction variable
+          while ( debounce() ) ;  // wait for button release
+        }
+    
+      // read analog value from the potentiometer
+      int val = analogRead(pot);
+    
+      // map digital value from [0, 1023] to [2, 500]
+      // ===> min speed = 2 and max speed = 500 rpm
+      if ( speed_!= map(val, 0, 1023, 2, 700) )
+      { // if the speed was changed
+        speed_ = map(val, 0, 1023, 2, 700);
+        // set the speed of the motor
+        stepper.setSpeed(speed_);
+      }
+    
+      // move the stepper motor
+      stepper.step(direction_);
+    
+    }
+
+    // a small function for button debounce
+    bool debounce()
+    {
+      byte count = 0;
+      for(byte i = 0; i < 5; i++) {
+        if (digitalRead(button) == 0)
+          count++;
+        delay(1);
+      }
+      if(count > 2)  return 1;
+      else           return 0;
+    }
+
+**Breakdown of the code:**
+
+ **Libraries**
+
+- `#include <Stepper.h>`: Includes the Stepper library that provides functions to control the stepper motor.
+
+ **Pin Definitions**
+
+- `#define STEPS 32`: Defines the number of steps per revolution for the stepper motor.
+- `Stepper stepper(STEPS, 8, 10, 9, 11);`: Initializes a stepper motor object named 'stepper' with the number of steps and the pins connected to the motor coils (pins 8, 10, 9, 11).
+
+ **Constants and Variables**
+
+- `const int button = 4;`: Defines a constant 'button' representing the pin to which the direction control button is connected.
+- `const int pot = A0;`: Defines a constant 'pot' representing the analog pin to which the speed control potentiometer is connected.
+- `int direction_ = 1, speed_ = 0;`: Initializes variables for direction and speed control of the stepper motor.
+
+ **Setup**
+
+- `void setup()`: Setup function runs once at the beginning of the program.
+- `pinMode(button, INPUT_PULLUP);`: Configures the button pin as input with an internal pull-up resistor enabled.
+
+ **Loop**
+
+- `void loop()`: Loop function runs repeatedly after the setup.
+  - Checks if the button is pressed and debounces the signal to prevent false readings due to noise.
+  - Reads the analog value from the potentiometer and maps it to set the speed of the stepper motor in the range of 2 to 500 RPM.
+  - Adjusts the speed of the motor using `stepper.setSpeed(speed_)` and moves the motor in the defined direction using `stepper.step(direction_)`.
+
+ **Debouncing Function**
+
+- `bool debounce()`: A function to debounce the button signal to prevent false triggers.
+  - It counts how many times the button reads LOW within a short period (debounce time) and returns true if it detects a stable button press.
+
+ **Motor Control**
+
+- The code continuously checks the button for direction changes and the potentiometer for speed changes. If changes are detected, it updates the motor's speed and direction accordingly.
+
+This code creates an Arduino program that allows you to control the direction and speed of a stepper motor using a button and a potentiometer, respectively, ensuring stable and reliable operation through debouncing.
+
+## Rsult
+
+<br>
+<br>
+<img style="float: center;" width=700 height=700 src="PM\AD\stepper\stepper_re.jpg">
+<br>
+<br>
+
+<video width="700" controls>
+  <source src="PM\AD\stepper\stepper.mp4" type="video/mp4">
+  <source src="PM\AD\stepper\stepper.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+

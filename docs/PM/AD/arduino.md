@@ -731,7 +731,7 @@ Your browser does not support the video tag.
 ## Arduino stepper motor control circuit
 <br>
 <br>
-<img style="float: center;" width=700 height=700 src="PM\AD\stepper\stepper.png">
+<img style="float: center;" width=1000 height=500 src="PM\AD\stepper\stepper.png">
 <br>
 <br>
 The stepper motor is connected to the ULN2003A board which is supplied with external power source of 5V. The control lines (IN1, IN2, IN3 and IN4) of this board are connected to the Arduino as follows:
@@ -744,7 +744,7 @@ The 10k ohm potentiometer is used to control the speed of the stepper motor, its
 
 The push button which is connected to Arduino pin 4 is used to change the rotation direction of the stepper motor.
 
-<img style="float: center;" width=700 height=700 src="PM\AD\stepper\stepper_diagram.png">
+<img style="float: center;" width=1000 height=400 src="PM\AD\stepper\stepper_diagram.png">
 
 
 ## Arduino unipolar stepper motor control code
@@ -840,7 +840,7 @@ Rest of code is described through comments.
  **Setup**
 
 - `void setup()`: Setup function runs once at the beginning of the program.
-  - `pinMode(button, INPUT_PULLUP);`: Configures the button pin as input with an internal pull-up resistor enabled.
+- `pinMode(button, INPUT_PULLUP);`: Configures the button pin as input with an internal pull-up resistor enabled.
 
  **Loop**
 
