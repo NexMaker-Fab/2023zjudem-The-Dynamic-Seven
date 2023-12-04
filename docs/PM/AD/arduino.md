@@ -470,7 +470,7 @@ The sensor has a controllable sensitivity that allows motion detection range of 
 
 ## **Circuit Diagram of PIR Sensor with Arduino, LED and Buzzer**
 
-<img src="PM\AD\PIR\circuit.png">
+<img src="PM\AD\PIR\circuit.jpg">
 
 <br><br>
 PIR Sensor‘s  Out Pin connected to digital pin 2. LED connected from digital pin 4 to ground through a 220ohm resistor. And Buzzer connected to digital PWM(~) pin 5.
@@ -599,7 +599,7 @@ Smart Dustbin as its name represents its work smartly or we can say that it is a
 
 ## **Circuit Diagram**
 
-<img src="PM\AD\Ultrasonic\circuit.png" >
+<img src="PM\AD\Ultrasonic\circuit.jpg" >
 
 ## **Code**
 
@@ -607,7 +607,7 @@ Smart Dustbin as its name represents its work smartly or we can say that it is a
     Servo servo;
     int trigPin = 5;
     int echoPin = 6;  
-    int servoPin = 7;
+    int servoPin = 11;
     int led= 10;
     long duration, dist, average;  
     long aver[3];   //array for average
