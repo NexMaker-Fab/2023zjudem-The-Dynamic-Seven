@@ -716,8 +716,10 @@ Your browser does not support the video tag.
 
 # Stepper Motor Control
 <br>
+
 ## Hardware Required:
 <br>
+
 1. Arduino UNO board
 2. 28BYJ-48 unipolar stepper motor (with driver board)
 3. 10k ohm potentiometer
