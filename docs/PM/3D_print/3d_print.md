@@ -257,10 +257,21 @@ Look for an option or icon labeled "Load"within the FlashPrint software. This op
 <img src="PM\3D_print\f_n.jpg" style="float: center;" width=800 height=700 >
 <br>
 <br>
+<img src="PM\3D_print\l_9.jpg" style="float: center;" width=800 height=700 >
+<br>
+<br>
 <img src="PM\3D_print\filament_load.jpg" style="float: center;" width=800 height=700 >
 <br>
+<br>
+<img src="PM\3D_print\l_8.jpg" style="float: center;" width=800 height=700 >
+<br>
+
 
 **Filament Unloading Procedure:**
+
+<br>
+<img src="PM\3D_print\u_1.jpg" style="float: center;" width=800 height=700 >
+<br>
 
 * Look for an option or icon labeled "Unload" within the FlashPrint software. This option on the main screen of the software interface.
 * Once you've initiated the filament unloading process in FlashPrint, the software might prompt you to perform manual steps.
@@ -270,7 +281,8 @@ Look for an option or icon labeled "Load"within the FlashPrint software. This op
 <br>
 <img src="PM\3D_print\interface.jpg" style="float: center;" width=800 height=700 >
 <br>
-Click on "Level"
+
+**Click on "Level"**
 
 * FlashPrint will guide you through a series of movements for adjusting the leveling screws or knobs on your printer's build platform.
 * You may be asked to use a sheet of paper or a leveling card between the nozzle and the print bed while making adjustments.
@@ -308,6 +320,20 @@ Now connect  the usb drive
 
 From here select your 3 D model.
 
+<video width="720" height="540" controls>
+<source src="PM\3D_print\m_1.mp4" type="video/mp4">
+<source src="PM\3D_print\m_1.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<br>
+
+<br>
+<img src="PM\3D_print\m_1.jpg" style="float: center;" width=800 height=700 >
+<br>
+<br>
+
+
 
 **WORKING TIME**
 <br>
@@ -329,3 +355,104 @@ After cleaning the Model
 <source src="PM\3D_print\final.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
+
+<br>
+<br>
+<br>
+
+# G-CODE
+
+* G-code is a programming language for CNC (Computer Numerical Control) machines. G-code stands for “Geometric Code”.
+* This  language  tells a machine what to do or how to do something. The G-code commands instruct the machine where to move, how fast to move and what path to follow.
+* The G-code commands instruct the machine to deposit material, layer upon layer forming a precise geometric shape.
+
+## THE COMMON G-CODE COMMAND
+
+### G00 – Rapid Positioning
+
+* The G00 command moves the machine at maximum travel speed from a current position to a specified point or the coordinates specified by the command.
+<br>
+
+<img src="PM\3D_print\g00.webp" style="float: center;" width=700 >
+<br>
+
+* The G00 is a non-cutting movement, and its purpose is to just quickly move the machine to the desired position to begin some kind of job, like cutting or printing.
+*
+
+### G01 – Linear Interpolation
+
+The G01 G-code command instructs the machine to move in a straight line at a set feed rate or speed. We specify the end position with the X, Y and Z values, and the speed with the F value.
+<br>
+<img src="PM\3D_print\g01.webp" style="float: center;" width=700 >
+<br>
+Unlike the G00 command which is used just for positioning, the G01 command is used when the machine is performing its main job. In case of lathe or mill, cutting material in straight line, and in case of a 3D printer, extruding material in straight line.
+
+## G02 – Circular Interpolation Clockwise
+
+The G02 command tells the machine to move clockwise in a circular pattern. In addition to the end point parameters, here we also need to define the center of rotation, or the distance of the arc start point from the center point of the arc. The start point is actually the end point from the previous command or the current point.
+<br>
+<img src="PM\3D_print\g02.webp" style="float: center;" width=700 >
+<br>
+In the above example, the G01 command  moves the machine to the X5, Y12 point. Now this will be the starting point for the G02 command. The X and Y parameters of the G02 command sets the end point. Now in order to get to this end point using a circular motion or using an arc, we need to define its center point. We do that using the I and J parameters. The values of the I and J are relative to the starting point, or the end point of the previous command. So, to get the center point to the X5 and Y7, we need to make an offset of 0 along the X axis, and offset of -5 along the Y axis.
+
+## G03 – Circular Interpolation Counterclockwise
+
+Just like the G02, the G03 G-code command defines the machine to move in circular pattern. The only difference here is that the motion is counterclockwise. All other features and rules are the same as the G02 command.
+
+## G20/ G21 – Units Selection
+
+The G20 and G21 commands define the G-code units, either inches or millimters.
+
+* G20 = inches
+* G21 = millimiters
+The units must be set at the beginning of the program.If we don’t specify the units the machine will consider the default set by the previous program.
+
+## G17/ G18/ G18 – G-code Plane Selection
+
+With these G-code commands we select the working plane of the machine.
+
+* G17 – XY plane
+* G18 – XZ plane
+* G19 – YZ plane
+The G17 is default for most CNC machines.
+
+## G28 – Return Home
+
+The G28 command tells the machine to move the tool to its reference point or home position
+
+## G90/ G91 – Positioning G-code commands
+
+The  G90 and G91 commands tells  the machine how to interpret the coordinates. G90 is for absolute mode and G91 is for relative mode.
+
+* In absolute mode the positioning of the tool is always from the absolute point or zero. So the command G01 X10 Y5 will take the tool to that exact point (10,5), no matter the previous position.
+* On the other hand, in relative mode,  the positioning of the tool is relative to the last point. So if the machine is currently at point(10,10), the command G01 X10 Y5 will take the tool to point (20,15). This mode is also called “incremental mode”.
+
+## More Commands and Rules
+
+So, the G-code commands  explained above are the most common ones but there are many more. There are commands like cutter compensation, scaling, work coordinate systems,  etc.
+
+In addition to the G-code, there also M-code commands which are used when generating a real full-fledged G-code program. Here are few common M-code commands:
+
+* M00 – Program stop
+* M02 – End of program
+* M03 – Spindle ON – clockwise
+* M04 – Spindle ON – counterclockwise
+* M05 – Spindle stop
+* M06 – Tool change
+* M08 – Flood colant ON
+* M09 – Flood colant OFF
+* M30 – End of program
+
+In case of a 3D printer:
+
+* M104 – Start extruder heating
+* M109 – Wait until extruder reaches T0
+* M140 – Start bed heating
+* M190 – Wait until bed reaches T0
+* M106 – Set fan speed
+
+Some of these commands need appropriate parameters. For example, when turning on the spindle with M03, we can set the spindle speed using the S parameter. So, the line M30 S1000 will turn on the spindle at speed of 1000 RPM.
+
+### REFERENCE
+
+[G-code](https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands/)
