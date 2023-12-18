@@ -357,7 +357,35 @@ Your browser does not support the video tag.
 </video>
 
 <br>
+
+
+# Assembly multi-part 3d models
+
 <br>
+<br>
+
+<video width="720" height="540" controls>
+<source src="PM\3D_print\fusion.mkv" type="video/mp4">
+<source src="PM\3D_print\final.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+<br>
+
+<video width="720" height="540" controls>
+<source src="PM\3D_print\flshprint.mkv" type="video/mp4">
+<source src="PM\3D_print\final.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<br>
+
+<img src="PM\3D_print\slider_1.jpg" style="float: center;" width=800 height=700 >
+<br>
+<br>
+
+<img src="PM\3D_print\silder_2.jpg" style="float: center;" width=800 height=700 >
+<br>
+
 <br>
 
 # G-CODE
