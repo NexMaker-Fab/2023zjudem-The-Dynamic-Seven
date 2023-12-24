@@ -1,7 +1,7 @@
 
 
 
-## What is 3D printing
+# What is 3D printing
 
 3D printing, also known as additive manufacturing, is a process of creating three-dimensional objects by adding material layer by layer based on a digital model. This process allows for the production of complex shapes and structures that might be difficult or impossible to achieve through traditional manufacturing methods.
 
@@ -23,197 +23,34 @@ There are several types of 3D printing technologies, each with its own principle
 
 These are some of the primary 3D printing technologies, each with its advantages, limitations, and specific applications across various industries, including aerospace, automotive, healthcare
 
-## 3D Printer Expremement
+# 3D Printer Expremement
 
-### Software
+## Software
 
 * Fusion360
 * FlashPrint 5
   
-### How to convert **STL** file from Fusion360
+## Print Assembly multi-part 3d models
 
 <br>
-<img style="float: center;" width=700 src="PM\3D_print\f.png">
-<br>
-<br>
-<img style="float: center;" width=700 src="PM\3D_print\f_1.png">
-<br>
-<br>
-<img style="float: center;" width=700 src="PM\3D_print\f_3.png">
 <br>
 
-Now Open the stl file in FlashPrint software.
-
-
-### User Guide
-
-#### 1. Software Introduction
-
-FDM technology slicing software The Flashforge FlashPrint 5 is newly revised and upgraded. Through newinterfacedesign and function optimization, the operation is simple and convenient. The slicingfilewill be prepared by just a few clicks with fast, efficient, and smooth operation.
+<video width="720" height="540" controls>
+<source src="PM\3D_print\fusion.mp4" type="video/mp4">
+<source src="PM\3D_print\final.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
 <br>
 
-#### 2. Software Installation
-
-Download the latest version of [FlashPrint 5](https://www.flashforge.com/product-detail/FlashPrint-slicer-for-flashforge-fdm-3d-printers)
-
-<br>
-
-#### 3. Software Operation
-
-When we first open the software that time we need to fix the Machine Type. <br>
-
-<img style="float: center;" width=700 src="PM\3D_print\1.png">
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\2.png">
-
-<br>We select “Guider II S Series” and then press “OK”.
-
-<br><br>
-<img style="float: center;" width=700 src="PM\3D_print\3.png"><br>
-Now, Go to “File” select “Load” and then upload the file that we want to print.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\4.png">
-<br>
-
-After clicking Load select the file and press”Open”.
-<br><br>
-
-<img style="float: center;" width=700 src="PM\3D_print\5.png"><br>
-Now the project “Eiffel Tower” is visible in the box of the interface.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\6.png">
-<br>
-View the model from different angles.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\7.png">
-<br>
-Click it to move the model along X, Y-axis, Shift+ mouse click it to move along Z-axis. Here always try to select “On Platform”.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\8.png">
-<br>
-Rotate the model.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\9.png">
-<br>
-Scale the model size. Here we can select the point “Uniform Scaling” or “Inches” . For our project we chose 1st one.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\10.png">
-<br>
-Cut the model from different directions.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\11.png">
-<br>
-Duplicate the selected model file. Here we can increase the number of duplication and then click “OK”.  
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\12.png">
-<br>
-Here most important thing is that we cannot set the model out of the box .If we put out of the box then Red box appears and notify that something is wrong and fix it then print.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\13.png">
-<br>
-If we put more than two model at a time then we need to check it. Auto layout section.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\14.png">
-<br>
-Enter the support-editing mode.
-<br>
-PM\3D_print\
-<img style="float: center;" width=700 src="PM\3D_print\15.png">
-<br>
-Here is one option but it is hard to remove after print.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\16.png">
-<br>
-For our model, we use this support and the support pillar size we put 1.5mm because then we easily remove it after printing.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\17.png">
-<br>
-
-We can also do it manually.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\18.png">
-<br>
-Enter the wiping tower editing mode.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\19.png">
-<br>
-Enter the multi-machine control interface.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\20.png">
-<br>
-Enter the machine connection interface.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\21.png">
-<br>
-Now press “Start Slicing”. At first the basic Interface appear in the below we can see it.  
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\22.png">
-<br>
-It is the Basic Mode of Slice part.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\23.png">
-<br>
-
-Now go to the Expert Mode.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\24.png">
-<br>
-In Expert mode, we need to fix every mandatory things. <br>
-
-<img style="float: center;" width=700 src="PM\3D_print\25.png">
-<br>
-After completing every part then we will Click “Slice”.<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\26.png">
-<br>
-Slicing in process.
-<br>
-
-<img style="float: center;" width=700 src="PM\3D_print\27.png">
-<br>
-When we press “Slice Preview” then the below interface arrived.
-<br>
-<img style="float: center;" width=700 src="PM\3D_print\30.png">
-<br>
-
-<video width="700" height="500" controls>
-<source src="PM\3D_print\ef_video.mp4" type="video/mp4">
-<source src="PM\3D_print\ef_video.ogg" type="video/ogg">
+<video width="720" height="540" controls>
+<source src="PM\3D_print\flshprint.mp4" type="video/mp4">
+<source src="PM\3D_print\final.ogg" type="video/ogg">
+Your browser does not support the video tag.
 </video>
 
-Here is one video of it.
-<br><br>
-
-<img style="float: center;" width=700 src="PM\3D_print\28.png">
-<br>
-Here is Download option we can download it in a flash drive and then we can print.
-<br>
-<img style="float: center;" width=700 src="PM\3D_print\29.png">
-<br>
-We directly send it to the Printer but in our case, we use flash drive for input out program in printer.
 
 
-## Setup on FlashPrint 5
+### Setup on FlashPrint 5
 
 Turn on the Machine
 <img src="PM\3D_print\machine_on.jpg" style="float: center;" width=800 height=700 >
@@ -329,53 +166,28 @@ Your browser does not support the video tag.
 <br>
 
 <br>
-<img src="PM\3D_print\m_1.jpg" style="float: center;" width=800 height=700 >
+<img src="PM\3D_print\w_1.jpg" style="float: center;" width=800 height=700 >
 <br>
 <br>
 
 
 
 **WORKING TIME**
+
 <br>
-<img src="PM\3D_print\on__mm.jpg" style="float: center;" width=800 height=700 >
-<br>
-<br>
-<img src="PM\3D_print\on_p.jpg" style="float: center;" width=800 height=700 >
+<img src="PM\3D_print\w_2.jpg" style="float: center;" width=800 height=700 >
 <br>
 <br>
-<img src="PM\3D_print\r_p.jpg" style="float: center;" width=800 height=700 >
-<br>
-After cleaning the Model
-<br>
-<img src="PM\3D_print\output.jpg" style="float: center;" width=800 height=700 >
-<br>
+
 
 <video width="720" height="540" controls>
-<source src="PM\3D_print\final.mp4" type="video/mp4">
-<source src="PM\3D_print\final.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-
-<br>
-
-
-# Assembly multi-part 3d models
-
-<br>
-<br>
-
-<video width="720" height="540" controls>
-<source src="PM\3D_print\fusion.mkv" type="video/mp4">
-<source src="PM\3D_print\final.ogg" type="video/ogg">
+<source src="PM\3D_print\w_1.mp4" type="video/mp4">
+<source src="PM\3D_print\w_1.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
 <br>
 
-<video width="720" height="540" controls>
-<source src="PM\3D_print\flshprint.mkv" type="video/mp4">
-<source src="PM\3D_print\final.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
+### Results
 
 <br>
 
@@ -387,6 +199,187 @@ Your browser does not support the video tag.
 <br>
 
 <br>
+<br>
+
+<img src="PM\3D_print\slider_gif.gif" style="float: center;" >
+<br>
+
+<br>
+
+
+## Model in different parameter and Different Filament
+
+
+ Here we print two model using different parameters.
+
+### Model 1
+
+<br>
+<img src="PM\3D_print\Model1/1.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/2.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/3.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/4.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/5.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/6.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/7.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/8.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/9.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/10.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/11.jpg" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model1/12.jpg" alt="Center">
+<br>
+
+### Model 2
+
+<br>
+<img src="PM\3D_print\Model2/1.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/2.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/3.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/4.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/6.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/5.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/7.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/8.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/9.png" alt="Center">
+<br>
+<br>
+<img src="PM\3D_print\Model2/10.png" alt="Center">
+<br>
+
+### Comparison between two model
+
+1. **Parameter Description**
+
+| Feature           | Model 1                 | Model 2                 |
+| ----------------- | ----------------------- | ----------------------- |
+| Machine Type      | Guider II S Series      | Guider II S Series                |
+| Material Type             | Flashforge-PLA 1.75mm                  | Flashforge-ABS 1.75mm                   |
+| Extruder Temperature      | 220 celsius                | 240 celsius                |
+| Platform Temperature            | 50 Celsius                 | 100 Celsius                 |
+|  Fill  Density    |   15%   |    40%    |
+|    **Support** |   **NO**   |    **YES**   |
+|  Raft    |  Yes Margin 5.0mm    |    Yes Margin 3.00mm   |
+
+<br>
+
+2. **Working Time**
+   
+<br>
+
+<table>
+  <tr>
+    <td><img src="PM\3D_print\wm1.jpg" alt="Alt text 1"> Model 1</td>
+    <td><img src="PM\3D_print\wm2.jpg" alt="Alt text 2">Model 2</td>
+  </tr>
+</table>
+
+3. **Result**
+
+<table>
+  <tr>
+    <td><img src="PM\3D_print\output\m11.jpg" alt="Alt text 1"></td>
+    <td><img src="PM\3D_print\output\m21.jpg" alt="Alt text 2"></td>
+  </tr>
+</table>
+   
+<table>
+  <tr>
+    <td><img src="PM\3D_print\output\m11.jpg" alt="Alt text 1"></td>
+    <td><img src="PM\3D_print\output\m21.jpg" alt="Alt text 2"></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="PM\3D_print\output\m12.jpg" alt="Alt text 1"></td>
+    <td><img src="PM\3D_print\output\m22.jpg" alt="Alt text 2"></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="PM\3D_print\output\m13.jpg" alt="Alt text 1"></td>
+    <td><img src="PM\3D_print\output\m23.jpg" alt="Alt text 2"></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img src="PM\3D_print\output\m14.jpg" alt="Alt text 1"></td>
+    <td><img src="PM\3D_print\output\m24.jpg" alt="Alt text 2"></td>
+  </tr>
+</table>
+
+<br>
+
+## Observation
+
+<br>
+<br>
+
+**Ease of Printing:**
+<br>
+
+* FlashForge PLA 1.75mm: PLA is generally easier to print with and is more forgiving than ABS. It has lower printing temperatures and does not require a heated bed as high as ABS.
+* FlashForge ABS 1.75mm: ABS can be trickier to print with due to higher printing temperatures and a tendency to warp. It often requires a heated bed and, in some cases, an enclosed print space.
+<br>
+
+**Strength and Durability:**
+<br>
+
+* FlashForge PLA 1.75mm: PLA is rigid but can be somewhat brittle. It's suitable for a variety of applications, including prototypes and artistic prints.
+* FlashForge ABS 1.75mm: ABS is known for its toughness and impact resistance, making it suitable for functional parts and prints that need to withstand more stress.
+<br>
+
+**Heat Resistance:**
+<br>
+
+* FlashForge PLA 1.75mm: PLA has a lower heat resistance compared to ABS. It may deform at lower temperatures, so it's not ideal for prints exposed to high temperatures.
+* FlashForge ABS 1.75mm: ABS has a higher heat resistance, making it suitable for prints that might be exposed to higher temperatures, though it can soften at elevated temperatures.
+<br>
+
+**Odor and Ventilation:**
+<br>
+
+* FlashForge PLA 1.75mm: PLA generally produces minimal odors during printing, making it more suitable for environments without advanced ventilation.
+* FlashForge ABS 1.75mm: ABS can emit strong fumes during printing, and using it in a well-ventilated space or with an enclosure is often recommended.
+
+**NOTE: FlashForge ABS is hard to remove support and raft. It's a very strong material. When we used ABS filament the printed model was not perfect.**
 
 # G-CODE
 
@@ -484,3 +477,38 @@ Some of these commands need appropriate parameters. For example, when turning on
 ### REFERENCE
 
 [G-code](https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands/)
+
+<br>
+<br>
+
+# New Research & Applications
+
+## Advancing Infrastructure Construction through 3D Printing: A Case Study on MX3D's 3D Printed Steel Bridge
+
+The emergence of 3D printing technology has opened up new possibilities in various industries, including construction. MX3D's project to create a 3D printed steel bridge over an Amsterdam canal represents a milestone in the field of architectural and civil engineering. This research seeks to analyze the implications of this project and explore avenues for further development in the realm of 3D printed infrastructure.
+
+REFERENCE: [3D Printing in Construction](https://www.hindawi.com/journals/ace/2021/6665333/)
+
+## Bio fabrication Breakthrough: 3D Printing Functional Organs for Transplants
+
+The field of organ transplantation stands on the brink of a revolutionary breakthrough as 3D printing technology intersects with bio fabrication. This research endeavors to explore the transformative potential of 3D printing in the creation of functional organs for transplantation. With recent strides in bio printing techniques and the unveiling of a 3D-printed heart prototype, the paper aims to provide a comprehensive overview of the current state of the art, challenges faced, ethical considerations, and the far-reaching implications for the field of medicine.
+
+REFERENCE : [Contemporary standpoint and future of 3D bioprinting in tissue/organs printing](https://www.sciencedirect.com/science/article/pii/S246845112300017X)
+
+## Sustainable Architecture: 3D Printed Eco-Friendly Homes Revolution
+
+In the quest for sustainable solutions in architecture, the fusion of 3D printing technology and eco-friendly housing emerges as a promising frontier. This research delves into the transformative impact of 3D printing on the construction of environmentally conscious homes. As various projects around the globe display the feasibility and cost-effectiveness of 3D-printed housing, this paper aims to explore the environmental benefits, scalability, and potential paradigm shift within the construction industry toward sustainable practices.
+
+REFERENCE : [Building Sustainable Housing: Is an Eco-Friendly Future 3D Printed](https://www.christiesrealestate.com/blog/building-sustainable-housing-is-an-eco-friendly-future-3d-printed/)
+
+## Precision Medicine: 3D Printing Personalized Medical Devices
+
+Advancements in 3D printing technology have opened new avenues in the realm of precision medicine, particularly in the development of personalized medical devices. This research seeks to unravel the potential of 3D printing in customizing medical implants, prosthetics, and devices to meet the unique needs of individual patients. By navigating the regulatory landscape and examining recent breakthroughs, the paper aims to shed light on the transformative role of 3D printing in the realm of personalized healthcare, addressing challenges and foreseeing future developments.
+
+REFERENCE : [Empowering Precision Medicine: The Impact of 3D Printing on Personalized Therapeutic](https://link.springer.com/article/10.1208/s12249-023-02682-w)
+
+## Lunar Habitats: 3D Printing Infrastructure for Space Colonization
+
+The endeavor to establish human habitats beyond Earth has become a focal point of space exploration, with 3D printing emerging as a key technology for lunar colonization. This research delves into the application of 3D printing in crafting essential infrastructure for lunar habitats. As space agencies embark on ambitious initiatives, this paper aims to unravel the technological requirements, feasibility, and potential of 3D printing in constructing shelters, habitats, and other structures on the Moon. The exploration of these themes holds profound implications for the future of humanity's presence in space.
+
+REFERENCE : [3D-Printed Habitat Challenge](https://www.nasa.gov/directorates/spacetech/centennial_challenges/3DPHab/index.html)
