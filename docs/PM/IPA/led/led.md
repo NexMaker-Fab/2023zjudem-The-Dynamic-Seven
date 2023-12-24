@@ -1,4 +1,171 @@
-## Control Arduino Using Processing
+# LED Control with Hand Gestures
+
+**Description**
+
+Create a system that allows users to control LEDs using hand gestures detected by a camera. The project combines computer vision with Arduino for physical output.
+
+**Components**
+
+1. Python (OpenCV and Mediapipe):
+
+Use OpenCV to capture video frames from a webcam.Implement hand tracking using the Mediapipe library to detect hand landmarks and gestures.
+
+2. Arduino:
+
+Connect LEDs to the Arduino board. The number of LEDs should correspond to the number of gestures or commands you want to support.
+
+Communication between Python and Arduino:
+
+Establish serial communication between Python and Arduino. You can use the pyserial library to send commands from Python to Arduino.
+
+3. Gesture Recognition:
+
+Define specific hand gestures for controlling the LEDs. For example, a "peace" sign might turn on a specific LED, while a closed fist might turn it off.
+Python Script:
+
+4. 5 LEDs
+
+**Software**
+
+1. vs code [Download](https://code.visualstudio.com/download)
+2. Arduino IDE [Download](https://www.arduino.cc/en/software)
+3. Python [Download](https://www.python.org/)
+
+<br>
+
+**Circuit Diagram**
+
+<br>
+
+<br>
+<img src="PM\IPA\led\diagram.png" alt="Center">
+<br>
+
+**Code**
+
+**Code for Python:**
+
+``````
+import cv2
+
+import controller as cnt
+from cvzone.HandTrackingModule import HandDetector
+
+detector=HandDetector(detectionCon=0.8,maxHands=1)
+
+video=cv2.VideoCapture(0)
+
+while True:
+    ret,frame=video.read()
+    frame=cv2.flip(frame,1)
+    hands,img=detector.findHands(frame)
+    if hands:
+        lmList=hands[0]
+        fingerUp=detector.fingersUp(lmList)
+
+        print(fingerUp)
+        cnt.led(fingerUp)
+        if fingerUp==[0,0,0,0,0]:
+            cv2.putText(frame,'Finger count:0',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1,cv2.LINE_AA)
+        elif fingerUp==[0,1,0,0,0]:
+            cv2.putText(frame,'Finger count:1',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1,cv2.LINE_AA)    
+        elif fingerUp==[0,1,1,0,0]:
+            cv2.putText(frame,'Finger count:2',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1,cv2.LINE_AA)
+        elif fingerUp==[0,1,1,1,0]:
+            cv2.putText(frame,'Finger count:3',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1,cv2.LINE_AA)
+        elif fingerUp==[0,1,1,1,1]:
+            cv2.putText(frame,'Finger count:4',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1,cv2.LINE_AA)
+        elif fingerUp==[1,1,1,1,1]:
+            cv2.putText(frame,'Finger count:5',(20,460),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1,cv2.LINE_AA) 
+
+    cv2.imshow("frame",frame)
+    k=cv2.waitKey(1)
+    if k==ord("k"):
+        break
+
+video.release()
+cv2.destroyAllWindows()
+``````
+
+**Code for Controller**
+
+``````
+import pyfirmata
+
+comport='COM6'
+
+board=pyfirmata.Arduino(comport)
+
+
+led_1=board.get_pin('d:8:o')
+led_2=board.get_pin('d:9:o')
+led_3=board.get_pin('d:10:o')
+led_4=board.get_pin('d:11:o')
+led_5=board.get_pin('d:12:o')
+
+def led(fingerUp):
+    if fingerUp==[0,0,0,0,0]:
+        led_1.write(0)
+        led_2.write(0)
+        led_3.write(0)
+        led_4.write(0)
+        led_5.write(0)
+
+    elif fingerUp==[0,1,0,0,0]:
+        led_1.write(1)
+        led_2.write(0)
+        led_3.write(0)
+        led_4.write(0)
+        led_5.write(0)
+    elif fingerUp==[0,1,1,0,0]:
+        led_1.write(1)
+        led_2.write(1)
+        led_3.write(0)
+        led_4.write(0)
+        led_5.write(0)    
+    elif fingerUp==[0,1,1,1,0]:
+        led_1.write(1)
+        led_2.write(1)
+        led_3.write(1)
+        led_4.write(0)
+        led_5.write(0)
+    elif fingerUp==[0,1,1,1,1]:
+        led_1.write(1)
+        led_2.write(1)
+        led_3.write(1)
+        led_4.write(1)
+        led_5.write(0)
+    elif fingerUp==[1,1,1,1,1]:
+        led_1.write(1)
+        led_2.write(1)
+        led_3.write(1)
+        led_4.write(1)
+        led_5.write(1)
+
+``````
+
+<br>
+
+**For Arduino IDE**
+<br>
+
+**File>Examples>Firmata>StandardFirmata**
+
+<br>
+
+**Result**
+<br>
+<video width="700" height="500" controls>
+  <source src="PM\IPA\led\led1.mp4" type="video/mp4">
+  <source src="led.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+<!-- ## Control Arduino Using Processing
 
 <br> 
 
@@ -221,5 +388,7 @@ void alloff(){
   <source src="PM/IPA/led/vdo.mp4" type="video/mp4">
   <source src="PM/IPA/led/vdo.ogg" type="video/ogg">
 </video>
-<br>
+<br> -->
+
+
 
