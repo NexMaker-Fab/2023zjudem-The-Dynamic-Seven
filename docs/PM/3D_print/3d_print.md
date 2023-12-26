@@ -487,7 +487,7 @@ Some of these commands need appropriate parameters. For example, when turning on
 
 The emergence of 3D printing technology has opened up new possibilities in various industries, including construction. MX3D's project to create a 3D printed steel bridge over an Amsterdam canal represents a milestone in the field of architectural and civil engineering. This research seeks to analyze the implications of this project and explore avenues for further development in the realm of 3D printed infrastructure.
 
-REFERENCE: [3D Printing in Construction](https://www.hindawi.com/journals/ace/2021/6665333/)
+REFERENCE: [3D Printing in Construction](https://www.arup.com/projects/mx3d-bridge)
 
 ## Bio fabrication Breakthrough: 3D Printing Functional Organs for Transplants
 
