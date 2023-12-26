@@ -3,154 +3,8 @@ Processing is a flexible software sketchbook and a language for learning how to 
 ## Download Software
 [Download Processing](https://processing.org/download/)
 
-
-## Processing and Keyboard  Interaction
-This example combines  keyboard input with moving shapes a cross the screen.
-
-<video width="720" height="500" controls>
-<source src="PM/IPA/game/keyboard.mp4" type="video/mp4">
-<source src="PM/IPA/game/Keyboard.ogg" type="video/ogg">
-</video>
-
-```
-//move a shape around the screen according to keyboard inputs
-int x=100;   //declare x and y coordinates  of the ellipse
-int y=100;
-
-void setup(){
-  size(640, 480);
-  pixelDensity(2);
-  stroke(0);
-  ellipse(x,y,10,10);
-}
-
-void draw(){
-  //stroke(0);
-  //ellipse(x,y,10,10);
-  
-  if ((keyPressed == true) && (key == 'u' || key == 'U')){
-    stroke(255,0,0);
-    y--;
-  }
-  else if (keyPressed == true && (key == 'd' || key =='D')){
-    stroke(0,255,0);
-    y++;
-  }
-  else if (keyPressed == true && (key == 'r' || key == 'R')){
-    stroke(0,0,255);
-    x++;
-  }
-  else if (keyPressed == true && (key == 'l' || key == 'L')){
-    stroke(255,255,0);
-    x--;
-  }
-  else {
-    ellipse(x,y,10,10);
-  }
-}
-
-```
-<br>
-
-The beginning position is just a black circle drawn to the middle of the display window. It doesn't do anything unless you type the u, d, l, or r keys, in which case the circle jumps up, down, left, or right, and changes color. If no key is being pressed, the circle just sits still in its most recent position with its most recent color.
-<br>
-
-## Description of the functions used in the above example
-<br>
-
-[Size()](https://processing.org/reference/size_.html)
-* It defines the dimension of the display window width and height in units of pixels. 
-* Program that has the setup() function, the size() function must be the first line of code inside setup(), and the setup() function must appear in the code tab with the same name as your sketch folder.
-* The built-in variables width and height are set by the parameters passed to this function.
-* For example, running size(640, 480) will assign 640 to the width variable and 480 to the height variable. If size() is not used, the window will be given a default size of 100 x 100 pixels.
-<br>
-
-[pixelDensity()](https://processing.org/reference/pixelDensity_.html)
-<br>
-
-* It makes it possible for Processing to render using all the pixels on high resolutions screens.
-* This function can only be run once within a program, and must be called right after size() in a program without a setup() function, or within setup() if present.
-* PixelDensity() should only be used with hardcoded numbers (in almost all cases this number will be 2)
-  <br>
-[Stroke()](https://processing.org/reference/stroke_.html)
-<br>
-
-* Sets the color used to draw lines and borders around shapes.
-*  This color is either specified in terms of the RGB or HSB color depending on the current colorMode(). 
-* The default color space is RGB, with each value in the range from 0 to 255.
-<br>
-
-[ellipse()](https://processing.org/reference/ellipse_.html)
-<br>
-* Draws an ellipse (oval) to the screen. An ellipse with equal width and height is a circle.
-* By default, the first two parameters set the location, and the third and fourth parameters set the shape's width and height.
-* The origin may be changed with the ellipseMode() function.
-<br>
-
-[keyPressed()](https://processing.org/reference/keyPressed_.html)
-
-<br>
-
-* The keyPressed() function is called once every time a key is pressed. The key that was pressed is stored in the key variable.
-  
-<br>
-
-## Processing and Mouse Interaction
-<br>
-This is a simple program that demonstrate how the mouse interact with the processing
-<br>
-
-<video width="720" height="500" controls>
-<source src="PM/IPA/game/mouse.mp4" type="video/mp4">
-<source src="PM/IPA/game/mouse.ogg" type="video/ogg">
-</video>
-
-<br>
-
-```
-color value= color(255,0,0);
-color value2= color(0,255,0);
- void setup(){
-     size(200,200);
-   background(255);
- }
-   //click within the square to change the color of the other square
- void draw(){
-   fill(value);
-   rect(25,25,50,50);
-   fill(value2);
-   rect(75,75,50,50);
- }
- //the mouse clicked function is called after  a mouse button is pressed and then released.
- void mouseClicked() {
-   //if the cursor is inside the top square and  the color of the bottom square is green
-   if(mouseX<75 && mouseY<75 && mouseX>25 && mouseY>25 && value2==color(0,255,0)){
-     value2=color(0,255,255);
-   }
-   //if the cursor is inside the top square and  the color of the bottom square is aqua
-    
-    else if(mouseX<75 && mouseY<75 && mouseX>25 && mouseY>25 && value2==color(0,255,255)){
-     value2=color(0,255,0);
-    }
-    //if the cursor is inside the top square and  the color of the top square is red
-   
-    else if (mouseX<125 && mouseY<125 && mouseX>75 && mouseY>75 && value==color(255,0,0)){
-     value=color(255, 0,255);
-    
-    } 
-     //if the cursor is inside the bottom square and  the color of the top square is pink 
-     else if (mouseX<125 && mouseY<125 && mouseX>75 && mouseY>75 && value==color(255,0,255)){
-     value=color(255, 0,0);
-     }
-     //tell me if i haven't satisfied any of the above  possibilities
-     else{
-       println( "you have to click inside a square  for something to happens");
-   }
- }
- ```
- <br>
-
 ## Using processing to create a game
+
 This game is  called a flappy pong which is a sort of a combination of Flappy Bird, Pong and Brick Breaker.
 <br>
 
@@ -158,6 +12,46 @@ This game is  called a flappy pong which is a sort of a combination of Flappy Bi
 <source src="PM/IPA/game/game.mp4" type="video/mp4">
 <source src="PM/IPA/game/game.ogg" type="video/ogg">
 </video>
+
+<br>
+
+**Flappy Pong Rules:**
+
+1. **Objective:**
+   * The objective of the game is to score as many points as possible by navigating the ball through gaps between moving walls.
+
+2. **Game Elements:**
+   * **Ball:** Controlled by the player's mouse clicks.
+   * **Racket:** The player-controlled paddle that can bounce the ball upward.
+   * **Walls:** Moving obstacles with gaps that the ball must pass through.
+   * **Health Bar:** Represents the player's health. Decreases over time and upon collision with walls. Game over if health reaches zero.
+
+3. **Gameplay:**
+   * The game starts on the initial screen (Screen 0). Clicking anywhere on the screen transitions to the Game Screen (Screen 1).
+   * On the Game Screen:
+     * Move the mouse to control the position of the racket.
+     * The ball is affected by gravity and air friction, causing it to fall unless bounced by the racket.
+     * The player loses health gradually over time.
+     * Colliding with walls decreases health. Different wall heights pose varying degrees of difficulty.
+     * Scoring occurs when the ball successfully passes through a gap in the wall.
+     * The score is displayed at the top of the screen.
+     * The game continues until the player's health reaches zero.
+
+4. **Scoring:**
+   * Score increases each time the ball passes through a gap in a wall.
+
+5. **Health:**
+   * The player starts with a maximum health of 100.
+   * Colliding with walls decreases health.
+   * The health bar visually represents the player's health.
+   * The game ends when the player's health drops to zero.
+
+6. **Game Over:**
+   * If the player's health reaches zero, the game transitions to the Game Over Screen (Screen 2).
+   * The Game Over Screen displays the player's final score and a prompt to click to restart.
+
+7. **Restart:**
+   * Clicking anywhere on the Game Over Screen restarts the game, resetting the score, health, and wall positions.
 
 <br>
 
@@ -500,7 +394,160 @@ void keepInScreen() {
 ```
 
 ## Reference
+
 [processing](http://www.processing.org/)
 [keyboard interaction](https://www.e-education.psu.edu/earth801/node/555)
 [Game](https://www.toptal.com/game/ultimate-guide-to-processing-simple-game)
+
+<br>
+
+
+## Processing and Keyboard  Interaction
+
+This example combines  keyboard input with moving shapes a cross the screen.
+
+<video width="720" height="500" controls>
+<source src="PM/IPA/game/keyboard.mp4" type="video/mp4">
+<source src="PM/IPA/game/Keyboard.ogg" type="video/ogg">
+</video>
+
+```
+//move a shape around the screen according to keyboard inputs
+int x=100;   //declare x and y coordinates  of the ellipse
+int y=100;
+
+void setup(){
+  size(640, 480);
+  pixelDensity(2);
+  stroke(0);
+  ellipse(x,y,10,10);
+}
+
+void draw(){
+  //stroke(0);
+  //ellipse(x,y,10,10);
+  
+  if ((keyPressed == true) && (key == 'u' || key == 'U')){
+    stroke(255,0,0);
+    y--;
+  }
+  else if (keyPressed == true && (key == 'd' || key =='D')){
+    stroke(0,255,0);
+    y++;
+  }
+  else if (keyPressed == true && (key == 'r' || key == 'R')){
+    stroke(0,0,255);
+    x++;
+  }
+  else if (keyPressed == true && (key == 'l' || key == 'L')){
+    stroke(255,255,0);
+    x--;
+  }
+  else {
+    ellipse(x,y,10,10);
+  }
+}
+
+```
+<br>
+
+The beginning position is just a black circle drawn to the middle of the display window. It doesn't do anything unless you type the u, d, l, or r keys, in which case the circle jumps up, down, left, or right, and changes color. If no key is being pressed, the circle just sits still in its most recent position with its most recent color.
+<br>
+
+## Description of the functions used in the above example
+<br>
+
+[Size()](https://processing.org/reference/size_.html)
+* It defines the dimension of the display window width and height in units of pixels. 
+* Program that has the setup() function, the size() function must be the first line of code inside setup(), and the setup() function must appear in the code tab with the same name as your sketch folder.
+* The built-in variables width and height are set by the parameters passed to this function.
+* For example, running size(640, 480) will assign 640 to the width variable and 480 to the height variable. If size() is not used, the window will be given a default size of 100 x 100 pixels.
+<br>
+
+[pixelDensity()](https://processing.org/reference/pixelDensity_.html)
+<br>
+
+* It makes it possible for Processing to render using all the pixels on high resolutions screens.
+* This function can only be run once within a program, and must be called right after size() in a program without a setup() function, or within setup() if present.
+* PixelDensity() should only be used with hardcoded numbers (in almost all cases this number will be 2)
+  <br>
+[Stroke()](https://processing.org/reference/stroke_.html)
+<br>
+
+* Sets the color used to draw lines and borders around shapes.
+*  This color is either specified in terms of the RGB or HSB color depending on the current colorMode(). 
+* The default color space is RGB, with each value in the range from 0 to 255.
+<br>
+
+[ellipse()](https://processing.org/reference/ellipse_.html)
+<br>
+* Draws an ellipse (oval) to the screen. An ellipse with equal width and height is a circle.
+* By default, the first two parameters set the location, and the third and fourth parameters set the shape's width and height.
+* The origin may be changed with the ellipseMode() function.
+<br>
+
+[keyPressed()](https://processing.org/reference/keyPressed_.html)
+
+<br>
+
+* The keyPressed() function is called once every time a key is pressed. The key that was pressed is stored in the key variable.
+  
+<br>
+
+## Processing and Mouse Interaction
+<br>
+This is a simple program that demonstrate how the mouse interact with the processing
+<br>
+
+<video width="720" height="500" controls>
+<source src="PM/IPA/game/mouse.mp4" type="video/mp4">
+<source src="PM/IPA/game/mouse.ogg" type="video/ogg">
+</video>
+
+<br>
+
+```
+color value= color(255,0,0);
+color value2= color(0,255,0);
+ void setup(){
+     size(200,200);
+   background(255);
+ }
+   //click within the square to change the color of the other square
+ void draw(){
+   fill(value);
+   rect(25,25,50,50);
+   fill(value2);
+   rect(75,75,50,50);
+ }
+ //the mouse clicked function is called after  a mouse button is pressed and then released.
+ void mouseClicked() {
+   //if the cursor is inside the top square and  the color of the bottom square is green
+   if(mouseX<75 && mouseY<75 && mouseX>25 && mouseY>25 && value2==color(0,255,0)){
+     value2=color(0,255,255);
+   }
+   //if the cursor is inside the top square and  the color of the bottom square is aqua
+    
+    else if(mouseX<75 && mouseY<75 && mouseX>25 && mouseY>25 && value2==color(0,255,255)){
+     value2=color(0,255,0);
+    }
+    //if the cursor is inside the top square and  the color of the top square is red
+   
+    else if (mouseX<125 && mouseY<125 && mouseX>75 && mouseY>75 && value==color(255,0,0)){
+     value=color(255, 0,255);
+    
+    } 
+     //if the cursor is inside the bottom square and  the color of the top square is pink 
+     else if (mouseX<125 && mouseY<125 && mouseX>75 && mouseY>75 && value==color(255,0,255)){
+     value=color(255, 0,0);
+     }
+     //tell me if i haven't satisfied any of the above  possibilities
+     else{
+       println( "you have to click inside a square  for something to happens");
+   }
+ }
+ ```
+ <br>
+
+
 

@@ -163,9 +163,8 @@ def led(fingerUp):
 
 
 
-
-
-<!-- ## Control Arduino Using Processing
+<!-- 
+# Control Arduino Using Processing
 
 <br> 
 
