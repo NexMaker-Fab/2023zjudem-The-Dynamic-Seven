@@ -493,7 +493,18 @@ REFERENCE: [3D Printing in Construction](https://www.arup.com/projects/mx3d-brid
 
 The field of organ transplantation stands on the brink of a revolutionary breakthrough as 3D printing technology intersects with bio fabrication. This research endeavors to explore the transformative potential of 3D printing in the creation of functional organs for transplantation. With recent strides in bio printing techniques and the unveiling of a 3D-printed heart prototype, the paper aims to provide a comprehensive overview of the current state of the art, challenges faced, ethical considerations, and the far-reaching implications for the field of medicine.
 
-REFERENCE : [Contemporary standpoint and future of 3D bioprinting in tissue/organs printing](https://www.sciencedirect.com/science/article/pii/S246845112300017X)
+<br>
+
+<img src="PM\3D_print\application\organ.png" style="float: center;" >
+<br>
+
+D bioprinting of organs, illustration. Three-dimensional (3D) bioprinting of organs allows artificial construction of viable organs such as heart, kidney, liver and others, primarily with the aim of transplantation. Construction of scaffold structures for various organs is also one of the benefits of 3D bioprinting. Manufacturing of artificial organs can be conducted using several techniques, but the most common ones are drop-based bioprinting (inkjet) and extrusion bioprinting.
+<br>
+
+
+REFERENCE : <br> [Contemporary standpoint and future of 3D bioprinting in tissue/organs printing](https://www.sciencedirect.com/science/article/pii/S246845112300017X) <br>
+[Complex formulations, simple techniques: Can 3D printing technology be the Midas touch in pharmaceutical industry?](https://www.researchgate.net/publication/331104806_Complex_formulations_simple_techniques_Can_3D_printing_technology_be_the_Midas_touch_in_pharmaceutical_industry)
+
 
 ## Sustainable Architecture: 3D Printed Eco-Friendly Homes Revolution
 
@@ -505,10 +516,20 @@ REFERENCE : [Building Sustainable Housing: Is an Eco-Friendly Future 3D Printed]
 
 Advancements in 3D printing technology have opened new avenues in the realm of precision medicine, particularly in the development of personalized medical devices. This research seeks to unravel the potential of 3D printing in customizing medical implants, prosthetics, and devices to meet the unique needs of individual patients. By navigating the regulatory landscape and examining recent breakthroughs, the paper aims to shed light on the transformative role of 3D printing in the realm of personalized healthcare, addressing challenges and foreseeing future developments.
 
+<br>
+<img src="PM\3D_print\application\medical.png" style="float: center;" >
+<br>
+
+
 REFERENCE : [Empowering Precision Medicine: The Impact of 3D Printing on Personalized Therapeutic](https://link.springer.com/article/10.1208/s12249-023-02682-w)
 
 ## Lunar Habitats: 3D Printing Infrastructure for Space Colonization
 
 The endeavor to establish human habitats beyond Earth has become a focal point of space exploration, with 3D printing emerging as a key technology for lunar colonization. This research delves into the application of 3D printing in crafting essential infrastructure for lunar habitats. As space agencies embark on ambitious initiatives, this paper aims to unravel the technological requirements, feasibility, and potential of 3D printing in constructing shelters, habitats, and other structures on the Moon. The exploration of these themes holds profound implications for the future of humanity's presence in space.
+
+<br>
+
+<img src="PM\3D_print\application\nasa.png" style="float: center;" >
+<br>
 
 REFERENCE : [3D-Printed Habitat Challenge](https://www.nasa.gov/directorates/spacetech/centennial_challenges/3DPHab/index.html)
