@@ -41,9 +41,52 @@ Python Script:
 <img src="PM\IPA\led\diagram.png" alt="Center">
 <br>
 
+<br>
+
+**Set the Environment**
+
+1. Install Python <br>
+  
+<br>
+<img src="PM\IPA\led\1.png" alt="Center">
+<br>
+
+[How to install Python](https://realpython.com/installing-python/) 
+<br>
+
+1. Install OpenCV <br>
+
+```pip install opencv-python``` <br>
+
+<br>
+<img src="PM\IPA\led\2.png" alt="Center">
+<br>
+
+[OpenCV](https://pypi.org/project/opencv-python/)
+<br>
+
+3. Install pyFirmata <br>
+
+```pip install pyFirmata```
+<br>
+<img src="PM\IPA\led\3.png" alt="Center">
+<br>
+
+[pyFirmata 1.1.0](https://pypi.org/project/pyFirmata/)
+
+4. Install Mediapipe <br>
+  
+```pip install mediapipe``` <br>
+
+<br>
+<img src="PM\IPA\led\4.png" alt="Center">
+<br>
+
+[mediapipe 0.10.9](https://pypi.org/project/mediapipe/)
+
 **Code**
 
-**Code for Python:**
+**Code for Python in Visual Studio Code**
 
 ``````
 import cv2
