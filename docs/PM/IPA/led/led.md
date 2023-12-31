@@ -130,7 +130,7 @@ video.release()
 cv2.destroyAllWindows()
 ``````
 
-**Code for Controller**
+**Code for Controller in Visual Studio Code**
 
 ``````
 import pyfirmata

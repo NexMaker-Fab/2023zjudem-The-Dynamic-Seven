@@ -15,7 +15,7 @@
        - [Radar](PM/IPA/Radar/radar.md)
        - [Processing and Keyboard  Interaction](PM/IPA/game/processing_game.md)
        - [Other Software](PM/IPA/os/Other_software.md)
-  - [6. LASER CUTTING](PM/Laser_cutting/laser_cutting.md)
+  - [6. LASER CUTTING](PM/lc/testm/test.md)
   - [7.IOT]
   
 - FINAL PROJECT
