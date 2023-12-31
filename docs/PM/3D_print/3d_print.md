@@ -312,6 +312,10 @@ Your browser does not support the video tag.
 </table>
 
 3. **Result**
+   
+
+
+<br>
 
 <table>
   <tr>
@@ -326,6 +330,28 @@ Your browser does not support the video tag.
     <td><img src="PM\3D_print\output\m21.jpg" alt="Alt text 2"></td>
   </tr>
 </table>
+
+<br>
+
+
+**Video for Model 1**
+
+<br>
+<video width="720" height="540" controls>
+<source src="PM\3D_print\Model1\model1.mp4" type="video/mp4">
+<source src="PM\3D_print\w_1.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+**Cleanig video for Model 2**
+
+<br>
+<video width="720" height="540" controls>
+<source src="PM\3D_print\Model2\cleanig.mp4" type="video/mp4">
+<source src="PM\3D_print\w_1.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+<br>
 <table>
   <tr>
     <td><img src="PM\3D_print\output\m12.jpg" alt="Alt text 1"></td>
