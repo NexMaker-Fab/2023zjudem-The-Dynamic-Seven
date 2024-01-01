@@ -16,7 +16,7 @@
        - [Processing and Keyboard  Interaction](PM/IPA/game/processing_game.md)
        - [Other Software](PM/IPA/os/Other_software.md)
   - [6. LASER CUTTING](PM/lc/testm/test.md)
-  - [7.IOT]
+  - [7.IOT](PM/IOT/test.md)
   
 - FINAL PROJECT
   - [Project Proposal](FINALPROJECT/proposal/proposal.md)

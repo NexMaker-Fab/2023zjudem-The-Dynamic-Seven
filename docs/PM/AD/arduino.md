@@ -790,9 +790,9 @@ Ensure the connections for the ultrasonic sensor, servo motor, and LED are corre
 
 ## **RESULT**
 
-<video width="700" controls>
-  <source src="PM\AD\Ultrasonic\video.mp4" type="video/mp4">
-  <source src="PM\AD\Ultrasonic\video.ogg" type="video/ogg">
+<video width="720" controls>
+<source src="PM\AD\Ultrasonic\smd.mkv" type="video/mp4">
+<source src="PM\AD\Ultrasonic\uv.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
 
