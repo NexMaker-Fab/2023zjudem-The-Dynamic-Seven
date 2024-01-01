@@ -507,42 +507,42 @@ Some of these commands need appropriate parameters. For example, when turning on
 # G Code for Our Model 
 First of all, from Flashprint we choose ‘Start Slicing’.  And the click’ Start Preview’.
 
-<img style="float: center;"  src="PM\3D_Print\gcod\1.jpg">
+<img style="float: center;"  src="PM\3D_print\gcod\1.jpg">
 <br>Then reduce the layer to 1.
 <br>
 <br>
 
-<img style="float: center;"  src="PM\3D_Print\gcod\2.jpg">
+<img style="float: center;"  src="PM\3D_print\gcod\2.jpg">
 <br>After that, take it to 2.
 <br>
 <br>
 
-<img style="float: center;"  src="PM\3D_Print\gcod\3.jpg">
+<img style="float: center;"  src="PM\3D_print\gcod\3.jpg">
 <br>
 <br>
 
 Below is the Gcode for layer 2:
 <br>
 
-<img style="float: center;"  src="PM\3D_Print\gcod\4.jpg">
+<img style="float: center;"  src="PM\3D_print\gcod\4.jpg">
 <br>
 <br>
 Download the Gcode file from the download icon.
 <br>
 <br>
-<img style="float: center;"  src="PM\3D_Print\gcod\5.jpg">
+<img style="float: center;"  src="PM\3D_print\gcod\5.jpg">
 <br>
 <br>
 Then open it to a exell file.
 <br>
 <br>
-<img style="float: center;"  src="PM\3D_Print\gcod\6.jpg">
+<img style="float: center;"  src="PM\3D_print\gcod\6.jpg">
 <br>
 <br>
 Finally, create a scatter graph from Insert Recommended Charts.
 <br>
 <br>
-<img style="float: center;"  src="PM\3D_Print\gcod\7.jpg">
+<img style="float: center;"  src="PM\3D_print\gcod\7.jpg">
 
 
 
