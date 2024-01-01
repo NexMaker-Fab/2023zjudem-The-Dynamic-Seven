@@ -112,7 +112,16 @@ We have assigned different colors here.
 <img src="PM\lc\testm\pchange.png" style="float: center;" >
 Each square is given an individual color during information insertion. the power and speed is also inserted and then the computer is connected to the machine and now, we can start the process.
 
-<br><img src="PM\lc\testm\Table of S_P.png" style="float: center;" >
+<!-- <br><img src="PM\lc\testm\Table of S_P.png" style="float: center;" > -->
+
+| Speed/Power| 10 | 20 | 30 | 40 | 50 | 60 | 70 |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| 10  | ×  | √  | √  |√  | √  | √  | √   |
+| 20  | ×  | ×  | √  |√  | √  | √  | √   |
+| 30  | ×  | ×  | √  |√  | √  | √  | √   |
+| 40  | ×  | ×  | ×  |√  | √  | √  | √   |
+| 50  | ×  | ×  | ×  |√  | √  | √  | √   |
+| 60  | ×  | ×  | √  |√  | √  | √  | √   |
 
 <br><img src="PM\lc\testm\LC.jpg" style="float: center;" >
 <br><img src="PM\lc\testm\LC1.jpg" style="float: center;" >
@@ -133,9 +142,10 @@ Then we put the Acrylic Material on Machine.
 After that, We turned on the main switch of the machine.
 
 <br><img src="PM\lc\testm\s1.png" style="float: center;" >
+We design our model in AutoCAD.
 <br><img src="PM\lc\testm\s2.png" style="float: center;" >
 <br><img src="PM\lc\testm\3.jpg" style="float: center;" >
-We have sucessfully connected our Computer to the machine wth the USB cable and Imported cutting target image to the machine.
+We have successfully connected our Computer to the machine wth the USB cable and Imported cutting target image to the machine.
 <br><img src="PM\lc\testm\s3.png" style="float: center;" >
 
 
@@ -154,7 +164,7 @@ Here is a short video of the lesar cutting precess and how it works.
 <br><img src="PM\lc\testm\7.jpg" style="float: center;" >
 We can see, size of the Acrylic matarial and now we can calculate the value of this.
 <br><img src="PM\lc\testm\final.jpg" style="float: center;" >
-Determine the real length to identify any discrepancies. The width of one component is 5mm, with a quantity of 10, resulting in a total measured length of 4.6cm (46.75mm) and a deviation of 3.25mm. Consequently, the Acrylic value is calculated as 3.25/10=0.325mm.
+Determine the real length to identify any discrepancies. The width of one component is 5mm, with a quantity of 10, resulting in a total measured length of 4.65 cm  and a deviation of 3.25mm. Consequently, the Acrylic value is calculated as 3.25/10=0.325mm.
 
 
 # 3D-printed and laser-cut Arduino lamp
@@ -166,7 +176,7 @@ Initially, we provided the DXF file to the machine.
 <img src="PM\lc\practice\m2.jpg" style="float: center;" >
 <img src="PM\lc\practice\m3.jpg" style="float: center;" >
 <img src="PM\lc\practice\m7.jpg" style="float: center;" >
-<img src="PM\lc\practice\m7.1.jpg" style="float: center;" >
+<img src="PM\lc\practice\m7.1.jpg" style="float: center;">
 After turning on the machine and placing the acrylic material, we utilized both platforms to establish the required distance.
 <img src="PM\lc\practice\sm4.png" style="float: center;" >
 <img src="PM\lc\practice\sm5.png" style="float: center;" >
@@ -207,3 +217,7 @@ The finished appearance of our Arduino lamp, crafted through a combination of 3D
 </video>
 <br>
 Let's check out a quick video featuring our 3D-printed and laser-cut Arduino lamp.
+
+**Reference**
+
+[3D Model Model Reference](https://www.thingiverse.com/thing:763622)
