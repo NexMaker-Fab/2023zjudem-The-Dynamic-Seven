@@ -141,7 +141,7 @@ Arduino MKR GPS Shield
 Arduino MKR 485 Shield
 <BR>
 
-### About Arduino
+**About Arduino**
 
 Arduino is an open-source electronics platform that encompasses both hardware and software, designed to simplify the creation of interactive, computer-controlled projects. It features a range of development boards equipped with microcontrollers and an integrated development environment (IDE) for programming. Arduino's user-friendly approach, extensive library support, and a vibrant community have made it a prominent choice for prototyping and implementing a wide array of electronic applications, from basic LED control to advanced robotics and IoT projects.
 
@@ -170,7 +170,7 @@ Open source software refers to computer programs and applications whose source c
 [Open source software & Hardware](https://www.nexmaker.com/doc/5arduino/open_source.html)
 [Open source Hardware Wikipedia](https://en.wikipedia.org/wiki/List_of_open-source_hardware_projects)
 
-### Arduino Control
+**Arduino Control**
 
 **1. Arduino IDE**
 
@@ -310,7 +310,7 @@ Holding the "Shift" key while clicking "Upload" is useful if you're using an ext
 
 - There is a list of libraries in the reference. Some libraries are included with the Arduino software. Others can be downloaded from a variety of sources or through the Library Manager. Starting with version 1.0.5 of the IDE, you do can import a library from a zip file and use it in an open sketch. See these instructions for installing a third-party library.
 
-### Reference
+**Reference**
 
 [Nexmaker](https://www.nexmaker.com/doc/5arduino/open_source.html)
 
