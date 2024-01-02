@@ -7,6 +7,7 @@
     - [3D Model using Plugins](PM/CAD/fg.md)
     - [Parameter](PM/CAD/parameter/parameter.md)
     - [Practices](PM/CAD/practicecad.md)
+    - [Automated Modeling](PM/CAD/auto/automated.md)
     - [Other software](PM/CAD/Other_software.md)
   - [3. ARDUINO](PM/AD/arduino.md)
   - [4. 3D PRINTING](PM/3D_print/3d_print.md)
