@@ -1,4 +1,8 @@
 ## Blender
+
+<br>
+<img src="PM\CAD\bl.png" style="float: center;">
+<br>
 Blender is a powerful and versatile open-source 3D creation suite that encompasses various aspects of computer graphics, animation, and game development. Developed by the Blender Foundation, Blender is available for free, making it accessible to a broad community of artists, designers, and developers.
 
 <br>
@@ -48,6 +52,10 @@ Blender's open-source nature has contributed to its widespread adoption, and it 
 
 ## Onshape
 
+<br>
+<img src="PM\CAD\oneshap.png" style="float: center;">
+<br>
+
 Onshape is a cloud-based computer-aided design (CAD) platform that provides professional 3D modeling and collaboration tools for engineers, designers, and other professionals involved in product development. Unlike traditional CAD software, Onshape operates entirely in the cloud, allowing users to access and work on their designs from any device with an internet connection. Onshape was developed by a team of former SolidWorks engineers and was first released in 2015. Here are some key features and aspects of Onshape:
 
 <br>
@@ -91,6 +99,10 @@ Onshape is widely used in industries such as manufacturing, engineering, and pro
 <br>
 
 ## SOLIDWORKS
+
+<br>
+<img src="PM\CAD\solid.png" style="float: center;">
+<br>
 
 <br>
 
