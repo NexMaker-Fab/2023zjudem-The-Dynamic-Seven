@@ -395,7 +395,98 @@ One of the fastest ways to explore the possibilities of Arduino in Tinkercad is 
 
  ## PRACTICE
 
- 
+ # Smart Glasses for Blind Prototype
+
+This are the smart glasses which can tell you about how much far/near the object is in front of you. Helpful for blind people.
+
+**Components and supplies**
+<br>
+
+- [Ultrasonic Sensor - HC-SR04](https://item.taobao.com/item.htm?abbucket=10&id=653347850995&ns=1&spm=a21n57.1.0.0.4cce43655Wvubi)
+- [Arduino UNO](https://detail.tmall.com/item.htm?abbucket=10&id=736774477015&ns=1&spm=a21n57.1.0.0.7a5a523coijyzY)
+- Jumper wires 
+- Headphone
+- Double Head Crocodile clip
+<br>
+
+**Project description**
+This works as in the ultrasonic sensor which is mounted on the head of the glasses, constantly keeps on detecting the objects in front of them, and sends an alert system through headphones.
+
+**Circuit diagram**
+<br>
+<img src="PM\AD\smartglass\circuit_diagram.png" style="float: center;" >
+<br>
+
+**Code**
+
+```
+#define TRIG_PIN 6
+#define ECHO_PIN 5
+#define BUZZER_PIN 7
+
+void setup() {
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Trigger ultrasonic sensor
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(2);
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+
+  // Read the echo pulse duration
+  long duration = pulseIn(ECHO_PIN, HIGH);
+
+  // Calculate distance in centimeters
+  int distance = duration * 0.034 / 2;
+
+  // Provide feedback based on distance
+  if (distance < 50) {
+    // Obstacle detected
+    tone(BUZZER_PIN, 1000); // Activate buzzer
+  } else {
+    // No obstacle
+    noTone(BUZZER_PIN); // Deactivate buzzer
+  }
+
+  Serial.println(distance); // Print distance for debugging
+
+  delay(100); // Adjust delay as needed
+}
+```
+
+**Result**
+
+<!-- <br>
+<img src="PM\AD\smartglass\r1.jpg" style="float: center;">
+<br> -->
+
+<br>
+<img src="PM\AD\smartglass\r3.jpg" style="float: center;">
+<br>
+
+<br>
+
+<video width="720" height="540" controls>
+<source src="PM\AD\smartglass\r2.mp4" type="video/mp4">
+<source src="PM\3D_print\w_1.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+<br>
+
+
+<br>
+
+**Reference** <br>
+
+[Ultrasonic Glasses for the Blind](https://www.hackster.io/gardnertech/ultrasonic-glasses-for-the-blind-142156)
+
+<br>
 
 # Arduino with PIR Sensor Project with LED and Buzzer
 
@@ -408,16 +499,16 @@ By monitoring variations in the amounts of infrared (heat) radiation generated b
 
 ## **Components Required  for the Arduino with PIR Sensor Project**
 
-- Arduino Uno × 1
-  <img style="float: center;" width=700 height=700 src="PM\AD\PIR\uno.jpg">
+- Arduino Uno
+  <img style="float: center;"  src="PM\AD\PIR\uno.jpg">
 - PIR Sensor × 1
-  <img style="float: center;" width=700 height=700 src="PM\AD\PIR\pir.jpg">
+  <img style="float: center;"  src="PM\AD\PIR\pir.jpg">
 - Buzzer × 1
-  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\buzzer.jpg">
+  <img style="float: center;"  src="PM\AD\PIR\buzzer.jpg">
 - LED and Resistor Kit × 1
-  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\led.jpg">
+  <img style="float: center;"  src="PM\AD\PIR\led.jpg">
 - Breadboard × 1
-  <img style="float: center;" width=700 height=500 src="PM\AD\PIR\board.jpg">
+  <img style="float: center;"  src="PM\AD\PIR\board.jpg">
 - Jumper wires × 2
 - USB cable type A/B
   
@@ -548,7 +639,7 @@ Ensure the connections for the PIR sensor, LED, and buzzer are appropriately set
  LED and Buzzer turn ON when an object or motion comes in the range of the PIR Sensor.
 <br>
 <br>
- <video width="700" controls>
+ <video  width="720" height=520 controls>
   <source src="PM\AD\PIR\pir_video.mp4" type="video/mp4">
   <source src="PM\AD\PIR\pir_video.mp4" type="video/ogg">
 Your browser does not support the video tag.
@@ -556,102 +647,6 @@ Your browser does not support the video tag.
 
 <br>
 <br>
-<br>
-
-
-
-
-# Smart Glasses for Blind Prototype
-
-This are the smart glasses which can tell you about how much far/near the object is in front of you. Helpful for blind people.
-
-**Components and supplies**
-<br>
-
-- Ultrasonic Sensor - HC-SR04 (Generic)
-- Arduino UNO
-- Jumper wires (generic)
-- Headphone
-- Double Head Crocodile clip
-<br>
-
-**Project description**
-This works as in the ultrasonic sensor which is mounted on the head of the glasses, constantly keeps on detecting the objects in front of them, and sends an alert system through headphones.
-
-**Circuit diagram**
-<br>
-<img src="PM\AD\smartglass\circuit_diagram.png" style="float: center;" >
-<br>
-
-**Code**
-
-```
-#define TRIG_PIN 6
-#define ECHO_PIN 5
-#define BUZZER_PIN 7
-
-void setup() {
-  pinMode(TRIG_PIN, OUTPUT);
-  pinMode(ECHO_PIN, INPUT);
-  pinMode(BUZZER_PIN, OUTPUT);
-  Serial.begin(9600);
-}
-
-void loop() {
-  // Trigger ultrasonic sensor
-  digitalWrite(TRIG_PIN, LOW);
-  delayMicroseconds(2);
-  digitalWrite(TRIG_PIN, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(TRIG_PIN, LOW);
-
-  // Read the echo pulse duration
-  long duration = pulseIn(ECHO_PIN, HIGH);
-
-  // Calculate distance in centimeters
-  int distance = duration * 0.034 / 2;
-
-  // Provide feedback based on distance
-  if (distance < 50) {
-    // Obstacle detected
-    tone(BUZZER_PIN, 1000); // Activate buzzer
-  } else {
-    // No obstacle
-    noTone(BUZZER_PIN); // Deactivate buzzer
-  }
-
-  Serial.println(distance); // Print distance for debugging
-
-  delay(100); // Adjust delay as needed
-}
-```
-
-**Result**
-
-<br>
-<img src="PM\AD\smartglass\r1.jpg" style="float: center;">
-<br>
-
-<br>
-<img src="PM\AD\smartglass\r3.jpg" style="float: center;">
-<br>
-
-<br>
-
-<video width="720" height="540" controls>
-<source src="PM\AD\smartglass\r2.mp4" type="video/mp4">
-<source src="PM\3D_print\w_1.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-<br>
-
-
-<br>
-
-**Reference** <br>
-
-[Ultrasonic Glasses for the Blind](https://www.hackster.io/gardnertech/ultrasonic-glasses-for-the-blind-142156)
-
 <br>
 
 
@@ -818,26 +813,56 @@ Your browser does not support the video tag.
 <br>
 
 1. Arduino UNO board
-2. 28BYJ-48 unipolar stepper motor (with driver board)
+2. 28BYJ-48 unipolar stepper motor
 3. 10k ohm potentiometer
 4. Pushbutton
 5. 5V power source
 6. Bread board
 7. Jumper wires
+8. [ULN2003 Motor drive](https://arduinogetstarted.com/tutorials/arduino-controls-28byj-48-stepper-motor-using-uln2003-driver)
 
+<br>
+
+
+
+**ULN2003 Motor drive**<br>
+The ULN2003 is a popular integrated circuit (IC) that is commonly used as a high-voltage, high-current Darlington transistor array. It is specifically designed for interfacing between low-level digital or microcontroller signals and high-power loads such as motors, relays, and other inductive loads. The ULN2003 is widely used in various electronic projects and applications where efficient and reliable control of high-power devices is required. <br>
+
+* ULN2003 Stepper Motor Driver Features
+We usually use stepper motors when we need precise control of the motor shaft. These motors can be used in robot arm, 3D printers, CNC machines, etc. 28BJY-48 is a kind of stepper motor. In full step mode, these motors have a 1 to 64 speed reduction gearbox and eachfull 360 degree rotation consists of 32 steps. The ULN2003 driver is commonly used to control these motors.
+
+ULN2003 IC consists of 7 pairs of Darlington transistors, each pair can withstand 500mA and 50V. There are 4 transistors in this module. This module has 4 LEDs to show the activity of 4 motor control pins.
+<br>
+
+**ULN2003 Stepper Motor Driver Pinout**
+This Module has 7 pins: <br>
+ <br>
+VIN: Module power supply – 5V to 12V <br>
+GND: Ground <br>
+IN1: Control pin 1 <br>
+IN2: Control pin 2 <br>
+IN3: Control pin 3 <br>
+IN4: Control pin 4 <br>
+MOTOR: Connected signals to motor
+
+<br>
+
+<br>
+<img style="float: center;"  src="PM\AD\stepper\ULN2003.jpg">
+<br>
 <br>
 
 ## Arduino stepper motor control circuit
 <br>
 <br>
-<img style="float: center;" width=1000 height=500 src="PM\AD\stepper\stepper.png">
+<img style="float: center;"  src="PM\AD\stepper\stepper.png">
 <br>
 <br>
-The stepper motor is connected to the ULN2003A board which is supplied with external power source of 5V. The control lines (IN1, IN2, IN3 and IN4) of this board are connected to the Arduino as follows:
-INA to Arduino pin 11
-INB to Arduino pin 10
-INC to Arduino pin 9
-IND to Arduino pin 8
+The stepper motor is connected to the ULN2003A board which is supplied with external power source of 5V. The control lines (IN1, IN2, IN3 and IN4) of this board are connected to the Arduino as follows: <br>
+INA to Arduino pin 11 <br>
+INB to Arduino pin 10 <br>
+INC to Arduino pin 9 <br>
+IND to Arduino pin 8 <br>
 
 The 10k ohm potentiometer is used to control the speed of the stepper motor, its output pin is connected to Arduino analog pin 0.
 
@@ -1175,7 +1200,7 @@ The last command is to toggle between run or stop using the PLAY/PAUSE key on my
 <br>
 <br>
 
-<video width="600" height="400" controls>
+<video width="720" height="570" controls>
 <source src="PM/AD/ir/ir.mp4" type="video/mp4">
 <source src="PM/AD/ir/ir.ogg" type="video/ogg">
 Your browser does not support the video tag.

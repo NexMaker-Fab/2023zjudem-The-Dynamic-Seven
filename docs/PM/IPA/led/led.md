@@ -2,13 +2,26 @@
 
 **Description**
 
-Create a system that allows users to control LEDs using hand gestures detected by a camera. The project combines computer vision with Arduino for physical output.
+Gesture recognition helps computers to understand human body language. This helps to build a more potent link between humans and machines, rather than just the basic text user interfaces or graphical user interfaces (GUIs).
+
+In this project, we are using gestures(by extracting the key points from the library), setting conditions based on the gestures that the code reads and sending data to arduino to turn the LEDs on/off.
 
 **Components**
 
 1. Python (OpenCV and Mediapipe):
 
-Use OpenCV to capture video frames from a webcam.Implement hand tracking using the Mediapipe library to detect hand landmarks and gestures.
+OpenCV (Open-Source Computer Vision Library) is an open-source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in commercial products. <br>
+
+**Mediapipe:**
+Mediapipe is an open-source machine learning library of Google, which has some solutions for face recognition and gesture recognition and provides encapsulation of python, js, and other languages. MediaPipe Hand is a high-fidelity hand and finger tracking solution. It uses machine learning (ML) to infer 21 key 3D hand information from just one frame.
+
+<br>
+<img src="PM\IPA\led\med.png" alt="Center">
+<br>
+
+
+**References :** <br>
+<References>https://www.hackster.io/as4527/control-led-with-open-cv-python-hand-gestures-and-arduino-93b020</References>
 
 2. Arduino:
 
@@ -24,6 +37,19 @@ Define specific hand gestures for controlling the LEDs. For example, a "peace" s
 Python Script:
 
 4. 5 LEDs
+
+<br>
+
+**APPROACH**
+1) Detect hand gestures.
+
+2) Code reads the gestures.
+
+3) Every gestures has different conditions.
+
+4) Based on the condition, send the data to arduino.
+   
+   <br>
 
 **Software**
 
@@ -51,7 +77,7 @@ Python Script:
 <img src="PM\IPA\led\1.png" alt="Center">
 <br>
 
-[How to install Python](https://realpython.com/installing-python/) 
+[How to install Python](https://realpython.com/installing-python/)
 <br>
 
 1. Install OpenCV <br>
@@ -84,9 +110,20 @@ Python Script:
 
 [mediapipe 0.10.9](https://pypi.org/project/mediapipe/)
 
+<br>
+
+**Working Diagram**
+<br>
+
+<br>
+<img src="PM\IPA\led\wc.png" alt="Center">
+<br>
+<br>
+
 **Code**
 
-**Code for Python in Visual Studio Code**
+**Code for Python in Visual Studio Code** "OpenCv.py"
+
 
 ``````
 import cv2
@@ -130,7 +167,7 @@ video.release()
 cv2.destroyAllWindows()
 ``````
 
-**Code for Controller in Visual Studio Code**
+**Code for Controller in Visual Studio Code** "Controller.py"
 
 ``````
 import pyfirmata
@@ -204,8 +241,6 @@ def led(fingerUp):
   Your browser does not support the video tag.
 </video>
 
-
-
 <!-- 
 # Control Arduino Using Processing
 
@@ -241,7 +276,6 @@ Processing is a flexible software sketchbook and a language for learning how to 
 **Processing IDE**
 
 To download Processing go here: [Processing Download](https://processing.org/download)
-
 
 <br>
 <img src="PM/IPA/led/pic1.jpg"style="float: center;" width=700 height=500 >
@@ -300,7 +334,6 @@ Processing window will be look like following if you use code provided below.
 **Arduino Code**
 
 ```
-
 
   void setup() {
   pinMode(10, OUTPUT);   
@@ -431,6 +464,3 @@ void alloff(){
   <source src="PM/IPA/led/vdo.ogg" type="video/ogg">
 </video>
 <br> -->
-
-
-

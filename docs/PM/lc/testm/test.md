@@ -11,6 +11,7 @@ Focusing the Beam: The laser beam is then directed through a series of mirrors a
 Material Interaction: When the focused laser beam makes contact with a material, it rapidly heats and vaporizes or melts the material at the point of interaction.
 
 Computer-Controlled Cutting Path: The cutting process is controlled by a computer numerical control (CNC) system, which directs the laser beam along a precise cutting path determined by a digital design or program.
+<br>
 
 
 **Materials** <br>
@@ -20,19 +21,21 @@ Metals: Stainless steel, aluminum, copper, etc.
 Plastics: Acrylic, polycarbonate, ABS, etc.
 Wood: Plywood, MDF, hardwoods, etc.
 Textiles: Fabric, leather, felt, etc. <br>
-**Applications**
+
+**Applications**<br>
 Industrial Cutting: Used in manufacturing industries for precise cutting of metal sheets, pipes, and other components.
 Prototyping: Rapid prototyping and small-scale production for product development.
 Engraving and Marking: Creating detailed designs or adding identification marks on various materials.
 Art and Decor: Crafting intricate designs in artistic or decorative pieces. <br>
 
 **Refarence**
-[Fabacademy](https://fabacademy.org/2019/labs/kamplintfort/students/alessandra-crotty/week3.html#eins)
+[LASER CUTTING](https://www.cncsourced.com/guides/what-is-a-laser-cutter/)
 
 ## SAFETY INSTRUCTION
 
 Safety instructions are crucial guidelines designed to protect individuals from potential hazards and ensure a secure environment in various settings, including workplaces, laboratories, construction sites, and public spaces. The primary goal of safety instructions is to prevent accidents, injuries, and other adverse events by promoting awareness, proper practices, and adherence to established safety protocols.
 <br>
+
 **Laser Hazard Classification**
 <br>
 LASER cutters are typically classified by the American National Standards Institute (ANSI) as Class 1 LASERs, emitting low-energy levels that pose no hazard to the eyes or skin. However, these devices often contain enclosed Class 3B or 4 LASERs, capable of emitting high-energy levels and posing risks. Only manufacturer-trained personnel should conduct maintenance.
@@ -75,8 +78,7 @@ Class 4: High-power lasers with the highest risk; capable of causing severe inju
 <br>
 
 **Reference**
-[Nexmaker](https://www.nexmaker.com/doc/6laser_cutter/Safety.html)
-
+[Laser Cutter Safetyr](https://www.cncsourced.com/guides/what-is-a-laser-cutter/)
 
 
 ## MATERIALS
