@@ -280,6 +280,10 @@ Initially, we provided the DXF file to the machine.
 After turning on the machine and placing the acrylic material, we utilized both platforms to establish the required distance.
 <img src="PM\lc\practice\sm4.png" style="float: center;" > <br>
 We have assigned different colors here.Red color for cut and Black for engraving.
+
+
+<img src="PM\lc\practice\usb.jpg" style="float: center;" ><br>
+Conect laptop with machine throug USB.
 <img src="PM\lc\practice\sm5.png" style="float: center;" ><br>
 Here we select machine name.
 <img src="PM\lc\practice\sm6.png" style="float: center;" >

@@ -357,7 +357,7 @@ Your browser does not support the video tag.
 
 <p style="color: red;">Safety Precautions: Wear gloves, goggles, and a mask. Work in a ventilated area. Avoid contact with skin and eyes. <br></p>
 
-**Example:**
+**Example:** In cleaning we forgot to wear gloves and here is the result.Becareful take proper safety.
 <br>
 <br>
 <img src="PM\3D_print\output\clean.jpg" alt="Center">
