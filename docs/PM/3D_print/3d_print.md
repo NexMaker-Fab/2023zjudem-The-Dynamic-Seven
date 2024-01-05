@@ -319,15 +319,15 @@ Your browser does not support the video tag.
 
 <table>
   <tr>
-    <td><img src="PM\3D_print\output\m11.jpg" alt="Alt text 1"></td>
-    <td><img src="PM\3D_print\output\m21.jpg" alt="Alt text 2"></td>
+    <td><img src="PM\3D_print\output\m11.jpg" alt="Alt text 1">Model 1</td>
+    <td><img src="PM\3D_print\output\m21.jpg" alt="Alt text 2">Model 2</td>
   </tr>
 </table>
    
 <table>
   <tr>
-    <td><img src="PM\3D_print\output\m11.jpg" alt="Alt text 1"></td>
-    <td><img src="PM\3D_print\output\m21.jpg" alt="Alt text 2"></td>
+    <td><img src="PM\3D_print\output\m11.jpg" alt="Alt text 1">Model 1</td>
+    <td><img src="PM\3D_print\output\m21.jpg" alt="Alt text 2">Model 2</td>
   </tr>
 </table>
 
@@ -352,22 +352,42 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 </video>
 <br>
+
+**Safety Precautions: Wear gloves, goggles, and a mask. Work in a ventilated area. Avoid contact with skin and eyes.** <br>
+
+**Example:**
+<br>
+<br>
+<img src="PM\3D_print\output\clean.jpg" alt="Center">
+<br>
+
+
+<br>
+
+
+
+
+<br>
 <table>
   <tr>
-    <td><img src="PM\3D_print\output\m12.jpg" alt="Alt text 1"></td>
-    <td><img src="PM\3D_print\output\m22.jpg" alt="Alt text 2"></td>
+    <td><img src="PM\3D_print\output\m12.jpg" alt="Alt text 1">Model 1</td>
+    <td><img src="PM\3D_print\output\m22.jpg" alt="Alt text 2">Model 2</td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="PM\3D_print\output\m13.jpg" alt="Alt text 1"></td>
-    <td><img src="PM\3D_print\output\m23.jpg" alt="Alt text 2"></td>
+    <td><img src="PM\3D_print\output\m13.jpg" alt="Alt text 1">Model 1</td>
+    <td><img src="PM\3D_print\output\m23.jpg" alt="Alt text 2">Model 2</td>
+  </tr>
+  <tr>
+    <td><img src="PM\3D_print\output\m13.1.jpg" alt="Alt text 1">Model 1</td>
+    <td><img src="PM\3D_print\output\m23.1.jpg" alt="Alt text 2">Model 2</td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="PM\3D_print\output\m14.jpg" alt="Alt text 1"></td>
-    <td><img src="PM\3D_print\output\m24.jpg" alt="Alt text 2"></td>
+    <td><img src="PM\3D_print\output\m14.jpg" alt="Alt text 1">Model 1</td>
+    <td><img src="PM\3D_print\output\m24.jpg" alt="Alt text 2">Model 2</td>
   </tr>
 </table>
 
@@ -505,47 +525,30 @@ Some of these commands need appropriate parameters. For example, when turning on
 
 
 # G Code for Our Model 
-First of all, from Flashprint we choose ‘Start Slicing’.  And the click’ Start Preview’.
 
-<img style="float: center;"  src="PM\3D_print\gcod\1.jpg">
-<br>Then reduce the layer to 1.
-<br>
-<br>
+Frist of all, from Flashprint we choose ‘Start Slicing’.  And the click’ Slice Preview’.
+<img style="float: center;" width=700 src="PM\3D_print\gcod\Start Slicing.png">
 
-<img style="float: center;"  src="PM\3D_print\gcod\2.jpg">
-<br>After that, take it to 2.
-<br>
-<br>
+Then reduce the layer to 1.
+<img style="float: center;" width=700 src="PM\3D_print\gcod\Reduce 1.PNG">
 
-<img style="float: center;"  src="PM\3D_print\gcod\3.jpg">
-<br>
-<br>
+After that, take it to 2.
+<img style="float: center;" width=700 src="PM\3D_print\gcod\Reduce 2.PNG">
 
-Below is the Gcode for layer 2:
-<br>
+Below is the Gcode:
+<img style="float: center;" width=700 src="PM\3D_print\gcod\Gcode.PNG">
 
-<img style="float: center;"  src="PM\3D_print\gcod\4.jpg">
-<br>
-<br>
 Download the Gcode file from the download icon.
-<br>
-<br>
-<img style="float: center;"  src="PM\3D_print\gcod\5.jpg">
-<br>
-<br>
-Then open it to a exell file.
-<br>
-<br>
-<img style="float: center;"  src="PM\3D_print\gcod\6.jpg">
-<br>
-<br>
-Finally, create a scatter graph from Insert Recommended Charts.
-<br>
-<br>
-<img style="float: center;"  src="PM\3D_print\gcod\7.jpg">
+<img style="float: center;" width=700 src="PM\3D_print\gcod\Download.PNG">
 
+Open the code in CNC Simulatore.
+<img style="float: center;"  src="PM\3D_print\gcod\Simulator.PNG">
 
+**Gcode Simulation For First Layer:**
+<img style="float: center;"  src="PM\3D_print\gcod\Layer 1.PNG">
 
+**Gcode Simulation For Second Layer:**
+<img style="float: center;"  src="PM\3D_print\gcod\layer 2.PNG">
 
 
 <br>

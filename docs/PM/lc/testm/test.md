@@ -81,7 +81,72 @@ Class 4: High-power lasers with the highest risk; capable of causing severe inju
 [Laser Cutter Safetyr](https://www.cncsourced.com/guides/what-is-a-laser-cutter/)
 
 
+
+
 ## MATERIALS
+
+Laser cutting is capable of working with a wide range of materials, including but not limited to:
+
+1. Acrylic:
+
+* Thickness: Laser cutting is effective for thin to medium-thickness acrylic sheets.
+* Applications: Acrylic is widely used for signage, displays, point-of-sale items, and artistic projects.
+* Considerations: Edge polishing may be required for a finished look.
+  
+2. Wood:
+
+* Types: Plywood, MDF, hardwoods, and veneers can be cut.
+* Applications: Wood laser cutting is popular in furniture making, model building, and architectural prototypes.
+* Considerations: Different woods have varying laser cutting characteristics; some may produce more smoke or have different burn patterns.
+  
+3. Paper and Cardboard:
+
+* Types: Various paper and cardboard types, including thick cardstock, are suitable.
+* Applications: Crafting, invitations, packaging prototypes, and intricate designs.
+* Considerations: Thin materials may be prone to burning, and adjustments may be needed for optimal results.
+  
+4. Fabric and Textiles:
+
+* Types: Cotton, polyester, leather, and other textiles.
+* Applications: Fashion industry, textile art, custom clothing, and accessories.
+* Considerations: Fabrics may require masking to prevent scorching.
+
+5. Plastics:
+
+* Types: Polycarbonate, ABS, PETG, and other plastic sheets.
+* Applications: Enclosures, prototypes, signage, and industrial parts.
+* Considerations: Some plastics release fumes that may require adequate ventilation.
+
+6. Foam:
+
+* Types: Foam board, foam rubber, and foam core materials.
+* Applications: Packaging, artistic projects, and architectural models.
+* Considerations: Some foams may produce smoke and require ventilation.
+
+7. Metal:
+
+* Types: Thin metals like stainless steel and aluminum.
+* Applications: Custom metal signage, jewelry, and detailed metalwork.
+* Considerations: Higher-powered lasers and specialized equipment may be necessary for metal cutting.
+
+8. Rubber:
+
+* Types: Natural rubber and synthetic rubber sheets.
+* Applications: Gaskets, stamps, and industrial applications.
+* Considerations: Rubber can produce an odor during laser cutting.
+
+9. Glass:
+
+* Applications: Laser engraving or etching on glass surfaces.
+* Considerations: Cutting thicker glass is challenging, and laser marking is more common.
+
+10. Stone and Ceramics:
+
+* Applications: Laser engraving and etching for decorative purposes.
+* Considerations: Cutting these materials is less common due to the high power required. <br>
+
+
+**Materials what we have been used in our Laser Cutting Machine "AWC_10084CCI" for our Laser cut model:** <br>
 
 1. Paper
 2. Acrylic
@@ -169,7 +234,40 @@ We can see, size of the Acrylic matarial and now we can calculate the value of t
 Determine the real length to identify any discrepancies. The width of one component is 5mm, with a quantity of 10, resulting in a total measured length of 4.65 cm  and a deviation of 3.25mm. Consequently, the Acrylic value is calculated as 3.25/10=0.325mm.
 
 
-# 3D-printed and laser-cut Arduino lamp
+# laser-cut Arduino lamp
+
+## Materials
+
+**Acrylic**
+
+we used 3 mm acrylic.
+
+<br>
+<img src="PM\lc\practice\ar.jpg" style="float: center;" >
+<br>
+
+Here are some key characteristics and properties of acrylic:
+
+1. **Transparency and Clarity:** Acrylic is known for its excellent optical clarity. It allows light to pass through almost as efficiently as glass, making it a popular choice for various applications where transparency is important.
+
+2. **Durability:** Acrylic is a durable material with high impact resistance. It is less prone to shattering than glass, making it a safer option in certain situations.
+
+3. **Lightweight:** Acrylic is significantly lighter than glass, which makes it easier to handle and transport.
+
+4. **Weather Resistance:** It has good resistance to outdoor weathering, including UV radiation. This property makes it suitable for both indoor and outdoor applications.
+
+5. **Versatility:** Acrylic can be easily machined, cut, and shaped. It can be molded into various forms, making it a versatile material for different applications.
+
+6. **Color Options:** Acrylic is available in a wide range of colors, and it can also be transparent, translucent, or opaque. This makes it suitable for various aesthetic and design requirements.
+
+7. **Chemical Resistance:** Acrylic has good resistance to many chemicals, but it may not be suitable for all chemical environments.
+
+8. **Temperature Stability:** It performs well over a broad temperature range, but it can soften or deform at high temperatures.
+
+9. **Applications:** Acrylic sheets of 3mm thickness can be used for various purposes, including signage, displays, picture frames, protective barriers, model making, and more.
+
+
+<br>
 
 <img src="PM\lc\practice\s1.png" style="float: center;" >
 <img src="PM\lc\practice\s2.png" style="float: center;" >
@@ -180,12 +278,18 @@ Initially, we provided the DXF file to the machine.
 <img src="PM\lc\practice\m7.jpg" style="float: center;" >
 <img src="PM\lc\practice\m7.1.jpg" style="float: center;">
 After turning on the machine and placing the acrylic material, we utilized both platforms to establish the required distance.
-<img src="PM\lc\practice\sm4.png" style="float: center;" >
-<img src="PM\lc\practice\sm5.png" style="float: center;" >
+<img src="PM\lc\practice\sm4.png" style="float: center;" > <br>
+We have assigned different colors here.Red color for cut and Black for engraving.
+<img src="PM\lc\practice\sm5.png" style="float: center;" ><br>
+Here we select machine name.
 <img src="PM\lc\practice\sm6.png" style="float: center;" >
-<img src="PM\lc\practice\sm7.jpg" style="float: center;" >
-<img src="PM\lc\practice\sm8.jpg" style="float: center;" >
-
+Then upload the file on the machine.
+<img src="PM\lc\practice\sm7.jpg" style="float: center;" > <br>
+Turn on Laser.
+<img src="PM\lc\practice\laser.jpg" style="float: center;" > <br>
+Now click on the start button.
+<img src="PM\lc\practice\start.jpg" style="float: center;" > <br>
+Then, we powered up the laser, and it began crafting our lamp with the specified speed and power. Here is a video showcasing the laser cutting process of our lamp.
 <video width="720" height="540" controls>
 <source src="PM\lc\practice\working.mp4" type="video/mp4">
 <source src="PM\lc\practice\working.ogg" type="video/ogg">
@@ -193,33 +297,31 @@ After turning on the machine and placing the acrylic material, we utilized both 
 
 <br>
 
-Then, we powered up the laser, and it began crafting our lamp with the specified speed and power. Here is a video showcasing the laser cutting process of our lamp.
+## Result  
 
-<img src="PM\lc\practice\r1.jpg" style="float: center;" >
 
-Our laser-cut lamp is now ready.
+<img src="PM\lc\practice\r1.jpg" style="float: center;" > <br>
 
-<img src="PM\lc\practice\r2.jpg" style="float: center;" >
+Collect the cutting part and Clean the machine platform.
 
-<img src="PM\lc\practice\r3.jpg" style="float: center;" >
+<img src="PM\lc\practice\r3.jpg" style="float: center;" ><br>
 
-We brought it out from the Laser-cut machine, cleaned it, and it looked good, ready for collaboration with 3D printing and Arduino components.
+We brought it out from the Laser-cut machine, cleaned it, and it looked good, ready for collaboration with Arduino components.
 
-<img src="PM\lc\practice\3d_Laser cut.jpg" style="float: center;" >
+<img src="PM\lc\practice\3d_Laser cut.jpg" style="float: center;" > <br>
+<br>
+<video width="720" height="540" controls>
+<source src="PM\lc\practice\result.mp4" type="video/mp4">
+<source src="PM\lc\practice\result.ogg" type="video/ogg">
+</video>
+<br>
 
-Laser-cut Lamp with 3D printed Ship.
-
-<img src="PM\lc\practice\Lamp_Ship_Arduino.jpg" style="float: center;" >
-
-The finished appearance of our Arduino lamp, crafted through a combination of 3D printing and laser cutting, showcases the culmination of our creative efforts.
+The finished appearance of our Arduino lamp, crafted through a combination laser cutting, showcases the culmination of our creative efforts.
 
 <video width="720" height="540" controls>
 <source src="PM\lc\practice\working1.mp4" type="video/mp4">
 <source src="PM\lc\practice\working1.ogg" type="video/ogg">
 </video>
 <br>
-Let's check out a quick video featuring our 3D-printed and laser-cut Arduino lamp.
+Let's check out a quick video featuring our  laser-cut Arduino lamp.
 
-**Reference**
-
-[3D Model Model Reference](https://www.thingiverse.com/thing:763622)
