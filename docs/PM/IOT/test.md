@@ -1,5 +1,6 @@
 
 ## Use Thinkspeak-IOT to get NodeMcu information and then control NodeMcu
+
 Step1: Setting ThingsSpeak
 * First [login](https://thingspeak.com/login) to the Thingspeak server.  
 * If you are new user then create the new account.
@@ -17,7 +18,8 @@ if you want give the description then write the description. and select the Fiel
 * The new channel name is LED then select the Field 1 and scroll the page and click on the save channel button.
 .
 
-## CONNECTING LED TO NodeMCU
+**CONNECTING LED TO NodeMCU**
+
 * Place NodeMCU on your breadboard, making sure that each side of the board is on a different side of the breadboard.
 *  Connect the longer leg of the LED (anode) to D1 on NodeMCU through a resistor.
 * Connect the shorter leg of the LED (cathode) to the ground (GND) on NodeMCU.
@@ -26,7 +28,8 @@ if you want give the description then write the description. and select the Fiel
 <img src="PM\IOT\txt1.jpg" style="float: center;" width=700 >
 <br>
 
-## Firmware
+**Firmware**
+
 * Open Arduino IDE and Go to <b>file>> Preferences >></b> Change additional Boards Manages URL(http://arduino.esp8266.com/stable/package_esp8266com_index.json)
 
 <br>
@@ -40,6 +43,7 @@ if you want give the description then write the description. and select the Fiel
 <br>
 
 * Go to tools>> board >> Boards Manager >>ESP8266>> "NodeMCU1.0(ESP-12E Module)"
+ <p style="color:red"> Need VPN for this time </p>
 <br>
 <img src="PM\IOT\g.png" style="float: center;" width=700 >
 <br>
@@ -68,6 +72,7 @@ if you want give the description then write the description. and select the Fiel
 <br>
 <img src="PM\IOT\tk2.png" style="float: center;" width=700 >
 <br>
+
 * Upload the code  below and click resert button on the nodeMCU board.
 
 ~~~
@@ -143,7 +148,7 @@ String SendHTML(void){
 }
 ~~~
 
-## outcome
+**Outcome**
  If you open serial monitor expect to see the ip address
 <br>
 <img src="PM\IOT\kkk.png" style="float: center;" width=700 >
@@ -158,30 +163,29 @@ So finally LED is ON.
 Now show the status of the thingSpeak server.
 <img src="PM\IOT\fk.png" style="float: center;" width=700 >
 
-## references
+**references**
 
 [electronic wings](https://www.electronicwings.com/users/shravanprajapati122/projects/228/led-control-via-thingspeak-server-using-nodemcu-esp8266) 
 [engineeringprojects](https://www.theengineeringprojects.com/2022/03/esp32-dht11-interfacing-with-thingspeak-webserver.html)
 [how-to-install-esp8266-board-arduino-ide/](https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/) 
 
 
-
-# Blinking LED with NodeMCU (ESP8266) and Arduino IDE
+## Blinking LED with NodeMCU (ESP8266) and Arduino IDE
 
 * This is a simple example of a project that uses an Arduino board to program a NodeMCU (ESP8266) to control an LED.
 
-## Wiring LEDs to NodeMCU
+**Wiring LEDs to NodeMCU**
 
 * Placing the NodeMCU on your breadboard, making sure that each side of the board is on a different side of the breadboard.
 * connect two LEDs to digital GPIO D6 and D7 using a 220Ω current limiting resistor.
 
-## Configuring the NOdeMCU Web Server in Access Point (AP) mode
+**Configuring the NOdeMCU Web Server in Access Point (AP) mode**
 
 In this project, we  control things by visiting a specific URL.When you enter a URL into a web browser, it sends an HTTP request (also known as a GET request) to a web server. It is the web server’s responsibility to handle this request.
 
 Assume you entered a URL like <http://192.168.1.1/ledon> into a browser. The browser then sends an HTTP request to the ESP8266. When the ESP8266 receives this request, it recognizes that the user wishes to turn on the LED. As a result, it turns on the LED and sends a dynamic webpage to a browser that displays the LED’s status as “on.”
 
-### Steps
+**Steps**
 
  Connect your ESP8266 to your computer
  ESP8266WiFi.h library. This library contains ESP8266-specific methods that we use to connect to the network. Following that, we include the ESP8266WebServer.h library and run the sketch.
@@ -324,14 +328,14 @@ After connecting to your NodeMCU AP network, open a browser and navigate to 192.
 <img src="PM\IOT\txt4.jpg" style="float: center;" width=700 >
 <br>
 
-## NodeMcu with Thinkspeak IOT
+# NodeMcu with Thinkspeak IOT
 
 The Internet of Things ( or IoT) is a network of interconnected computing devices such as digital machines, automobiles with built-in sensors, or humans with unique identifiers and the ability to communicate data over a network without human intervention.
 
 NodeMCU is an open source IoT platform. It includes firmware which runs on the ESP8266 WiFi SoC from Espressif, and hardware which is based on the ESP-12 module.
 It can be used as a standalone device, or as a UART to Wi-Fi adaptor to allow other microcontrollers to connect to a Wi-Fi network. For example, you can connect an ESP8266 to an Arduino to add Wi-Fi capabilities to your Arduino board. The most practical application is using it as a standalone device.
 
-## Features
+** Features**
 
 * Wi-Fi Module – ESP-12E module similar to the ESP-12 module but with 6 extra GPIOs.
 * USB – micro USB port for power, programming and debugging
@@ -341,7 +345,7 @@ It can be used as a standalone device, or as a UART to Wi-Fi adaptor to allow ot
 
 ## CONNECTING THE NODEMCU, DHT11 Interfacing with ThingSpeak WebServer
 
-### DHT11 (Temperature and Humidity Sensor)
+**DHT11 (Temperature and Humidity Sensor)**
 
 * DHT11 is used to measure humidity and temperature from its surrounding.
 * It monitors the ambient temperature and humidity of a given area.
@@ -350,7 +354,7 @@ It can be used as a standalone device, or as a UART to Wi-Fi adaptor to allow ot
 
 * DHT11 sensor can measure humidity from 20% to 90% with +-5% (RH or relative humidity) of accuracy and can measure the temperature in the range of 0 degrees Celsius to 50 degrees Celsius with +-2C of accuracy.DHT11 sensors can also be used to implement a wired sensor system using a cable length of up to 20 meters.
 
-## Arduino Programming
+**Arduino Programming**
 
 * Install the DHT11 sensor library;
 * Open Aurdino IDE and Go to Tools >> Manage Libraries.
@@ -364,7 +368,7 @@ It can be used as a standalone device, or as a UART to Wi-Fi adaptor to allow ot
 <br>
 Test code
 
-## Wiring Instructions
+**Wiring Instructions**
 
 Connect the DHT11 sensor to the NodeMCU as follows:
 
@@ -479,29 +483,31 @@ Serial.println(F("°F"));
 <img src="PM\IOT\ki.png" style="float: center;" width=700 >
 <br>
 
-## ThingSpeak web servie
+**ThingSpeak web servie**
 
 * It is an open data platform for the Internet of Things (Internet of Things).
 * ThingSpeak is a MathWorks web service that allows us to send sensor readings/data to the cloud. We can also visualise and act on the data (calculate the data) sent to ThingSpeak by the devices. Data can be stored in both private and public channels.
 
 * ThingSpeak is commonly used for internet of things prototyping and proof of concept systems requiring analytics.
 
-## Features Of ThingSpeak Introduction
+**Features Of ThingSpeak Introduction**
 
 * <b>ThingSpeak service enables users to share analyzed data through public channels:</b> Users can view multiple options on their channels via the settings panel. The tab displays sharing options, allowing the user to make their channel private, public or shared with specific users. Professionals can import and export data through their channels as well.
 
 * <b>ThingSpeak allows professionals to prepare and analyze data for their businesses:</b> Weather forecasters use the MATLAB Analysis app to prepare, analyze, and filter data, such as estimating average humidity or calculating dew point. Users can use the visualization and analysis applications to perform operations on live or historical data by using template codes. To enable modular coding, industry professionals can add new functions to the software. Companies can use ThingSpeak Analysis to read stored data or write new data to their private channels. They can scrape numbers from various web pages thanks to the URL filter.
 
-* <b>ThingSpeak updates various ThingSpeak channels using MQTT and REST APIs: </b>Professionals in the industry also use the platform to analyze and chart numerical data sent from smart devices and stored on various channels. Business owners can update their feeds, clear, or delete their channels entirely by using REST API calls like POST, GET, DELETE, or PUT. MQTT Publish methods allow users to update their feeds, whereas MQTT Subscribe methods allow them to receive messages.
+* <b>ThingSpeak updates various ThingSpeak channels using MQTT and REST APIs: </b>Professionals in the industry also use the platform to analyze and chart numerical data sent from smart devices and stored on various channels. Business owners can update their feeds, clear, or delete their channels entirely by using REST API calls like POST, GET, DELETE, or PUT. MQTT Publish methods allow users to update their feeds, whereas MQTT Subscribe methods allow them to receive messages.2
 
-## Preparing Arduino IDE for NodeMCU and ThingSpeak
+ <br>
+
+**Preparing Arduino IDE for NodeMCU and ThingSpeak**
 
 We are using Arduino IDE to compile and upload code into the NodeMCU module.
 
 * Hardware: NodeMCU(In this example we choice NodeMCU CP2102)
 * Software:Arduino IDE
 
-## Programming NodeMCU in Arduino IDE
+**Programming NodeMCU in Arduino IDE**
 
 To use the NodeMCU with the Arduino IDE, we need to add the ESP8266 board manager to the Arduino IDE. All we have to do is add the JSON file link. JSON is a format of text files that allow structured information to be shared between computers.
 
@@ -525,7 +531,7 @@ Go to tools>> board >> Boards Manager >>ESP8266>> "NodeMCU1.0(ESP-12E Module)"
 <img src="PM\IOT\g.png" style="float: center;" width=700 >
 <br>
 
-## Preparing Arduino IDE for  ThingSpeak
+**Preparing Arduino IDE for  ThingSpeak**
 
 * Click the link  to download theThingSpeak Arduino library:[ThingSpeak Arduino library](https://github.com/mathworks/thingspeak-arduino)
 * Open the Arduino IDE.
@@ -545,7 +551,7 @@ Go to tools>> board >> Boards Manager >>ESP8266>> "NodeMCU1.0(ESP-12E Module)"
 <br>
 * The ThingSpeak library by <b>MathWorks</b> has been successfully downloaded.
 
-## ThingSpeak IOT  platform setting
+**ThingSpeak IOT  platform setting**
 
 * To create  account or log in to ThingSpeak (operated by MathWorks) server [here](https://thingspeak.com/)
 * Click on <b>Get Started for free.</b>
@@ -607,7 +613,7 @@ Edit the details as per your requirements and click on the Save
 <img src="PM\IOT\l.png" style="float: center;" width=700 >
 <br>
 
-## Testing
+**Testing**
 
 * Copy the code and paste it in the Aurdino IDE
 

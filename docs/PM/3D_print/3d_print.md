@@ -353,7 +353,9 @@ Your browser does not support the video tag.
 </video>
 <br>
 
-**Safety Precautions: Wear gloves, goggles, and a mask. Work in a ventilated area. Avoid contact with skin and eyes.** <br>
+
+
+<p style="color: red;">Safety Precautions: Wear gloves, goggles, and a mask. Work in a ventilated area. Avoid contact with skin and eyes. <br></p>
 
 **Example:**
 <br>
