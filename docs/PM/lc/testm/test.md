@@ -310,11 +310,6 @@ We brought it out from the Laser-cut machine, cleaned it, and it looked good, re
 
 <img src="PM\lc\practice\3d_Laser cut.jpg" style="float: center;" > <br>
 <br>
-<video width="720" height="540" controls>
-<source src="PM\lc\practice\result.mp4" type="video/mp4">
-<source src="PM\lc\practice\result.ogg" type="video/ogg">
-</video>
-<br>
 
 The finished appearance of our Arduino lamp, crafted through a combination laser cutting, showcases the culmination of our creative efforts.
 
