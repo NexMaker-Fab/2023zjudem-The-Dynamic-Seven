@@ -345,6 +345,7 @@ Go to tools>> board >> Boards Manager >>ESP8266>> "NodeMCU1.0(ESP-12E Module)"
 <br>
 <img src="c.png" style="float: center;" width=700 >
 <br>
+
 * The ThingSpeak library by <b>MathWorks</b> has been successfully downloaded.
 
 ##  ThingSpeak IOT  platform setting 
@@ -569,6 +570,9 @@ lastTime = millis();
 }
 
 ```
+
+<br>
+
 * Connect the ESP8266 module with your laptop using USB cable.
 * Select the right development board in Tools >> Boards >>ESP8266>>NodeMCU 1.0 (ESP-12E Module)
 * Compile and upload the code into ESP8266 using Arduino IDE.
