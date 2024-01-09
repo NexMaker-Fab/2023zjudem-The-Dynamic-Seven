@@ -20,4 +20,4 @@
   - [7.IOT](PM/IOT/test.md)
   
 - FINAL PROJECT
-  - [Project Proposal](FINALPROJECT/final.md)
+  - [InclusiveVision - Smart Glasses for Visually Impaired Individuals](FINALPROJECT/final.md)
