@@ -1,4 +1,5 @@
-# Smart Glasses for Blind Prototype
+# Title: InclusiveVision - Smart Glasses for Visually Impaired Individuals
+
 This are the smart glasses which can tell you about how much far/near the object is in front of you. Helpful for blind people.
 
 **Components and supplies**

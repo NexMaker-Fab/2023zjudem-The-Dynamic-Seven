@@ -20,4 +20,4 @@
   - [7.IOT](PM/IOT/test.md)
   
 - FINAL PROJECT
-  - [Project Proposal](FINALPROJECT/proposal/proposal.md)
+  - [Project Proposal](FINALPROJECT/final.md)
