@@ -186,7 +186,7 @@ Various smartphone apps leverage GPS and other technologies to provide navigatio
 Tactile maps and signs with Braille annotations are available in some public spaces, aiding blind individuals in orientation. However, these are static and may not provide dynamic, real-time information. 
 <br>
 
-**Innovation in the Project:** <br>
+* **Innovation in the Project** <br>
 
 The smart glass project introduces several innovations to address the limitations of existing solutions:
 
