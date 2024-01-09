@@ -214,6 +214,7 @@ Leveraging Arduino as a central component embraces an open-source platform, enco
 In summary, the project's innovation lies in its real-time object detection, voice alert system, compact design, affordability, and the integration of multiple ultrasonic sensors, all aimed at significantly enhancing the independence and safety of blind individuals in their daily mobility.
 
 
+
 # Our working Step <br>
 
 <br>
@@ -417,6 +418,14 @@ void buzz() {
 <br>
   <img  src="FINALPROJECT\pic\final.jpg">
 </br>
+
+<br>
+<video width="720" height="540" controls>
+<source src="FINALPROJECT\pic\final.mp4" type="video/mp4">
+<source src="PM\3D_print\final.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+<br>
 
 
 
